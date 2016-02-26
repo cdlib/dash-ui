@@ -1,13 +1,13 @@
 {
-  "name": "gulp_toolkit_for_stash",
+  "name": "Dash_UI",
   "version": "1.0.0",
-  "description": "Gulp toolkit for the Stash project.",
+  "description": "A library of static themes, components, and objects for the Dash application.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joel Hagedorn",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.9.6",
     "browsersync-ssi": "^0.2.4",
