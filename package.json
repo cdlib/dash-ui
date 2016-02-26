@@ -1,5 +1,5 @@
 {
-  "name": "Dash_UI",
+  "name": "dash-ui",
   "version": "1.0.0",
   "description": "A library of static themes, components, and objects for the Dash application.",
   "main": "index.html",
