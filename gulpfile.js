@@ -159,7 +159,7 @@ gulp.task('deploy', function () {
   return gulp.src('dist/**')
     .pipe(sftp({
       host: 'webprod.cdlib.org',
-      remotePath: '/apps/webprod/apache/htdocs/gulptemplate/',
+      remotePath: '/apps/webprod/apache/htdocs/dash/',
       authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc.
       auth: 'keyMain'
     }));
