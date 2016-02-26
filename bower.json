@@ -8,5 +8,8 @@
   "license": "MIT",
   "homepage": "https://github.com/cdlib/dash-ui",
   "moduleType": [],
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "normalize-scss": "^3.0.3"
+  }
 }
