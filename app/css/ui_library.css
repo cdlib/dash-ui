@@ -1,0 +1,9 @@
+/* UI Library Styles */
+
+.ui-library__header {
+	background-color: #eee;
+}
+
+.ui-library__header h1 {
+	margin: 0 0 1em 0;
+}
