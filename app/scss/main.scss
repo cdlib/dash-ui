@@ -5,7 +5,6 @@
 @import 'variables';
 @import 'mixins';
 @import 'testing';
-@import 'ui-library';
 
 // ***** Vendor Libraries ***** //
 
@@ -24,6 +23,8 @@
 // will go here
 
 // ***** Global Styles ***** //
+
+@import 'ui-library';
 
 body {
   margin: 0 10px;
