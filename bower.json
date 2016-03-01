@@ -10,6 +10,8 @@
   "moduleType": [],
   "private": true,
   "devDependencies": {
-    "normalize-scss": "^3.0.3"
+    "normalize-scss": "^3.0.3",
+    "css-grid-polyfill-binaries": "^1.1.2",
+    "jquery": "^2.2.1"
   }
 }
