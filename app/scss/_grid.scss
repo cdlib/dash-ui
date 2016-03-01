@@ -1,5 +1,21 @@
 // ##### Grid ##### //
 
-.ex-grid {
-	// empty
+.grid {
+  display: flex;
+}
+
+.grid__content {
+  flex: 1;
+}
+
+.grid__sidebar1, .grid__sidebar2 {
+  flex: 0 0 20%;
+}
+
+.grid__sidebar1 {
+  padding: 0 10px 0 0;
+}
+
+.grid__sidebar2 {
+	padding: 0 0 0 10px;
 }
