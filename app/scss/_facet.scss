@@ -30,9 +30,12 @@
 }
 
 .c-facet__check-input {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+
+html.svg .c-facet__check-input {
   @extend %hide;
-  margin: 10px 10px 0 0; // put in no-svg
-  float: right; // put in no-svg
 
   &:checked + .c-facet__check-label {
     background: url('../images/icon_checkbox-checked.svg') right 10px center no-repeat;
@@ -43,11 +46,14 @@
 .c-facet__check-label {
   display: block;
   padding: 10px;
-  background: url('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
   cursor: pointer;
 
   &:not(:first-of-type) {
     border-top: 1px solid $design-dark-blue-color;
   }
 
+}
+
+html.svg .c-facet__check-label {
+  background: url('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
 }
