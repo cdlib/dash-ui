@@ -1,5 +1,43 @@
 // ##### Facet Component ##### //
 
 .c-facet {
-  // empty
+  border: 1px solid $design-dark-blue-color;
+}
+
+.c-facet__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: $design-dark-blue-color;
+}
+
+.c-facet__heading {
+  color: $design-white-color;
+  font-size: 1.2em;
+}
+
+.c-facet__select-all {
+  border: none;
+  background: transparent;
+  color: $design-white-color;
+  font-size: 0.9em;
+}
+
+.c-facet__check-group {
+  max-height: 10em;
+  overflow: auto;
+}
+
+.c-facet__check-input {
+  float: right;
+}
+
+.c-facet__check-label {
+  display: block;
+  padding: 8px;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid $design-dark-blue-color;
+  }
+
 }
