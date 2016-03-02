@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin: 0 -10px;
   padding: 10px;
-  background-color: $design-gray-color;
+  background-color: lighten($design-light-gray-color, 20%);
 
   h1,
   h2 {
@@ -15,7 +15,7 @@
   }
 
   h1 {
-  	color: blue;
+  	color: $design-dark-blue-color;
 
   	a {
   		color: inherit;
