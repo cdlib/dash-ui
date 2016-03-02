@@ -7,7 +7,7 @@
 .c-facet__header {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 10px;
   background-color: $design-dark-blue-color;
 }
 
@@ -17,6 +17,7 @@
 }
 
 .c-facet__select-all {
+  padding: 0;
   border: none;
   background: transparent;
   color: $design-white-color;
@@ -24,17 +25,26 @@
 }
 
 .c-facet__check-group {
-  max-height: 10em;
+  max-height: 11em;
   overflow: auto;
 }
 
 .c-facet__check-input {
-  float: right;
+  @extend %hide;
+  margin: 10px 10px 0 0; // put in no-svg
+  float: right; // put in no-svg
+
+  &:checked + .c-facet__check-label {
+    background: url('../images/icon_checkbox-checked.svg') right 10px center no-repeat;
+  }
+
 }
 
 .c-facet__check-label {
   display: block;
-  padding: 8px;
+  padding: 10px;
+  background: url('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
+  cursor: pointer;
 
   &:not(:first-of-type) {
     border-top: 1px solid $design-dark-blue-color;
