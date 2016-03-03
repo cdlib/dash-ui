@@ -12,14 +12,8 @@
   max-width: 800px;
 
   a {
+    @extend %o-link__primary;
     margin: 0 0 0 1em;
-    color: $design-light-blue-color;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
   }
 
 }
