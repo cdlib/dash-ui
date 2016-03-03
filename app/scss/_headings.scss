@@ -1,0 +1,9 @@
+// ##### Headings Object ##### //
+
+%o-heading__level1 {
+  // empty
+}
+
+.o-heading__level1 {
+  @extend %o-heading__level1;
+}
