@@ -1,9 +1,31 @@
 // ##### Headings Object ##### //
 
 %o-heading__level1 {
-  // empty
+  color: $design-orange-color;
+  font-size: 1.6em;
+  font-weight: normal;
 }
 
 .o-heading__level1 {
   @extend %o-heading__level1;
+}
+
+%o-heading__level2 {
+  color: $design-dark-blue-color;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.o-heading__level2 {
+  @extend %o-heading__level2;
+}
+
+%o-heading__level3 {
+  color: $design-black-color;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.o-heading__level3 {
+  @extend %o-heading__level3;
 }
