@@ -52,3 +52,16 @@ Selector pattern using above mixin:
   top: auto;
   left: auto;
 }
+
+// Set form field focus styles
+
+%fcontrol-focus:focus {
+  border-width: 2px;
+  border-color: $design-orange-color;
+  outline: 0;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+}
