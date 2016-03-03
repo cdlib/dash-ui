@@ -1,5 +1,30 @@
 // ##### Footer Component ##### //
 
 .c-footer {
-  // empty
+  border-top: 1px solid $design-dark-gray-color;
+  font-size: 0.7em;
+}
+
+.c-footer__link {
+  
+
+}
+
+.c-footer__links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 800px;
+
+  a {
+    margin: 0 0 0 1em;
+    color: $design-light-blue-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
 }
