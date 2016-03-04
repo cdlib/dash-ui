@@ -1,37 +1,39 @@
 // ##### Buttons Object ##### //
 
-%o-button__bg {
+%o-button__big-white {
   height: 35px;
   padding: 0 12px;
   border: none;
-  border-radius: 0; // if border added
+  border-radius: 0;
+  background-color: $design-dark-blue-color;
+  color: $design-white-color;
 }
 
-.o-button__bg {
-  @extend %o-button__bg;
+.o-button__big-white {
+  @extend %o-button__big-white;
 }
 
-%o-button__bg-icon {
+%o-button__icon {
   height: 35px;
   border: none;
 }
 
-%o-button__bg-icon-left {
-  @extend %o-button__bg-icon;
+%o-button__icon-left {
+  @extend %o-button__icon;
   padding: 0 12px 0 50px;
 }
 
-.o-button__bg-icon-left {
-  @extend %o-button__bg-icon-left;
+.o-button__icon-left {
+  @extend %o-button__icon-left;
 }
 
-%o-button__bg-icon-right {
-  @extend %o-button__bg-icon;
+%o-button__icon-right {
+  @extend %o-button__icon;
   padding: 0 50px 0 12px;
 }
 
-.o-button__bg-icon-right {
-  @extend %o-button__bg-icon-right;
+.o-button__icon-right {
+  @extend %o-button__icon-right;
 }
 
 %o-button__no-bg-icon-left {
