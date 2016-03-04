@@ -13,8 +13,8 @@
 }
 
 .o-button__plain-text2 {
-  height: 30px;
   @extend %o-button__plain-text;
+  height: 30px;
   background-color: $design-lighter-blue-color;
   color: $design-black-color;
 }
@@ -27,8 +27,8 @@
 
 %o-button__icon-left {
   @extend %o-button__icon;
-  background: url('../images/icon_left-blue-arrow.svg') left 10px center no-repeat;
   padding: 0 12px 0 35px;
+  background: url('../images/icon_left-blue-arrow.svg') left 10px center no-repeat;
 }
 
 .o-button__icon-left {
@@ -43,8 +43,8 @@
 
 %o-button__icon-right {
   @extend %o-button__icon;
-  background: url('../images/icon_right-blue-arrow.svg') right 10px center no-repeat;
   padding: 0 35px 0 12px;
+  background: url('../images/icon_right-blue-arrow.svg') right 10px center no-repeat;
 }
 
 .o-button__icon-right {
