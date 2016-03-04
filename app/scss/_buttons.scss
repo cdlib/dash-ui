@@ -4,7 +4,6 @@
   height: 35px;
   padding: 0 12px;
   border: none;
-  border-radius: 0;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
 }
@@ -15,12 +14,14 @@
 
 %o-button__icon {
   height: 35px;
-  border: none;
+  border: 1px solid $design-light-gray-color;
+  border-radius: 0;
 }
 
 %o-button__icon-left {
   @extend %o-button__icon;
-  padding: 0 12px 0 50px;
+  background: url('../images/icon_left-blue-arrow.svg') left 10px center no-repeat;
+  padding: 0 12px 0 35px;
 }
 
 .o-button__icon-left {
@@ -29,7 +30,8 @@
 
 %o-button__icon-right {
   @extend %o-button__icon;
-  padding: 0 50px 0 12px;
+  background: url('../images/icon_right-blue-arrow.svg') right 10px center no-repeat;
+  padding: 0 35px 0 12px;
 }
 
 .o-button__icon-right {
@@ -37,11 +39,19 @@
 }
 
 %o-button__no-bg-icon-left {
-  padding: 0 12px 0 50px;
+  padding: 3px 0 3px 25px;
   border: none;
-  background: transparent;
+  color: $design-light-blue-color;
+  
+  font-size: 0.9em;
 }
 
-.o-button__no-bg-icon-left {
+.o-button__no-bg-icon-left1 {
   @extend %o-button__no-bg-icon-left;
+  background: url('../images/icon_point.svg') left center no-repeat;
+}
+
+.o-button__no-bg-icon-left2 {
+  @extend %o-button__no-bg-icon-left;
+  background: url('../images/icon_details.svg') left center no-repeat;
 }
