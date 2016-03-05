@@ -24,6 +24,16 @@
   font-size: 0.9em;
 }
 
+.c-facet__refine-label {
+  @extend %hide;
+}
+
+.c-facet__refine {
+  // empty
+  width: 100%;
+  margin: 10px;
+}
+
 .c-facet__check-group {
   max-height: 11em;
   overflow: auto;
