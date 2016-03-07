@@ -30,7 +30,12 @@
 
 .c-facet__refine {
   display: block; // if flexbox not supported
+  flex: 1 0 auto;
+  min-height: 25px;
   margin: 10px;
+  padding: 0 35px 0 5px;
+  border: 1px solid $design-light-gray-color;
+  background: url('../images/icon_magnifying-glass-blue.svg') right 5px center no-repeat;
 }
 
 .c-facet__check-group {
