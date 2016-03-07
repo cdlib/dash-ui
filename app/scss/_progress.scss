@@ -12,12 +12,7 @@
   align-items: center;
   justify-content: center;
   height: 37px;
-  border-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-color: $design-dark-gray-color;
+  border: 1px solid $design-dark-gray-color;
   color: $design-black-color;
   text-decoration: none;
 }
@@ -32,6 +27,24 @@
 
 .c-progress__tab3 {
   @extend %c-progress__tab-base;
+}
+
+%c-progress__tab--active {
+  @extend %c-progress__tab-base;
+  border: 2px solid $design-orange-color;
+  color: $design-orange-color;
+}
+
+.c-progress__tab1--active {
+  @extend %c-progress__tab--active;
+}
+
+.c-progress__tab2--active {
+  @extend %c-progress__tab--active;
+}
+
+.c-progress__tab3--active {
+  @extend %c-progress__tab--active;
 }
 
 %c-progress__tab--arrow {
