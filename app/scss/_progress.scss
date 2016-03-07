@@ -17,7 +17,7 @@
   text-decoration: none;
 }
 
-%c-progress__tab--arrow {
+%c-progress__tab-arrow {
   @extend %c-progress__tab-base;
   margin: 0 50px 0 0;
   border-right: none;
@@ -40,7 +40,7 @@
 .c-progress__tab1,
 .c-progress__tab2 {
   @extend %c-progress__tab-base;
-  @extend %c-progress__tab--arrow;
+  @extend %c-progress__tab-arrow;
 }
 
 .c-progress__tab3 {
@@ -56,8 +56,8 @@
 
 .c-progress__tab1--active,
 .c-progress__tab2--active {
+  @extend %c-progress__tab-arrow;
   @extend %c-progress__tab--active;
-  @extend %c-progress__tab--arrow;
 
   &::after {
     border-width: 2px;
