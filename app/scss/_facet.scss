@@ -29,19 +29,15 @@
 }
 
 .c-facet__refine {
-  // empty
-  width: 100%;
+  display: block; // if flexbox not supported
   margin: 10px;
 }
 
 .c-facet__check-group {
+  display: flex;
+  flex-flow: column nowrap;
   max-height: 11em;
   overflow: auto;
-}
-
-.c-facet__check-input {
-  margin: 10px 10px 0 0;
-  float: right;
 }
 
 html.svg .c-facet__check-input {
@@ -54,7 +50,7 @@ html.svg .c-facet__check-input {
 }
 
 .c-facet__check-label {
-  display: block;
+  display: block; // if flexbox not supported
   padding: 10px;
   cursor: pointer;
 
