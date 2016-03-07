@@ -1,5 +1,90 @@
 // ##### Progress Component ##### //
 
 .c-progress {
-  // empty
+  display: flex;
+  justify-content: space-between;
+}
+
+%c-progress__tab-base {
+  display: flex;
+  position: relative;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-color: $design-dark-gray-color;
+}
+
+.c-progress__tab1 {
+  @extend %c-progress__tab-base;
+}
+
+.c-progress__tab2 {
+  @extend %c-progress__tab-base;
+}
+
+.c-progress__tab3 {
+  @extend %c-progress__tab-base;
+}
+
+%c-progress__tab--arrow {
+  @extend %c-progress__tab-base;
+  margin: 0 50px 0 0;
+  border-right: none;
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    right: -14px;
+    padding: 13px;
+    transform: rotate(45deg);
+    border-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: $design-dark-gray-color;
+    content: '';
+  }
+
+}
+
+.c-progress__tab1--arrow {
+  @extend %c-progress__tab--arrow;
+}
+
+.c-progress__tab2--arrow {
+  @extend %c-progress__tab--arrow;
+}
+
+.c-progress__tab3--arrow {
+  @extend %c-progress__tab--arrow;
+}
+
+%c-progress__tab--arrow-active {
+  @extend %c-progress__tab--arrow;
+  border-width: 2px;
+  border-color: $design-orange-color;
+  color: $design-orange-color;
+
+  &::after {
+    border-width: 2px;
+    border-color: $design-orange-color;
+  }
+
+}
+
+.c-progress__tab1--arrow-active {
+  @extend %c-progress__tab--arrow-active;
+}
+
+.c-progress__tab2--arrow-active {
+  @extend %c-progress__tab--arrow-active;
+}
+
+.c-progress__tab3--arrow-active {
+  @extend %c-progress__tab--arrow-active;
 }
