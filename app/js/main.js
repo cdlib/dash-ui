@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   
-  // ***** Facets *****
+  // ***** Facets ***** //
 
   $('.js-facet__deselect-all-button').hide();
 
@@ -24,3 +24,26 @@ $(document).ready(function(){
   });
 
 }); // Close $(document).ready(function()
+
+// ***** Details Element ***** //
+
+if (Modernizr.details) {
+
+  // details element supported:
+  // $('.o-showhide').css('border', '1px solid green');
+
+} else {
+
+  // details element not supported:
+  // $('.o-showhide').css('border', '1px solid red');
+
+  $('.o-showhide__summary').siblings().hide();
+  
+  if ($('.o-showhide').is('[open]')) {
+    $('[open]').children().show();
+  }
+
+  $('.o-showhide__summary').click(function(){
+    $(this).siblings().toggle();
+  });
+}
