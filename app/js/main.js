@@ -45,5 +45,11 @@ if (Modernizr.details) {
 
   $('.o-showhide__summary').click(function(){
     $(this).siblings().toggle();
+    
+    if ($(this).parent().is('[open]')) {
+      $(this).parent().removeAttr('open');
+    } else {
+      $(this).parent().attr('open', '');
+    }
   });
 }
