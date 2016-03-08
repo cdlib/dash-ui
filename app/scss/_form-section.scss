@@ -3,3 +3,11 @@
 .c-fsection {
   // empty
 }
+
+.c-fsection__summary {
+  position: relative;
+  margin: 0 -10px;
+  padding: 10px 10px;
+  color: $design-white-color;
+  background-color: $design-dark-blue-color;
+}
