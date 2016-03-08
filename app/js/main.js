@@ -31,13 +31,13 @@ if (Modernizr.details) {
 
   // Details element supported:
 
-  $('.o-showhide').attr('aria-expanded', 'false');
+  $('details').attr('aria-expanded', 'false');
 
-  if ($('.o-showhide').is('[open]')) {
+  if ($('details').is('[open]')) {
     $('[open]').attr('aria-expanded', 'true');
   }
 
-  $('.o-showhide__summary').click(function(){
+  $('summary').click(function(){
     if ($(this).parent().is('[open]')) {
       $(this).parent().attr('aria-expanded', 'false');
     } else {
@@ -49,15 +49,15 @@ if (Modernizr.details) {
 
   // Details element not supported:
 
-  $('.o-showhide__summary').siblings().hide();
-  $('.o-showhide').attr('aria-expanded', 'false');
+  $('summary').siblings().hide();
+  $('details').attr('aria-expanded', 'false');
   
-  if ($('.o-showhide').is('[open]')) {
+  if ($('details').is('[open]')) {
     $('[open]').children().show();
     $('[open]').attr('aria-expanded', 'true');
   }
 
-  $('.o-showhide__summary').click(function(){
+  $('summary').click(function(){
     $(this).siblings().toggle();
 
     if ($(this).parent().is('[open]')) {
