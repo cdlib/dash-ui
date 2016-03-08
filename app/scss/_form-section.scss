@@ -15,12 +15,11 @@
 }
 
 .c-fsection__summary {
+  @extend %page-bleed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  margin: 0 -10px;
-  padding: 0 10px;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
 

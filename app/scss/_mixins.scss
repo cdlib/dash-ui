@@ -39,6 +39,13 @@ Selector pattern using above mixin:
 
 */
 
+// Bleed object to edge of browser window past body margins
+
+%page-bleed {
+  margin: 0 (-$spacing-body-margin);
+  padding: 0 $spacing-body-margin;
+}
+
 // Hide/show something visually but not for screen readers
 
 %hide {
