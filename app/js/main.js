@@ -32,24 +32,42 @@ if (Modernizr.details) {
   // details element supported:
   // $('.o-showhide').css('border', '1px solid green');
 
+  $('.o-showhide').attr('aria-expanded', 'false');
+
+  if ($('.o-showhide').is('[open]')) {
+    $('[open]').attr('aria-expanded', 'true');
+  }
+
+  $('.o-showhide__summary').click(function(){
+    if ($(this).parent().is('[open]')) {
+      $(this).parent().attr('aria-expanded', 'false');
+    } else {
+      $(this).parent().attr('aria-expanded', 'true');
+    }
+  });
+
 } else {
 
   // details element not supported:
   // $('.o-showhide').css('border', '1px solid red');
 
   $('.o-showhide__summary').siblings().hide();
+  $('.o-showhide').attr('aria-expanded', 'false');
   
   if ($('.o-showhide').is('[open]')) {
     $('[open]').children().show();
+    $('[open]').attr('aria-expanded', 'true');
   }
 
   $('.o-showhide__summary').click(function(){
     $(this).siblings().toggle();
-    
+
     if ($(this).parent().is('[open]')) {
       $(this).parent().removeAttr('open');
+      $(this).parent().attr('aria-expanded', 'false');
     } else {
       $(this).parent().attr('open', '');
+      $(this).parent().attr('aria-expanded', 'true');
     }
   });
 }
