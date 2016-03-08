@@ -1,2 +1,15 @@
 // ##### Show / Hide Object ##### //
 
+.o-showhide {
+  // empty
+}
+
+.o-showhide__summary {
+  cursor: pointer;
+
+  // Remove native arrow icon from Chrome & Safari:
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+}
