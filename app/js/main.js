@@ -29,8 +29,7 @@ $(document).ready(function(){
 
 if (Modernizr.details) {
 
-  // details element supported:
-  // $('.o-showhide').css('border', '1px solid green');
+  // Details element supported:
 
   $('.o-showhide').attr('aria-expanded', 'false');
 
@@ -48,8 +47,7 @@ if (Modernizr.details) {
 
 } else {
 
-  // details element not supported:
-  // $('.o-showhide').css('border', '1px solid red');
+  // Details element not supported:
 
   $('.o-showhide__summary').siblings().hide();
   $('.o-showhide').attr('aria-expanded', 'false');
