@@ -5,17 +5,16 @@
 }
 
 .o-showhide__summary {
-  font-weight: bold;
-  cursor: pointer;
 
-  // Remove native arrow icon from Chrome & Safari:
+  // Remove native details arrow icon from Chrome & Safari:
   &::-webkit-details-marker {
     display: none;
   }
 
 }
 
-// for modernizr custom build detection:
-.no-details {
-  cursor: auto;
+// Set basic style to confirm Modernizr script loading correctly:
+html.details .o-showhide__summary,
+html.no-details .o-showhide__summary {
+  cursor: pointer;
 }
