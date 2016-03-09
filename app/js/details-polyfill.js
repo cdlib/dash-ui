@@ -7,6 +7,7 @@ if (Modernizr.details) {
   // Details element supported:
 
   $('details').attr('aria-expanded', 'false');
+  $('summary').attr('role', 'button');
 
   if ($('details').is('[open]')) {
     $('[open]').attr('aria-expanded', 'true');
@@ -24,9 +25,10 @@ if (Modernizr.details) {
 
   // Details element not supported:
 
-  $('summary').siblings().hide();
   $('details').attr('aria-expanded', 'false');
-  
+  $('summary').attr('role', 'button');
+  $('summary').siblings().hide();
+
   if ($('details').is('[open]')) {
     $('[open]').children().show();
     $('[open]').attr('aria-expanded', 'true');
