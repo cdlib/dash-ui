@@ -1,8 +1,8 @@
 // ##### Form Section Component ##### //
 
-.c-fsection {
+.c-fgroup {
 
-  &[open] .c-fsection__summary {
+  &[open] .c-fgroup__summary {
 
     &::after {
       right: 14px;
@@ -14,7 +14,7 @@
 
 }
 
-.c-fsection__summary {
+.c-fgroup__summary {
   @extend %page-bleed;
   position: relative;
   padding: 10px $spacing-body-margin;
