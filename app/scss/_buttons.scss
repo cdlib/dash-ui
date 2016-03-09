@@ -98,12 +98,26 @@
 
 .o-button__previous {
   @extend %o-button__prev-next;
-  padding: 5px 0 5px 20px;
+  padding: 5px 5px 5px 20px;
   background: url('../images/icon_left-blue-arrow.svg') left center no-repeat;
 }
 
 .o-button__next {
   @extend %o-button__prev-next;
-  padding: 5px 20px 5px 0;
+  padding: 5px 20px 5px 5px;
   background: url('../images/icon_right-blue-arrow.svg') right center no-repeat;
+}
+
+%o-button__text-number {
+  border: none;
+  background-color: $design-white-color;
+}
+
+.o-button__text-number {
+  @extend %o-button__text-number;
+}
+
+.o-button__text-number--active {
+  @extend %o-button__text-number;
+  color: $design-light-blue-color;
 }
