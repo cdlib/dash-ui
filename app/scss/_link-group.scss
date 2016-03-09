@@ -1,0 +1,24 @@
+// ##### Link Group Component ##### //
+
+.c-lgroup {
+
+  &[open] .c-lgroup__summary {
+
+    &::before {
+      transform: rotate(90deg);
+      content: url('../images/icon_thin-right-arrow.svg');
+    }
+
+  }
+
+}
+
+.c-fgroup__summary {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url('../images/icon_thin-right-arrow.svg');
+  }
+
+}
