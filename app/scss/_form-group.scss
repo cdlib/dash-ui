@@ -1,4 +1,4 @@
-// ##### Form Section Component ##### //
+// ##### Form Group Component ##### //
 
 .c-fgroup {
 
@@ -7,7 +7,6 @@
     &::after {
       right: 14px;
       transform: rotate(90deg);
-      content: url('../images/icon_right-white-arrow.svg');
     }
 
   }
