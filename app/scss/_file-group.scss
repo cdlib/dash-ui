@@ -1,8 +1,8 @@
-// ##### Link Group Component ##### //
+// ##### File Group Component ##### //
 
-.c-lgroup {
+.c-file-group {
 
-  &[open] .c-lgroup__summary {
+  &[open] .c-file-group__summary {
 
     &::before {
       transform: rotate(90deg);
@@ -12,7 +12,7 @@
 
 }
 
-.c-lgroup__summary {
+.c-file-group__summary {
   position: relative;
   padding: 0 0 0 20px;
 
@@ -25,7 +25,7 @@
 
 }
 
-.c-lgroup__list {
+.c-file-group__list {
   list-style: none;
 
   li {
