@@ -32,10 +32,12 @@
 
 // ***** Global Styles ***** //
 
+@import 'fonts';
 @import 'ui-library';
 
 body {
   margin: 0 10px;
+  font-family: 'KievitWeb';
 }
 
 .icon-source {
