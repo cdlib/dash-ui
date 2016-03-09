@@ -6,19 +6,35 @@
 
     &::before {
       transform: rotate(90deg);
-      content: url('../images/icon_thin-right-arrow.svg');
     }
 
   }
 
 }
 
-.c-fgroup__summary {
+.c-lgroup__summary {
   position: relative;
+  padding: 0 0 0 20px;
 
   &::before {
     position: absolute;
+    top: 0;
+    left: 0;
     content: url('../images/icon_thin-right-arrow.svg');
+  }
+
+}
+
+.c-lgroup__list {
+  list-style: none;
+
+  li {
+    margin: 0 0 0.3em 0;
+
+    a {
+      @extend %o-link__primary;
+    }
+
   }
 
 }
