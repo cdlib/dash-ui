@@ -1,5 +1,28 @@
 // ##### Pagination Component ##### //
 
 .c-pagination {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  @include bp(screen1) {
+    flex-flow: row nowrap;
+  }
+
+}
+
+.c-pagination__prev-next {
   // empty
+}
+
+.c-pagination__show-all {
+  order: 100; // last in order
+  margin: 10px 0;
+
+  @include bp(screen1) {
+    order: 0;
+    margin: 0 30px 0 0;
+  }
+
 }
