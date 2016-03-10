@@ -3,3 +3,47 @@
 .c-sites {
   // empty
 }
+
+%c-sites__item {
+  display: block;
+  margin: 0 0 2px;
+  padding: 10px;
+  background-color: $design-light-blue-color;
+  color: $design-white-color;
+  text-decoration: none;
+}
+
+.c-sites__group {
+
+  &[open] .c-sites__summary {
+
+    &::after {
+      right: 14px;
+      transform: rotate(90deg);
+    }
+
+  }
+
+}
+
+.c-sites__summary {
+  @extend %c-sites__item;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: $spacing-body-margin;
+    content: url('../images/icon_right-white-arrow.svg');
+  }
+
+}
+
+.c-sites__group-item {
+  @extend %c-sites__item;
+}
+
+.c-sites__login {
+  @extend %c-sites__item;
+  background-color: $design-dark-blue-color;
+  text-align: center;
+}
