@@ -5,6 +5,11 @@ $search-field-size: 28px;
 .o-global-search {
   display: flex;
   height: $search-field-size;
+
+  @include bp(screen2) {
+    max-width: 200px;
+  }
+
 }
 
 .o-global-search__label {
@@ -13,6 +18,7 @@ $search-field-size: 28px;
 
 .o-global-search__input {
   @extend %fcontrol-focus;
+  flex: 1 0 auto;
   padding: 0 0 0 0.5em;
   border: solid $design-light-blue-color;
   border-width: 1px 3px 1px 1px; // for focus styles
