@@ -2,16 +2,16 @@
 
 $search-field-size: 28px;
 
-.c-search-field {
+.o-global-search {
   display: flex;
   height: $search-field-size;
 }
 
-.c-search-field__label {
+.o-global-search__label {
   @extend %hide;
 }
 
-.c-search-field__input {
+.o-global-search__input {
   @extend %fcontrol-focus;
   padding: 0 0 0 0.5em;
   border: solid $design-light-blue-color;
@@ -25,7 +25,7 @@ $search-field-size: 28px;
 
 }
 
-.c-search-field__submit-button {
+.o-global-search__submit-button {
   width: $search-field-size;
   border: none;
   background: $design-light-blue-color url('../images/icon_magnifying-glass.svg') top 4px center no-repeat;
