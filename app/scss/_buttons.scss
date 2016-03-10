@@ -121,3 +121,9 @@
   @extend %o-button__text-number;
   color: $design-light-blue-color;
 }
+
+.o-button__menu {
+  padding: 15px;
+  border: none;
+  background: url('../images/icon_menu.svg') center / 35px no-repeat;
+}

@@ -1,11 +1,15 @@
 // ##### Header Component ##### //
 
 .c-header {
-  // empty
+  display: flex;
 }
 
-.c-header__dash-logo-link {
-  margin: 0 0 0 45px;
+.c-header__menu-button {
+  margin: 0 45px 0 0;
+}
+
+.c-header__dash-logo {
+  // empty
 }
 
 .c-header__dash-logo-svg {
