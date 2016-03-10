@@ -28,6 +28,7 @@
 .c-header__nav {
   display: flex;
   flex-flow: column nowrap;
+  margin: 5px 0 0;
 }
 
 %c-header__nav-bar {
@@ -46,4 +47,34 @@
   @extend %c-header__nav-bar;
   background-color: $design-dark-blue-color;
   text-align: center;
+}
+
+.c-header__nav-bar-group {
+
+  &[open] .c-header__nav-bar-group-summary {
+
+    &::after {
+      right: 14px;
+      transform: rotate(90deg);
+    }
+
+  }
+
+}
+
+.c-header__nav-bar-group-summary {
+  @extend %c-header__nav-bar;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: $spacing-body-margin;
+    content: url('../images/icon_right-white-arrow.svg');
+  }
+
+}
+
+.c-header__nav-bar-group-item {
+  @extend %c-header__nav-bar;
+  display: block;
 }
