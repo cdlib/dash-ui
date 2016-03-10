@@ -36,8 +36,7 @@
   margin: 5px 0 0;
 
   @include bp(screen2) {
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    width: 500px;
   }
 
 }
@@ -48,9 +47,21 @@
   background-color: $design-light-blue-color;
 
   @include bp(screen2) {
+    align-self: flex-end;
     margin: 0;
     padding: 0;
     background-color: $design-white-color;
+  }
+
+}
+
+.c-header__nav-items {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include bp(screen2) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 
 }
