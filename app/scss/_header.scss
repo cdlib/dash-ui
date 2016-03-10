@@ -1,5 +1,18 @@
 // ##### Header Component ##### //
 
 .c-header {
-  
+  // empty
+}
+
+.c-header__dash-logo-link {
+  margin: 0 0 0 45px;
+}
+
+.c-header__dash-logo-svg {
+  max-width: 240px;
+  max-height: 50px;
+
+  // Native dimentions:
+  // max-width: 340px;
+  // max-height: 65px;
 }
