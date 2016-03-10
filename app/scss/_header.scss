@@ -1,7 +1,12 @@
 // ##### Header Component ##### //
 
 .c-header {
-  // empty
+  
+  @include bp(screen2) {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .c-header__logos {
@@ -29,6 +34,13 @@
   display: flex;
   flex-flow: column nowrap;
   margin: 5px 0 0;
+
+  @include bp(screen2) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-width: 380px;
+  }
+
 }
 
 %c-header__nav-bar {
@@ -37,6 +49,14 @@
   background-color: $design-light-blue-color;
   color: $design-white-color;
   text-decoration: none;
+
+  @include bp(screen2) {
+    margin: 0;
+    padding: 0;
+    background-color: $design-white-color;
+    color: $design-black-color;
+  }
+
 }
 
 .c-header__nav-bar {
