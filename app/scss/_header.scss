@@ -1,6 +1,10 @@
 // ##### Header Component ##### //
 
 .c-header {
+  // empty
+}
+
+.c-header__logos {
   display: flex;
 }
 
@@ -19,4 +23,27 @@
   // Native dimentions:
   // max-width: 340px;
   // max-height: 65px;
+}
+
+.c-header__nav {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+%c-header__nav-bar {
+  margin: 0 0 2px;
+  padding: 10px;
+  background-color: $design-light-blue-color;
+  color: $design-white-color;
+  text-decoration: none;
+}
+
+.c-header__nav-bar {
+  @extend %c-header__nav-bar;
+}
+
+.c-header__nav-bar--login {
+  @extend %c-header__nav-bar;
+  background-color: $design-dark-blue-color;
+  text-align: center;
 }
