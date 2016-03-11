@@ -19,6 +19,11 @@
 
 .c-header__menu-button {
   margin: 5px 35px 0 0;
+
+  @include bp(screen2) {
+    display: none;
+  }
+
 }
 
 .c-header__dash-logo {
