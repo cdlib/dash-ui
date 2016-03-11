@@ -4,8 +4,12 @@
 
   @include bp(screen2) {
     display: flex;
+    position: absolute;
+    top: 50px;
+    right: 0;
     flex-flow: row-reverse nowrap;
     justify-content: flex-end;
+    z-index: 5;
   }
 
 }
