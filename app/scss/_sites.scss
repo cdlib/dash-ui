@@ -103,8 +103,8 @@
 
   @include bp(screen2) {
     margin: 0 20px 0 0;
-    padding: 0 0 10px;
-    background-color: $design-white-color;
+    padding: 0;
+    background-color: transparent;
     color: $design-light-blue-color;
     text-align: left;
   }
