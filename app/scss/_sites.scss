@@ -2,7 +2,7 @@
 
 .c-sites {
 
-  @include bp(screen1) {
+  @include bp(screen2) {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: flex-end;
@@ -18,7 +18,7 @@
   color: $design-white-color;
   text-decoration: none;
 
-  @include bp(screen1) {
+  @include bp(screen2) {
     background-color: $design-white-color;
     color: $design-black-color;
   }
@@ -36,7 +36,7 @@
       transform: rotate(90deg);
     }
 
-    @include bp(screen1) {
+    @include bp(screen2) {
 
       &::after {
         right: -10px;
@@ -60,7 +60,7 @@
     content: url('../images/icon_right-white-arrow.svg');
   }
 
-  @include bp(screen1) {
+  @include bp(screen2) {
 
     &::after {
       display: inline-block;
@@ -81,7 +81,7 @@
 .c-sites__group-item {
   @extend %c-sites__item;
 
-  @include bp(screen1) {
+  @include bp(screen2) {
     border-bottom: 1px solid $design-light-gray-color;
   }
 
@@ -92,7 +92,7 @@
   background-color: $design-dark-blue-color;
   text-align: center;
 
-  @include bp(screen1) {
+  @include bp(screen2) {
     margin: 0 10px 0 0;
     background-color: $design-white-color;
     color: $design-light-blue-color;
