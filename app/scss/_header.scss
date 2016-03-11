@@ -6,6 +6,7 @@
     display: flex;
     position: relative;
     justify-content: space-between;
+    height: 60px;
     z-index: 0;
   }
 
@@ -13,10 +14,11 @@
 
 .c-header__logos {
   display: flex;
+  align-items: flex-start;
 }
 
 .c-header__menu-button {
-  margin: 0 45px 0 0;
+  margin: 5px 35px 0 0;
 }
 
 .c-header__dash-logo {
@@ -38,6 +40,8 @@
   margin: 5px 0 0;
 
   @include bp(screen2) {
+    justify-content: space-between;
+    margin: 0;
     width: 550px;
   }
 
