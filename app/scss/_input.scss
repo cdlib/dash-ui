@@ -1,5 +1,20 @@
 // ##### Input Component ##### //
 
 .c-input {
-	// empty
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.c-input__label {
+	font-weight: bold;
+}
+
+.c-input__hint {
+	font-weight: normal;
+}
+
+.c-input__field {
+	@extend %fcontrol-focus;
+	padding: 3px 5px;
+	border: 1px solid $design-dark-gray-color;
 }
