@@ -38,7 +38,7 @@
   margin: 5px 0 0;
 
   @include bp(screen2) {
-    width: 500px;
+    width: 550px;
   }
 
 }
@@ -64,6 +64,7 @@
   @include bp(screen2) {
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 0 200px 0 0;
   }
 
 }
