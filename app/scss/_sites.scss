@@ -9,6 +9,7 @@
     right: 0;
     flex-flow: row-reverse nowrap;
     justify-content: flex-end;
+    width: 190px;
     z-index: 5;
   }
 
@@ -58,6 +59,10 @@
   @extend %c-sites__item;
   position: relative;
 
+  @include bp(screen2) {
+    padding: 0 0 10px;
+  }
+
   &::after {
     position: absolute;
     right: $spacing-body-margin;
@@ -97,7 +102,8 @@
   text-align: center;
 
   @include bp(screen2) {
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
+    padding: 0 0 10px;
     background-color: $design-white-color;
     color: $design-light-blue-color;
     text-align: left;
