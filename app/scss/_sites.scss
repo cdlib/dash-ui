@@ -59,10 +59,6 @@
   @extend %c-sites__item;
   position: relative;
 
-  @include bp(screen2) {
-    padding: 0 0 10px;
-  }
-
   &::after {
     position: absolute;
     right: $spacing-body-margin;
@@ -70,6 +66,8 @@
   }
 
   @include bp(screen2) {
+    padding: 0 0 10px;
+    background-color: transparent;
 
     &::after {
       display: inline-block;
