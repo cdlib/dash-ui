@@ -85,3 +85,13 @@
 .c-header__nav-bar {
   @extend %c-header__nav-bar;
 }
+
+.c-header__nav-bar--active {
+  @extend %c-header__nav-bar;
+  color: $design-black-color;
+  
+  @include bp(screen2) {
+    color: $design-light-blue-color;
+  }
+
+}
