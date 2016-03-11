@@ -23,4 +23,10 @@ $(document).ready(function(){
     $('.js-facet__deselect-all-button').show();
   });
 
+  // ***** Header Mobile Menu Toggle ***** //
+
+  $('.js-header__menu-button').click(function(){
+    $('.js-header__nav').toggleClass('c-header__nav c-header__nav--is-open');
+  });
+
 }); // Close $(document).ready(function()

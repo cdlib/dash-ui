@@ -40,17 +40,27 @@
   // max-height: 65px;
 }
 
-.c-header__nav {
-  display: flex;
+%c-header__nav {
+  display: none;
   flex-flow: column nowrap;
   margin: 5px 0 0;
 
   @include bp(screen2) {
+    display: flex;
     justify-content: space-between;
     width: 550px;
     margin: 0;
   }
 
+}
+
+.c-header__nav {
+  @extend %c-header__nav;
+}
+
+.c-header__nav--is-open {
+  @extend %c-header__nav;
+  display: flex;
 }
 
 .c-header__global-search {
