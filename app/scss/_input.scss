@@ -1,8 +1,12 @@
 // ##### Input Component ##### //
 
-.c-input {
+%c-input {
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+.c-input {
+	@extend %c-input;
 }
 
 .c-input__label {
@@ -17,4 +21,24 @@
 	@extend %fcontrol-focus;
 	padding: 3px 5px;
 	border: 1px solid $design-dark-gray-color;
+}
+
+.c-input__error {
+	display: none;
+	padding: 5px;
+	background-color: $design-red-color;
+	color: $design-white-color;
+}
+
+.c-input--error {
+	@extend %c-input;
+
+	.c-input__field {
+		border: 1px solid $design-red-color;
+	}
+
+	.c-input__error {
+		display: block;
+	}
+
 }
