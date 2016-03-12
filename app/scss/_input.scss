@@ -9,8 +9,22 @@
 	@extend %c-input;
 }
 
-.c-input__label {
+%c-input__label {
 	font-weight: bold;
+}
+
+.c-input__label {
+	@extend %c-input__label;
+}
+
+.c-input__label--required {
+	@extend %c-input__label;
+	
+	&::after {
+		color: $design-red-color;
+		content: ' *';
+	}
+
 }
 
 .c-input__hint {

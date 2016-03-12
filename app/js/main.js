@@ -29,4 +29,11 @@ $(document).ready(function(){
     $('.js-header__nav').toggleClass('c-header__nav c-header__nav--is-open');
   });
 
+  // ***** Required Text Field State ***** //
+
+  $('.c-input__field[required]').map(function() {
+    // $(this).siblings('.c-input__label').removeClass();
+    // $(this).siblings('.c-input__label--required').addClass();
+  });
+
 }); // Close $(document).ready(function()
