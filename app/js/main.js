@@ -29,9 +29,9 @@ $(document).ready(function(){
     $('.js-header__nav').toggleClass('c-header__nav c-header__nav--is-open');
   });
 
-  // ***** Required Text Field State ***** //
+  // ***** Required Field State ***** //
 
-  $('.c-input__field[required]').map(function() {
+  $('[required]').map(function() {
     $(this).siblings('label').removeClass('c-input__label');
     $(this).siblings('label').addClass('c-input__label--required');
   });

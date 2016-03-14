@@ -23,7 +23,7 @@ $input-height: 30px;
 	@extend %c-input__label;
 
 	&::after {
-		color: $design-red-color;
+		color: $design-orange-color;
 		content: ' *';
 	}
 
