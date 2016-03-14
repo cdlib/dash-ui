@@ -19,7 +19,7 @@
 
 .c-input__label--required {
 	@extend %c-input__label;
-	
+
 	&::after {
 		color: $design-red-color;
 		content: ' *';

@@ -32,8 +32,8 @@ $(document).ready(function(){
   // ***** Required Text Field State ***** //
 
   $('.c-input__field[required]').map(function() {
-    // $(this).siblings('.c-input__label').removeClass();
-    // $(this).siblings('.c-input__label--required').addClass();
+    $(this).siblings('label').removeClass('c-input__label');
+    $(this).siblings('label').addClass('c-input__label--required');
   });
 
 }); // Close $(document).ready(function()
