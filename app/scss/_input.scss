@@ -62,7 +62,7 @@ $input-height: 30px;
 
 .c-input__select {
 	@extend %c-input__element;
-	height: $input-height;
+	height: $input-height + 2;
 	padding: 0 5px;
 	border-radius: 0;
 	background: url('../images/icon_up-down-arrows.svg') right 9px center / 12px no-repeat, linear-gradient($design-light-blue-color, $design-light-blue-color) right / 30px 30px no-repeat;
