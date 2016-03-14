@@ -4,7 +4,7 @@ $input-height: 30px;
 
 %c-input {
 	display: flex;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	flex-flow: column nowrap;
 }
 
@@ -80,22 +80,18 @@ $input-height: 30px;
 
 }
 
-.c-input__error {
+%c-input__error-message {
 	display: none;
 	padding: 5px;
 	background-color: $design-red-color;
 	color: $design-white-color;
 }
 
-.c-input--error {
-	@extend %c-input;
+.c-input__error-message {
+	@extend %c-input__error-message;
+}
 
-	.c-input__field {
-		border: 1px solid $design-red-color;
-	}
-
-	.c-input__error {
-		display: block;
-	}
-
+.c-input__error-message--active {
+	@extend %c-input__error-message;
+	display: flex;
 }
