@@ -14,6 +14,11 @@ $input-height: 30px;
 
 .c-input__inline {
 	display: flex;
+
+	.c-input ~ .c-input {
+		margin: 0 0 0 20px;
+	}
+
 }
 
 %c-input__label {
