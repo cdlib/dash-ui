@@ -46,6 +46,7 @@ $input-height: 30px;
 
 .c-input__textarea {
 	@extend %c-input__element;
+	height: 5em;
 	padding: 3px 5px;
 }
 
