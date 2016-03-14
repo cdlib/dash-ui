@@ -1,5 +1,7 @@
 // ##### Input Component ##### //
 
+$input-height: 30px;
+
 %c-input {
 	display: flex;
 	flex-flow: column nowrap;
@@ -31,16 +33,26 @@
 	font-weight: normal;
 }
 
-.c-input__field {
+%c-input__element {
 	@extend %fcontrol-focus;
-	padding: 3px 5px;
 	border: 1px solid $design-dark-gray-color;
 }
 
-.c-input__select {
-	@extend %fcontrol-focus;
+.c-input__text {
+	@extend %c-input__element;
+	height: $input-height;
+	padding: 0 5px;
+}
+
+.c-input__textarea {
+	@extend %c-input__element;
 	padding: 3px 5px;
-	border: 1px solid $design-dark-gray-color;
+}
+
+.c-input__select {
+	@extend %c-input__element;
+	height: $input-height;
+	padding: 0 5px;
 	border-radius: 0;
 	background: url('../images/icon_up-down-arrows.svg') right 9px center / 12px no-repeat, linear-gradient($design-light-blue-color, $design-light-blue-color) right / 30px 30px no-repeat;
 	appearance: none; // removes default down arrow for Chrome and FF 35 and higher
