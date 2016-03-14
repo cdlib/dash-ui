@@ -4,11 +4,16 @@ $input-height: 30px;
 
 %c-input {
 	display: flex;
+	flex: 1 0 auto;
 	flex-flow: column nowrap;
 }
 
 .c-input {
 	@extend %c-input;
+}
+
+.c-input__inline {
+	display: flex;
 }
 
 %c-input__label {

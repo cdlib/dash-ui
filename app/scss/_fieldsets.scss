@@ -1,5 +1,10 @@
 // ##### Fieldsets Component ##### //
 
 .c-fieldset {
-	// empty
+	padding: 15px 0 0;
+	border: 0;
+}
+
+.c-fieldset__legend {
+	font-weight: bold;
 }
