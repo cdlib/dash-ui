@@ -1,0 +1,47 @@
+// ##### Search Results Data Component ##### //
+
+.c-data-results {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 10px 0 0;
+	border-bottom: 1px solid $design-dark-gray-color;
+}
+
+.c-data-results__number-title-group {
+	display: flex;
+}
+
+.c-data-results__number {
+	flex: 0 0 auto;
+	width: 30px;
+	color: $design-dark-blue-color;
+	font-size: 1.4em;
+}
+
+.c-data-results__title-group {
+	// empty
+}
+
+.c-data-results__title {
+	margin: 0 0 10px;
+	color: $design-dark-blue-color;
+	font-size: 1.4em;
+}
+
+.c-data-results__author {
+	margin: 10px 0;
+}
+
+.c-data-results__type-group {
+	margin: 0 0 0 30px;
+}
+
+.c-data-results__type {
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+
+.c-data-results__location {
+	margin: 0 0 10px;
+}
