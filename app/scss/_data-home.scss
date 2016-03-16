@@ -13,10 +13,13 @@
 }
 
 .c-data-home__group {
-	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	border-top: 1px solid $design-dark-gray-color;
+
+	@include bp(screen1) {
+		display: flex;
+	}
 
 	@include bp(screen2) {
 		width: 50%;
@@ -32,8 +35,6 @@
 .c-data-home__title-group {
 	flex: 0 1 auto; // fixes IE 10
 	padding: 20px 10px 10px 20px;
-
-	// border: $bred;
 }
 
 .c-data-home__title {
@@ -48,10 +49,12 @@
 
 .c-data-home__type-group {
 	flex: 0 0 auto;
-	max-width: 6em;
-	padding: 20px 20px 10px 10px;
 
-	// border: $bblue;
+	@include bp(screen1) {
+		max-width: 6em;
+		padding: 20px 20px 10px 10px;
+	}
+
 }
 
 .c-data-home__type {
