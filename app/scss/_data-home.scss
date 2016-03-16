@@ -1,8 +1,10 @@
 // ##### Home Page Data Component ##### //
 
 .c-data-home {
-	display: flex;
-	border-top: 1px solid $design-dark-gray-color;
+
+	@include bp(screen2) {
+		display: flex;
+	}
 
 	~ .c-data-home {
 		border-bottom: 1px solid $design-dark-gray-color;
@@ -14,10 +16,15 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	width: 50%;
+	border-top: 1px solid $design-dark-gray-color;
 
-	&:first-of-type {
-		border-right: 1px dashed $design-orange-color;
+	@include bp(screen2) {
+		width: 50%;
+
+		&:first-of-type {
+			border-right: 1px dashed $design-orange-color;
+		}
+
 	}
 
 }
@@ -26,7 +33,7 @@
 	flex: 0 1 auto; // fixes IE 10
 	padding: 20px 10px 10px 20px;
 
-	border: $bred;
+	// border: $bred;
 }
 
 .c-data-home__title {
@@ -44,7 +51,7 @@
 	max-width: 6em;
 	padding: 20px 20px 10px 10px;
 
-	border: $bblue;
+	// border: $bblue;
 }
 
 .c-data-home__type {
