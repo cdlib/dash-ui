@@ -23,7 +23,8 @@
 }
 
 .c-data-home__title-group {
-	padding: 20px 20px 10px;
+	flex: 0 1 auto; // fixes IE 10
+	padding: 20px 10px 10px 20px;
 
 	border: $bred;
 }
@@ -39,8 +40,9 @@
 }
 
 .c-data-home__type-group {
-	width: 20%;
-	padding: 20px 20px 10px;
+	flex: 0 0 auto;
+	max-width: 6em;
+	padding: 20px 20px 10px 10px;
 
 	border: $bblue;
 }
