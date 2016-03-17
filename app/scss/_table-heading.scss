@@ -1,5 +1,21 @@
 // ##### Table Heading Component ##### //
 
 .c-table-heading {
-	// empty
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: $design-dark-blue-color;
+}
+
+.c-table-heading__text {
+	color: $design-white-color;
+	font-size: 1.2em;
+}
+
+.c-table-heading__button {
+
+	@include bp(screen2) {
+		display: none;
+	}
+
 }
