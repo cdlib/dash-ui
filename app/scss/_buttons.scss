@@ -34,6 +34,14 @@
   font-size: 0.9em;
 }
 
+.o-button__plain-text5 {
+  padding: 4px 10px;
+  border: 1px solid $design-white-color;
+  border-radius: 0;
+  background-color: $design-dark-blue-color;
+  color: $design-white-color;
+}
+
 %o-button__icon {
   height: 35px;
   border: 1px solid $design-light-gray-color;
