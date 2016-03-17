@@ -2,6 +2,8 @@
 
 // Inspired from: https://css-tricks.com/examples/ResponsiveTables/responsive.php
 
+// ***** Large Screen Styles ***** //
+
 @include bp(screen2) {
   .c-table {
     width: 100%;
@@ -13,19 +15,25 @@
 
   .c-table th,
   .c-table td {
-    padding: 0.5em;
-    
+    padding: 0.8em;
+    text-align: left;
     vertical-align: top;
   }
 
-  .c-table th {
-    padding: 0.5em 30px 0.5em 0.5em;
-    text-align: left;
+  .c-table td:nth-of-type(1) {
+    color: $design-dark-blue-color;
+    font-size: 1.1em;
+  }
+
+  .c-table td:nth-of-type(2) {
+    white-space: nowrap;
   }
 
 }
 
-@media (max-width: $screen-md-min) {
+// ***** Small Screen Styles ***** //
+
+@media (max-width: $screen-md-min - 1) {
   .c-table table,
   .c-table thead,
   .c-table tbody,
@@ -33,6 +41,10 @@
   .c-table td,
   .c-table tr {
     display: block;
+  }
+
+  .c-table {
+    width: 100%;
   }
 
   .c-table thead tr {
@@ -51,23 +63,38 @@
 
   .c-table td {
     position: relative;
-    margin: 0 0 0 150px;
+    margin: 0 0 0 130px;
     padding: 6px;
 
     &:before {
       position: absolute;
       top: 6px;
-      left: -145px;
+      left: -125px;
+      width: 120px;
       font-weight: bold;
+      text-align: right;
       white-space: nowrap;
     }
 
   }
 
-  .c-table td:nth-of-type(1):before { content: 'Title'; }
-  .c-table td:nth-of-type(2):before { content: 'Description'; }
-  .c-table td:nth-of-type(3):before { content: 'Files'; }
-  .c-table td:nth-of-type(4):before { content: 'Created'; }
-  .c-table td:nth-of-type(5):before { content: 'Modified'; }
-  .c-table td:nth-of-type(6):before { content: 'Action'; }
-}
+  .c-table td:nth-of-type(1) {
+    margin: 0 0 0 -5px;
+    color: $design-dark-blue-color;
+    font-size: 1.1em;
+  }
+
+  .c-table td:nth-of-type(2):before { content: 'Description:';
+  }
+
+  .c-table td:nth-of-type(3):before { content: 'Files:';
+  }
+
+  .c-table td:nth-of-type(4):before { content: 'Created:';
+  }
+
+  .c-table td:nth-of-type(5):before { content: 'Modified:';
+  }
+
+  .c-table td:nth-of-type(6):before { content: 'Action:'; }
+  }
