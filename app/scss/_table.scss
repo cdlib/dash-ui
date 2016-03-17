@@ -7,10 +7,14 @@
     width: 100%;
   }
 
+  .c-table tr {
+    border-bottom: 1px solid $design-light-gray-color;
+  }
+
   .c-table th,
   .c-table td {
     padding: 0.5em;
-    border: 1px solid $design-light-gray-color;
+    
     vertical-align: top;
   }
 
@@ -38,7 +42,6 @@
   }
 
   .c-table tbody {
-    border: 1px solid $design-light-gray-color;
 
     tr:not(:first-child) {
       border-top: 1px solid $design-light-gray-color;
@@ -50,7 +53,6 @@
     position: relative;
     margin: 0 0 0 150px;
     padding: 6px;
-    border-left: 1px solid $design-light-gray-color;
 
     &:before {
       position: absolute;
