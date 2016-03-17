@@ -2,6 +2,14 @@
 
 // Inspired from: https://css-tricks.com/examples/ResponsiveTables/responsive.php
 
+.c-table__highlight1 {
+  color: $design-orange-color;
+}
+
+.c-table__highlight2 {
+  color: $design-dark-blue-color;
+}
+
 // ***** Large Screen Styles ***** //
 
 @include bp(screen2) {
