@@ -2,6 +2,8 @@
 
 // Inspired from: https://css-tricks.com/examples/ResponsiveTables/responsive.php
 
+$table-cell-label-width: 110px;
+
 .c-table__highlight1 {
   color: $design-orange-color;
 }
@@ -72,18 +74,22 @@
 
   .c-table td {
     position: relative;
-    margin: 0 0 0 130px;
+    margin: 0 0 0 $table-cell-label-width;
     padding: 6px 0;
     font-weight: bold;
+
+    // border: $bblue;
 
     &:before {
       position: absolute;
       top: 6px;
-      left: -125px;
-      width: 120px;
+      left: (-$table-cell-label-width);
+      width: $table-cell-label-width - 10px;
       font-weight: normal;
       text-align: right;
       white-space: nowrap;
+
+      // border: $bred;
     }
 
   }
