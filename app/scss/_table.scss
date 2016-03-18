@@ -30,19 +30,6 @@ $table-cell-label-width: 110px;
     vertical-align: top;
   }
 
-  .o-table td:nth-of-type(1) {
-    color: $design-dark-blue-color;
-    font-size: 1.1em;
-  }
-
-  .o-table td:nth-of-type(2) {
-    white-space: nowrap;
-  }
-
-  .o-table td:nth-of-type(6) {
-    color: $design-dark-blue-color;
-  }
-
 }
 
 // ***** Small Screen Styles ***** //
@@ -91,42 +78,6 @@ $table-cell-label-width: 110px;
       white-space: nowrap;
     }
 
-  }
-
-  .o-table td:nth-of-type(1), {
-    margin: 0;
-    padding: 15px 0;
-    color: $design-dark-blue-color;
-    font-size: 1.3em;
-    font-weight: normal;
-  }
-
-  .o-table td:nth-of-type(2) {
-    line-height: 1.8; // double-space
-
-    &:before {
-      content: 'Description:';
-    }
-
-  }
-
-  .o-table td:nth-of-type(3):before {
-    content: 'Files:';
-  }
-
-  .o-table td:nth-of-type(4):before {
-    content: 'Created:';
-  }
-
-  .o-table td:nth-of-type(5):before {
-    content: 'Modified:';
-  }
-
-  .o-table td:nth-of-type(6) {
-    margin: 0;
-    padding: 15px 0;
-    color: $design-dark-blue-color;
-    font-size: 1.2em;
   }
 
 }

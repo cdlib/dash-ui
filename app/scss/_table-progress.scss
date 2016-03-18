@@ -1,5 +1,7 @@
 // ##### Table Progress Component ##### //
 
+// These styles extend the table object styles (o-table) and need to be applied together on the table element: <table class="o-table c-table-progress">
+
 // ***** Large Screen Table Cell Styles ***** //
 
 @include bp(screen2) {
