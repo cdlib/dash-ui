@@ -30,14 +30,17 @@ $table-cell-label-width: 110px;
     vertical-align: top;
   }
 
-  .c-table td:nth-of-type(1),
-  .c-table td:nth-of-type(6) {
+  .c-table td:nth-of-type(1) {
     color: $design-dark-blue-color;
     font-size: 1.1em;
   }
 
   .c-table td:nth-of-type(2) {
     white-space: nowrap;
+  }
+
+  .c-table td:nth-of-type(6) {
+    color: $design-dark-blue-color;
   }
 
 }
@@ -98,7 +101,7 @@ $table-cell-label-width: 110px;
     margin: 0;
     padding: 15px 0;
     color: $design-dark-blue-color;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: normal;
   }
 
@@ -127,6 +130,7 @@ $table-cell-label-width: 110px;
     margin: 0;
     padding: 15px 0;
     color: $design-dark-blue-color;
+    font-size: 1.2em;
   }
 
 }
