@@ -96,8 +96,13 @@
     font-weight: normal;
   }
 
-  .c-table td:nth-of-type(2):before {
-    content: 'Description:';
+  .c-table td:nth-of-type(2) {
+    line-height: 1.8; // double-space
+
+    &:before {
+      content: 'Description:';
+    }
+
   }
 
   .c-table td:nth-of-type(3):before {
