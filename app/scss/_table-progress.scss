@@ -1,0 +1,62 @@
+// ##### Table Progress Component ##### //
+
+// ***** Large Screen Table Cell Styles ***** //
+
+@include bp(screen2) {
+
+  .c-table-progress td:nth-of-type(1) {
+    color: $design-dark-blue-color;
+    font-size: 1.1em;
+  }
+
+  .c-table-progress td:nth-of-type(2) {
+    white-space: nowrap;
+  }
+
+  .c-table-progress td:nth-of-type(6) {
+    color: $design-dark-blue-color;
+  }
+
+}
+
+// ***** Small Screen Table Cell Styles ***** //
+
+@media (max-width: $screen-md-min - 1) {
+
+  .c-table-progress td:nth-of-type(1), {
+    margin: 0;
+    padding: 15px 0;
+    color: $design-dark-blue-color;
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+
+  .c-table-progress td:nth-of-type(2) {
+    line-height: 1.8; // double-space
+
+    &:before {
+      content: 'Description:';
+    }
+
+  }
+
+  .c-table-progress td:nth-of-type(3):before {
+    content: 'Files:';
+  }
+
+  .c-table-progress td:nth-of-type(4):before {
+    content: 'Created:';
+  }
+
+  .c-table-progress td:nth-of-type(5):before {
+    content: 'Modified:';
+  }
+
+  .c-table-progress td:nth-of-type(6) {
+    margin: 0;
+    padding: 15px 0;
+    color: $design-dark-blue-color;
+    font-size: 1.2em;
+  }
+
+}
