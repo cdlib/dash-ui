@@ -74,23 +74,25 @@
     position: relative;
     margin: 0 0 0 130px;
     padding: 6px;
+    font-weight: bold;
 
     &:before {
       position: absolute;
       top: 6px;
       left: -125px;
       width: 120px;
-      font-weight: bold;
+      font-weight: normal;
       text-align: right;
       white-space: nowrap;
     }
 
   }
 
-  .c-table td:nth-of-type(1) {
+  .c-table td:nth-of-type(1), {
     margin: 0 0 0 -5px;
     color: $design-dark-blue-color;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: normal;
   }
 
   .c-table td:nth-of-type(2):before {
@@ -112,7 +114,6 @@
   .c-table td:nth-of-type(6) {
     margin: 0 0 0 -5px;
     color: $design-dark-blue-color;
-    font-size: 1.1em;
   }
 
 }
