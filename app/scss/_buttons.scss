@@ -42,6 +42,23 @@
   color: $design-white-color;
 }
 
+.o-button__plain-text6 {
+  padding: 0 5px 0 0;
+  border: none;
+  border-right: 2px solid $design-light-gray-color;
+  background-color: $design-white-color;
+  color: $design-dark-blue-color;
+  font-weight: bold;
+}
+
+.o-button__plain-text7 {
+  padding: 0 0 0 5px;
+  border: none;
+  background-color: $design-white-color;
+  color: $design-dark-blue-color;
+  font-weight: bold;
+}
+
 %o-button__icon {
   height: 35px;
   border: 1px solid $design-light-gray-color;
