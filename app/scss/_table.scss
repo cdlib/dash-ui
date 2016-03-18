@@ -1,45 +1,45 @@
-// ##### Table Component ##### //
+// ##### Table Object ##### //
 
 // Inspired from: https://css-tricks.com/examples/ResponsiveTables/responsive.php
 
 $table-cell-label-width: 110px;
 
-.c-table__highlight1 {
+.o-table__highlight1 {
   color: $design-orange-color;
 }
 
-.c-table__highlight2 {
+.o-table__highlight2 {
   color: $design-dark-blue-color;
 }
 
 // ***** Large Screen Styles ***** //
 
 @include bp(screen2) {
-  .c-table {
+  .o-table {
     width: 100%;
   }
 
-  .c-table tr {
+  .o-table tr {
     border-bottom: 1px solid $design-light-gray-color;
   }
 
-  .c-table th,
-  .c-table td {
+  .o-table th,
+  .o-table td {
     padding: 0.8em;
     text-align: left;
     vertical-align: top;
   }
 
-  .c-table td:nth-of-type(1) {
+  .o-table td:nth-of-type(1) {
     color: $design-dark-blue-color;
     font-size: 1.1em;
   }
 
-  .c-table td:nth-of-type(2) {
+  .o-table td:nth-of-type(2) {
     white-space: nowrap;
   }
 
-  .c-table td:nth-of-type(6) {
+  .o-table td:nth-of-type(6) {
     color: $design-dark-blue-color;
   }
 
@@ -48,26 +48,26 @@ $table-cell-label-width: 110px;
 // ***** Small Screen Styles ***** //
 
 @media (max-width: $screen-md-min - 1) {
-  .c-table table,
-  .c-table thead,
-  .c-table tbody,
-  .c-table th,
-  .c-table td,
-  .c-table tr {
+  .o-table table,
+  .o-table thead,
+  .o-table tbody,
+  .o-table th,
+  .o-table td,
+  .o-table tr {
     display: block;
   }
 
-  .c-table {
+  .o-table {
     width: 100%;
   }
 
-  .c-table thead tr {
+  .o-table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  .c-table tbody {
+  .o-table tbody {
 
     tr:not(:first-child) {
       border-top: 1px solid $design-light-gray-color;
@@ -75,13 +75,11 @@ $table-cell-label-width: 110px;
 
   }
 
-  .c-table td {
+  .o-table td {
     position: relative;
     margin: 0 0 0 $table-cell-label-width;
     padding: 6px 0;
     font-weight: bold;
-
-    // border: $bblue;
 
     &:before {
       position: absolute;
@@ -91,13 +89,11 @@ $table-cell-label-width: 110px;
       font-weight: normal;
       text-align: right;
       white-space: nowrap;
-
-      // border: $bred;
     }
 
   }
 
-  .c-table td:nth-of-type(1), {
+  .o-table td:nth-of-type(1), {
     margin: 0;
     padding: 15px 0;
     color: $design-dark-blue-color;
@@ -105,7 +101,7 @@ $table-cell-label-width: 110px;
     font-weight: normal;
   }
 
-  .c-table td:nth-of-type(2) {
+  .o-table td:nth-of-type(2) {
     line-height: 1.8; // double-space
 
     &:before {
@@ -114,19 +110,19 @@ $table-cell-label-width: 110px;
 
   }
 
-  .c-table td:nth-of-type(3):before {
+  .o-table td:nth-of-type(3):before {
     content: 'Files:';
   }
 
-  .c-table td:nth-of-type(4):before {
+  .o-table td:nth-of-type(4):before {
     content: 'Created:';
   }
 
-  .c-table td:nth-of-type(5):before {
+  .o-table td:nth-of-type(5):before {
     content: 'Modified:';
   }
 
-  .c-table td:nth-of-type(6) {
+  .o-table td:nth-of-type(6) {
     margin: 0;
     padding: 15px 0;
     color: $design-dark-blue-color;
