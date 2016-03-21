@@ -26,6 +26,7 @@ $(document).ready(function(){
   $('.js-facet__toggle-button').click(function(){
     $('.js-facet__toggle-button').toggleClass('c-facet__toggle-button--open c-facet__toggle-button');
     $('.js-facet__check-group').toggleClass('c-facet__check-group--open c-facet__check-group');
+    $('.js-facet__select-buttons').toggleClass('c-facet__select-buttons c-facet__select-buttons--open');
   });
 
   // ***** Header Mobile Menu Toggle ***** //

@@ -52,6 +52,26 @@
   background-color: green;
 }
 
+%c-facet__select-buttons {
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @include bp(screen2) {
+    display: flex;
+  }
+
+}
+
+.c-facet__select-buttons {
+  @extend %c-facet__select-buttons;
+}
+
+.c-facet__select-buttons--open {
+  @extend %c-facet__select-buttons;
+  display: flex;
+}
+
 .c-facet__select-button {
   padding: 10px;
   border: none;
