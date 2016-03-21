@@ -18,15 +18,38 @@
 }
 
 .c-facet__heading {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   background-color: $design-dark-blue-color;
-  color: $design-white-color;
-  font-size: 1.2em;
 
   @include bp(screen2) {
     padding: 0;
   }
 
+}
+
+.c-facet__heading-text {
+  color: $design-white-color;
+  font-size: 1.2em;
+}
+
+%c-facet__toggle-button {
+  background-color: $design-red-color;
+
+  @include bp(screen2) {
+    display: none;
+  }
+
+}
+
+.c-facet__toggle-button {
+  @extend %c-facet__toggle-button;
+}
+
+.c-facet__toggle-button--open {
+  @extend %c-facet__toggle-button;
+  background-color: green;
 }
 
 .c-facet__select-button {
