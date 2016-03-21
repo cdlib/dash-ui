@@ -6,22 +6,41 @@
 
 .c-facet__header {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: $design-dark-blue-color;
+  flex-flow: column nowrap;
+
+  @include bp(screen2) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $design-dark-blue-color;
+  }
+
 }
 
 .c-facet__heading {
+  padding: 10px;
+  background-color: $design-dark-blue-color;
   color: $design-white-color;
   font-size: 1.2em;
+
+  @include bp(screen2) {
+    padding: 0;
+  }
+
 }
 
 .c-facet__select-button {
-  padding: 0;
+  padding: 10px;
   border: none;
-  background: transparent;
-  color: $design-white-color;
-  font-size: 0.9em;
+  background: $design-light-gray-color;
+
+  @include bp(screen2) {
+    padding: 0;
+    background: transparent;
+    color: $design-white-color;
+    font-size: 0.9em;
+  }
+
 }
 
 .c-facet__refine-label {
