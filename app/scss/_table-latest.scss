@@ -2,7 +2,7 @@
 
 // These styles extend the table object styles (o-table) and need to be applied together on the table element: <table class="o-table c-table-latest">
 
-// ***** Large Screen Table Cell Styles ***** //
+// ***** Large Screen Styles ***** //
 
 @include bp(screen2) {
 
@@ -13,7 +13,7 @@
 
 }
 
-// ***** Small Screen Table Cell Styles ***** //
+// ***** Small Screen Styles ***** //
 
 @media (max-width: $screen-md-min - 1) {
 

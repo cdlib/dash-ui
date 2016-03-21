@@ -56,8 +56,13 @@ $table-cell-label-width: 110px;
 
   .o-table tbody {
 
-    tr:not(:first-child) {
-      border-top: 1px solid $design-light-gray-color;
+    tr {
+      padding: 10px 0;
+
+      &:not(:first-child) {
+        border-top: 1px solid $design-light-gray-color;
+      }
+
     }
 
   }
@@ -65,12 +70,11 @@ $table-cell-label-width: 110px;
   .o-table td {
     position: relative;
     margin: 0 0 0 $table-cell-label-width;
-    padding: 6px 0;
+    padding: 5px 0;
     font-weight: bold;
 
     &:before {
       position: absolute;
-      top: 6px;
       left: (-$table-cell-label-width);
       width: $table-cell-label-width - 10px;
       font-weight: normal;
