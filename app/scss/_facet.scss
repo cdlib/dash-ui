@@ -80,11 +80,25 @@
   background: url('../images/icon_magnifying-glass-blue.svg') right 5px center no-repeat;
 }
 
-.c-facet__check-group {
-  display: flex;
+%c-facet__check-group {
+  display: none;
   flex-flow: column nowrap;
   max-height: 11em;
   overflow: auto;
+
+  @include bp(screen2) {
+    display: flex;
+  }
+
+}
+
+.c-facet__check-group {
+  @extend %c-facet__check-group;
+}
+
+.c-facet__check-group--open {
+  @extend %c-facet__check-group;
+  display: flex;
 }
 
 html.svg .c-facet__check-input {
