@@ -166,4 +166,9 @@ html.svg .c-facet__check-label {
 .c-facet__update-button--open {
   @extend %c-facet__update-button;
   display: block;
+
+  @include bp(screen2) {
+    display: none;
+  }
+
 }
