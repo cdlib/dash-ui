@@ -1,6 +1,8 @@
 // ##### Facet Component ##### //
 
 .c-facet {
+  display: flex;
+  flex-flow: column nowrap;
   border: 1px solid $design-dark-blue-color;
 }
 
@@ -143,4 +145,25 @@ html.svg .c-facet__check-input {
 
 html.svg .c-facet__check-label {
   background: url('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
+}
+
+%c-facet__update-button {
+  display: none;
+  padding: 10px;
+  border: none;
+  background-color: $design-light-gray-color;
+
+  &[disabled] {
+    background-color: lighten($design-light-gray-color, 25%);
+  }
+
+}
+
+.c-facet__update-button {
+  @extend %c-facet__update-button;
+}
+
+.c-facet__update-button--open {
+  @extend %c-facet__update-button;
+  display: block;
 }
