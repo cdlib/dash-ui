@@ -32,7 +32,7 @@ $(document).ready(function(){
   // ***** Alert Close ***** //
 
   $('.js-alert__close').click(function(){
-    $('.js-alert').fadeToggle();
+    $(this).parent('.js-alert').fadeToggle();
   });
 
   // ***** Header Mobile Menu Toggle ***** //
