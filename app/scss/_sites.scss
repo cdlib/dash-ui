@@ -30,21 +30,20 @@
 
 }
 
-// Override small screen styles with large screen styles via breakpoint
+// Rotate icon when details open
 // scss-lint:disable DeclarationOrder
 .c-sites__group {
 
   &[open] .c-sites__summary {
 
     &::after {
-      right: 14px;
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
     }
 
     @include bp(screen2) {
 
       &::after {
-        right: -10px;
+        transform: rotate(-180deg);
       }
 
     }
@@ -61,7 +60,8 @@
 
   &::after {
     position: absolute;
-    right: $spacing-body-margin;
+    right: $spacing-body-margin + 5px;
+    transform: rotate(90deg);
     content: url('../images/icon_right-white-arrow.svg');
   }
 
@@ -73,7 +73,8 @@
       display: inline-block;
       position: relative;
       right: -10px;
-      content: url('../images/icon_thin-right-arrow.svg');
+      transform: rotate(0deg);
+      content: url('../images/icon_down-blue-arrow.svg');
     }
 
   }
