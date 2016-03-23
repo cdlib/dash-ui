@@ -30,19 +30,16 @@
 
 }
 
-// Rotate icon when details open
-// scss-lint:disable DeclarationOrder
+// Rotate icon when details open:
+
 .c-sites__group {
 
   &[open] .c-sites__summary {
 
     &::after {
       transform: rotate(-90deg);
-    }
 
-    @include bp(screen2) {
-
-      &::after {
+      @include bp(screen2) {
         transform: rotate(-180deg);
       }
 
@@ -52,24 +49,22 @@
 
 }
 
-// Override small screen styles with large screen styles via breakpoint
-// scss-lint:disable DeclarationOrder
 .c-sites__summary {
   @extend %c-sites__item;
   position: relative;
+
+  @include bp(screen2) {
+    padding: 0 0 10px;
+    background-color: transparent;
+  }
 
   &::after {
     position: absolute;
     right: $spacing-body-margin + 5px;
     transform: rotate(90deg);
     content: url('../images/icon_right-white-arrow.svg');
-  }
 
-  @include bp(screen2) {
-    padding: 0 0 10px;
-    background-color: transparent;
-
-    &::after {
+    @include bp(screen2) {
       display: inline-block;
       position: relative;
       right: -10px;
