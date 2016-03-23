@@ -1,5 +1,10 @@
 // ##### Logout Object ##### //
 
 .o-logout {
-	// empty
+	display: flex;
+	position: absolute; // to .c-header__nav-items
+  top: 0;
+  right: -200px;
+	justify-content: space-between;
+	width: 190px;
 }
