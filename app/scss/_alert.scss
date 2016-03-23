@@ -1,13 +1,22 @@
 // ##### Alert Component ##### //
 
-.c-alert {
+%c-alert {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	min-height: 30px;
 	padding: 5px 10px;
 	border-radius: 5px;
-	background-color: $design-light-gray-color;
+}
+
+.c-alert--success {
+	@extend %c-alert;
+	background-color: lighten($design-green-color, 30%);
+}
+
+.c-alert--error {
+	@extend %c-alert;
+	background-color: lighten($design-red-color, 50%);
 }
 
 .c-alert__close {
