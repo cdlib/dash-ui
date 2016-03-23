@@ -1,5 +1,15 @@
 // ##### Alert Component ##### //
 
 .c-alert {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
+	padding: 0 10px;
+	border-radius: 5px;
+	background-color: $design-light-gray-color;
+}
+
+.c-alert__close {
 	// empty
 }
