@@ -29,6 +29,12 @@ $(document).ready(function(){
     $('.js-facet__select-buttons').toggleClass('c-facet__select-buttons c-facet__select-buttons--open');
   });
 
+  // ***** Alert Close ***** //
+
+  $('.js-alert__close').click(function(){
+    $('.js-alert').fadeToggle();
+  });
+
   // ***** Header Mobile Menu Toggle ***** //
 
   $('.js-header__menu-button').click(function(){
