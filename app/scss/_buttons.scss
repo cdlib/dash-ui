@@ -152,3 +152,9 @@
   border: none;
   background: url('../images/icon_menu.svg') center / 35px no-repeat;
 }
+
+.o-button__close {
+  padding: 10px;
+  border: none;
+  background: transparent url('../images/icon_close.svg') center / 15px no-repeat;
+}
