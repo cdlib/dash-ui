@@ -1,8 +1,6 @@
 // ##### Facet Component ##### //
 
 .c-facet {
-  display: flex;
-  flex-flow: column nowrap;
   border: 1px solid $design-dark-blue-color;
 }
 
@@ -37,7 +35,9 @@
 }
 
 %c-facet__toggle-button {
-  background-color: $design-red-color;
+  padding: 10px;
+  background: url('../images/icon_right-white-arrow.svg') center no-repeat;
+  border: none;
 
   @include bp(screen2) {
     display: none;
@@ -47,11 +47,12 @@
 
 .c-facet__toggle-button {
   @extend %c-facet__toggle-button;
+  transform: rotate(90deg);
 }
 
 .c-facet__toggle-button--open {
   @extend %c-facet__toggle-button;
-  background-color: green;
+  transform: rotate(-90deg);
 }
 
 %c-facet__select-buttons {
