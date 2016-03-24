@@ -70,9 +70,9 @@
 
   @include bp(screen2) {
     align-self: flex-end;
+    width: $global-search-width;
     margin: 0;
     padding: 0;
-    width: $global-search-width;
     background-color: $design-white-color;
   }
 

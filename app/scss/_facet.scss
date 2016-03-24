@@ -36,8 +36,8 @@
 
 %c-facet__toggle-button {
   padding: 10px;
-  background: url('../images/icon_right-white-arrow.svg') center no-repeat;
   border: none;
+  background: url('../images/icon_right-white-arrow.svg') center no-repeat;
 
   @include bp(screen2) {
     display: none;
