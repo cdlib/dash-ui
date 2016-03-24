@@ -1,10 +1,45 @@
 // ##### Logout Object ##### //
 
 .o-logout {
-	display: flex;
-	position: absolute; // to .c-header__nav-items
-  top: 0;
-  right: -200px;
-	justify-content: space-between;
-	width: 190px;
+	position: relative;
+	// justify-content: center;
+	margin: 0 0 2px;
+  // padding: 10px;
+
+	@include bp(screen2) {
+		display: flex;
+		position: absolute; // to .c-header__nav-items
+	  top: 0;
+	  right: -200px;
+		justify-content: space-between;
+		width: 190px;
+	}
+
+}
+
+.o-logout__name {
+	position: absolute;
+	left: 50%;
+	padding: 10px;
+	color: $design-white-color;
+	pointer-events: none;
+
+	@include bp(screen2) {
+		color: $design-black-color;
+	}
+
+}
+
+.o-logout__button {
+	width: 100%;
+	padding: 10px 3.8em 10px 10px;
+	border: none;
+	background-color: $design-dark-blue-color;
+	color: $design-white-color;
+
+	@include bp(screen2) {
+		background: none;
+		color: $design-light-blue-color;
+	}
+
 }
