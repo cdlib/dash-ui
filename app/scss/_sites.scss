@@ -5,8 +5,6 @@
   @include bp(screen2) {
     display: flex;
     position: absolute; // to .c-header__nav-items
-    top: 0;
-    right: -200px;
     flex-flow: row-reverse nowrap;
     justify-content: flex-end;
     width: 190px;
@@ -54,7 +52,7 @@
   position: relative;
 
   @include bp(screen2) {
-    padding: 0 0 10px;
+    padding: 0;
     background-color: transparent;
   }
 
