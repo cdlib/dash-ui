@@ -72,6 +72,7 @@
     align-self: flex-end;
     margin: 0;
     padding: 0;
+    width: $global-search-width;
     background-color: $design-white-color;
   }
 
@@ -85,7 +86,7 @@
     position: relative; // to .c-sites
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0 192px 0 0;
+    margin: 0 $global-search-width 0 0;
     z-index: 1;
   }
 

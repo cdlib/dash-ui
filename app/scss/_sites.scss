@@ -6,8 +6,8 @@
     display: flex;
     position: absolute; // to .c-header__nav-items
     flex-flow: row-reverse nowrap;
-    justify-content: flex-end;
-    width: 190px;
+    justify-content: space-between;
+    width: $global-search-width;
     z-index: 5;
   }
 
@@ -52,7 +52,7 @@
   position: relative;
 
   @include bp(screen2) {
-    padding: 0;
+    padding: 0 20px 0 0;
     background-color: transparent;
   }
 
@@ -64,8 +64,8 @@
 
     @include bp(screen2) {
       display: inline-block;
-      position: relative;
-      right: -10px;
+      // position: relative;
+      right: 0;
       transform: rotate(0deg);
       content: url('../images/icon_down-blue-arrow.svg');
     }
