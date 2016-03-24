@@ -2,9 +2,7 @@
 
 .o-logout {
 	position: relative;
-	// justify-content: center;
 	margin: 0 0 2px;
-  // padding: 10px;
 
 	@include bp(screen2) {
 		display: flex;
@@ -25,6 +23,8 @@
 	pointer-events: none;
 
 	@include bp(screen2) {
+		position: static;
+		padding: 0;
 		color: $design-black-color;
 	}
 
@@ -38,6 +38,8 @@
 	color: $design-white-color;
 
 	@include bp(screen2) {
+		width: auto;
+		padding: 0;
 		background: none;
 		color: $design-light-blue-color;
 	}
