@@ -1,5 +1,37 @@
 // ##### Banner Object ##### //
 
 .o-banner {
-  // empty
+  height: 29vw;
+  padding: 8vw 0 0;
+  background: url('../images/bg_drawer-of-bugs.jpg') no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+.o-banner__group {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 130px;
+	background: darken($design-light-blue-color, 15%) url('../images/bg_drawer-of-bugs.jpg') no-repeat;
+	background-position: 0 -8vw;
+  background-size: 100%;
+	background-blend-mode: soft-light;
+}
+
+.o-banner__tagline {
+	margin: 0 0 15px;
+	color: $design-white-color;
+	font-size: 2em;
+	opacity: 1;
+}
+
+.o-banner__button {
+	height: 35px;
+	padding: 0 15px;
+	border: none;
+	background-color: $design-white-color;
+	color: $design-dark-blue-color;
+	opacity: 1;
 }
