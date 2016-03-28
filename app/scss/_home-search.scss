@@ -1,5 +1,36 @@
 // ##### Home Search Object ##### //
 
 .o-home-search {
-  // empty
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  background-color: $design-dark-blue-color;
+}
+
+.o-home-search__label {
+  margin: 0 0 15px;
+  color: $design-white-color;
+  font-size: 18px;
+}
+
+.o-home__search-group {
+	display: flex;
+	width: 350px;
+	height: 35px;
+}
+
+.o-home-search__input {
+  flex: 1 0 auto;
+  padding: 0 0.5em;
+  border: none;
+}
+
+.o-home-search__submit-button {
+  margin: 0 0 0 5px;
+  padding: 0 15px;
+  border: 1px solid $design-white-color;
+  background-color: $design-dark-blue-color;
+  color: $design-white-color;
 }
