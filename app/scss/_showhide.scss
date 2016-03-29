@@ -5,12 +5,7 @@
 }
 
 .o-showhide__summary {
-
-  // Remove native details arrow icon from Chrome & Safari:
-  &::-webkit-details-marker {
-    display: none;
-  }
-
+	// empty
 }
 
 // Set basic style to confirm Modernizr script loading correctly:
