@@ -19,6 +19,11 @@
 
 }
 
+html.no-multiplebgs .o-banner {
+	padding: 20px 0;
+	background: $design-light-blue-color;
+}
+
 .o-banner__tagline {
 	margin: 0 0 10px;
 	color: $design-white-color;
