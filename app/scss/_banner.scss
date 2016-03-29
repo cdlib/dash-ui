@@ -1,11 +1,12 @@
 // ##### Banner Object ##### //
 
 .o-banner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   height: 29vw;
-  padding: 8vw 0 0;
-  background: url('../images/bg_drawer-of-bugs.jpg') no-repeat;
-  background-position: 0 0;
-  background-size: 100%;
+  padding: 100px 0 0;
+  background: linear-gradient(transparent 80px, rgba($design-dark-blue-color, 0.6), 80px, rgba($design-dark-blue-color, 0.6), 210px, transparent 210px), url('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
 }
 
 .o-banner__group {
@@ -23,7 +24,7 @@
 .o-banner__tagline {
 	margin: 0 0 15px;
 	color: $design-white-color;
-	font-size: 2em;
+	font-size: 2.2em;
 }
 
 .o-banner__button {
