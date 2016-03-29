@@ -9,6 +9,10 @@
   background: linear-gradient(rgba($design-light-gray-color, 0.85), 150px, transparent 0), url('../images/bg_ramon-y-cajal.png') 0 0 / cover no-repeat;
 }
 
+html.no-multiplebgs .o-quote {
+	background: $design-light-gray-color;
+}
+
 .o-quote__quote {
 	width: 320px;
 	margin: 0 0 15px;

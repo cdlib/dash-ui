@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.3.1
- * Build http://modernizr.com/download?-details-svg-setclasses-dontmin
+ * Build http://modernizr.com/download?-details-multiplebgs-svg-setclasses-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -278,6 +278,28 @@ Detects support for SVG in `<embed>` or `<object>` elements.
   }
 
   ;
+/*!
+{
+  "name": "CSS Multiple Backgrounds",
+  "caniuse": "multibackgrounds",
+  "property": "multiplebgs",
+  "tags": ["css"]
+}
+!*/
+
+  // Setting multiple images AND a color on the background shorthand property
+  // and then querying the style.background property value for the number of
+  // occurrences of "url(" is a reliable method for detecting ACTUAL support for this!
+
+  Modernizr.addTest('multiplebgs', function() {
+    var style = createElement('a').style;
+    style.cssText = 'background:url(https://),url(https://),red url(https://)';
+
+    // If the UA supports multiple backgrounds, there should be three occurrences
+    // of the string "url(" in the return value for elemStyle.background
+    return (/(url\s*\(.*?){3}/).test(style.background);
+  });
+
 
   /**
    * getBody returns the body of a document, or an element that can stand in for
