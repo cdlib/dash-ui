@@ -1,17 +1,37 @@
 // ##### Home Page Theme ##### //
 
-.t-home {
+.t-home__header {
 	border-bottom: none;
 }
 
+.t-home__banner {
+	margin: 0 0 10px;
+}
+
 .t-home__quote-search {
-	display: flex;
+
+	@include bp(screen1) {
+		display: flex;
+	}
+
 }
 
 .t-home__quote {
-	flex: 1 0 auto;
+	display: none;
+
+	@include bp(screen2) {
+		display: flex;
+		flex: 1 0 auto;
+		margin: 0 5px 0 0;
+	}
+
 }
 
 .t-home__search {
 	flex: 1 0 auto;
+
+	@include bp(screen2) {
+		margin: 0 0 0 5px;
+	}
+
 }
