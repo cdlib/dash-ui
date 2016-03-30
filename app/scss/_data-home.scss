@@ -1,12 +1,12 @@
 // ##### Home Page Data Component ##### //
 
-.c-data-home {
+.c-data-home__row {
 
 	@include bp(screen2) {
 		display: flex;
 	}
 
-	~ .c-data-home {
+	~ .c-data-home__row {
 		border-bottom: 1px solid $design-dark-gray-color;
 	}
 
