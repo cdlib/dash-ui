@@ -1,10 +1,10 @@
-// ##### Dash Sites Component ##### //
+// ##### Dash Sites Object ##### //
 
-.c-sites {
+.o-sites {
 
   @include bp(screen2) {
     display: flex;
-    position: relative; // to .c-sites__group
+    position: relative; // to .o-sites__group
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
     width: $global-search-width;
@@ -15,9 +15,9 @@
 
 // Rotate icon when details open:
 
-.c-sites__details {
+.o-sites__details {
 
-  &[open] .c-sites__summary {
+  &[open] .o-sites__summary {
 
     &::after {
       transform: rotate(-90deg);
@@ -32,7 +32,7 @@
 
 }
 
-%c-sites__item {
+%o-sites__item {
   display: block;
   margin: 0 0 2px;
   padding: 10px;
@@ -48,8 +48,8 @@
 
 }
 
-.c-sites__summary {
-  @extend %c-sites__item;
+.o-sites__summary {
+  @extend %o-sites__item;
   position: relative;
 
   @include bp(screen2) {
@@ -75,10 +75,10 @@
 
 }
 
-.c-sites__group {
+.o-sites__group {
 
   @include bp(screen2) {
-    position: absolute; // to .c-sites
+    position: absolute; // to .o-sites
     right: 0;
     left: 0;
     margin: 10px 0 0;
@@ -86,14 +86,14 @@
 
 }
 
-.c-sites__group-heading {
-  @extend %c-sites__item;
+.o-sites__group-heading {
+  @extend %o-sites__item;
   padding: 5px 10px;
   background-color: $design-light-gray-color;
 }
 
-.c-sites__group-item {
-  @extend %c-sites__item;
+.o-sites__group-item {
+  @extend %o-sites__item;
 
   @include bp(screen2) {
     border-right: 1px solid $design-light-gray-color;
@@ -116,8 +116,8 @@
 
 }
 
-.c-sites__login {
-  @extend %c-sites__item;
+.o-sites__login {
+  @extend %o-sites__item;
   background-color: $design-dark-blue-color;
   text-align: center;
 
