@@ -4,11 +4,11 @@
 
   @include bp(screen2) {
     display: flex;
-    position: absolute; // to .c-header__nav-items
+    position: relative; // to .c-sites__group
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
     width: $global-search-width;
-    z-index: 5;
+    z-index: 2;
   }
 
 }
