@@ -30,7 +30,7 @@
 
 // Rotate icon when details open:
 
-.c-sites__group {
+.c-sites__details {
 
   &[open] .c-sites__summary {
 
@@ -74,6 +74,16 @@
 
 }
 
+.c-sites__group {
+
+  @include bp(screen2) {
+    position: absolute; // to c-sites
+    right: 0;
+    left: 0;
+  }
+
+}
+
 .c-sites__group-heading {
   @extend %c-sites__item;
   background-color: $design-light-gray-color;
@@ -94,7 +104,6 @@
   text-align: center;
 
   @include bp(screen2) {
-    margin: 0 20px 0 0;
     padding: 0;
     background-color: transparent;
     color: $design-light-blue-color;
