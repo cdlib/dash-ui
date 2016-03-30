@@ -78,7 +78,7 @@
 
 }
 
-.c-header__nav-items {
+.c-header__nav-group {
   display: flex;
   flex-flow: column nowrap;
 
@@ -90,7 +90,7 @@
 
 }
 
-%c-header__nav-bar {
+%c-header__nav-item {
   margin: 0 0 2px;
   padding: 10px;
   background-color: $design-light-blue-color;
@@ -106,12 +106,12 @@
 
 }
 
-.c-header__nav-bar {
-  @extend %c-header__nav-bar;
+.c-header__nav-item {
+  @extend %c-header__nav-item;
 }
 
-.c-header__nav-bar--active {
-  @extend %c-header__nav-bar;
+.c-header__nav-item--active {
+  @extend %c-header__nav-item;
   color: $design-black-color;
 
   @include bp(screen2) {
