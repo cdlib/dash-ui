@@ -83,10 +83,8 @@
   flex-flow: column nowrap;
 
   @include bp(screen2) {
-    position: relative; // to .c-sites
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0 $global-search-width 0 0;
     z-index: 1;
   }
 
