@@ -1,6 +1,6 @@
 // ##### Column Layout Component ##### //
 
-.c-col-layout {
+.c-columns {
 
   @include bp(screen2) {
     display: flex;
@@ -8,16 +8,16 @@
 
 }
 
-.c-col-layout__content {
+.c-columns__content {
   flex: 1;
 }
 
-.c-col-layout__sidebar1,
-.c-col-layout__sidebar2 {
+.c-columns__sidebar1,
+.c-columns__sidebar2 {
   flex: 0 0 20%;
 }
 
-.c-col-layout__sidebar1 {
+.c-columns__sidebar1 {
 
   @include bp(screen2) {
     padding: 0 20px 0 0;
@@ -25,7 +25,7 @@
 
 }
 
-.c-col-layout__sidebar2 {
+.c-columns__sidebar2 {
 
 	@include bp(screen2) {
     padding: 0 0 0 20px;
