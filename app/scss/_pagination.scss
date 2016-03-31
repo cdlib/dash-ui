@@ -8,6 +8,7 @@
 
   @include bp(screen1) {
     flex-flow: row nowrap;
+    justify-content: flex-end;
   }
 
 }
