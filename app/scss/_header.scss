@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     height: 60px;
-    padding: 0 0 10px;
+    padding: 0 $spacing-lg 10px;
     border-bottom: 1px solid $design-dark-gray-color;
     z-index: 0;
   }
