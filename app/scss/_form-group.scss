@@ -16,13 +16,13 @@
 .c-fgroup__summary {
   @extend %page-bleed;
   position: relative;
-  padding: 10px $spacing-body-margin;
+  padding: 10px $spacing-body;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
 
   &::after {
     position: absolute;
-    right: $spacing-body-margin;
+    right: $spacing-body;
     content: url('../images/icon_right-white-arrow.svg');
   }
 

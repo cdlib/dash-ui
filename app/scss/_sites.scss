@@ -60,7 +60,7 @@
 
   &::after {
     position: absolute;
-    right: $spacing-body-margin + 5px;
+    right: $spacing-body + 5px;
     transform: rotate(90deg);
     content: url('../images/icon_right-white-arrow.svg');
 

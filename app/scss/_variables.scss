@@ -25,4 +25,6 @@ $screen-lg-min: 1000px;
 
 // ***** Spacing ***** //
 
-$spacing-body-margin: 10px;
+$spacing-sm: 10px;
+$spacing-lg: 20px;
+$spacing-body: $spacing-sm;
