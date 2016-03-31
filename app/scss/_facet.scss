@@ -55,7 +55,7 @@
   transform: rotate(-90deg);
 }
 
-.c-facet__deselect-button {
+%c-facet__deselect-button {
   padding: 10px;
   border: none;
   background-color: $design-light-gray-color;
@@ -77,6 +77,20 @@
 
   }
 
+}
+
+.c-facet__deselect-button {
+  display: none;
+
+  @include bp(screen2) {
+    @extend %c-facet__deselect-button;
+    display: block;
+  }
+
+}
+
+.c-facet__deselect-button--open {
+  @extend %c-facet__deselect-button;
 }
 
 .c-facet__refine-label {
