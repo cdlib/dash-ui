@@ -4,29 +4,23 @@ $(document).ready(function(){
   
   // ***** Facets ***** //
 
-  // $('.js-facet__deselect-all-button').hide();
-
-  $('.js-facet__select-all-button').click(function(){
-    $('.js-facet__check-input').prop('checked', true);
-    // $('.js-facet__select-all-button').hide();
-    // $('.js-facet__deselect-all-button').show();
-  });
-
-  $('.js-facet__deselect-all-button').click(function(){
+  $('.js-facet__deselect-button').click(function(){
     $('.js-facet__check-input').prop('checked', false);
-    // $('.js-facet__select-all-button').show();
-    // $('.js-facet__deselect-all-button').hide();
+    $('.js-facet__deselect-button').attr('disabled', '');
   });
 
-  $('.js-facet__check-input').click(function(){
-    $('.js-facet__select-all-button').hide();
-    $('.js-facet__deselect-all-button').show();
+  $('.js-facet__check-input').click(function() {
+    if ($('.js-facet__check-input').is(':checked')) {
+      $('.js-facet__deselect-button').removeAttr('disabled');
+    } else {
+      $('.js-facet__deselect-button').attr('disabled', '');
+    }
+    
   });
 
   $('.js-facet__toggle-button').click(function(){
     $('.js-facet__toggle-button').toggleClass('c-facet__toggle-button--open c-facet__toggle-button');
     $('.js-facet__check-group').toggleClass('c-facet__check-group--open c-facet__check-group');
-    // $('.js-facet__select-buttons').toggleClass('c-facet__select-buttons c-facet__select-buttons--open');
   });
 
   // ***** Alert Close ***** //

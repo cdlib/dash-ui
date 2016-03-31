@@ -55,36 +55,26 @@
   transform: rotate(-90deg);
 }
 
-.c-facet__select-buttons {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-
-  @include bp(screen2) {
-    display: flex;
-  }
-
-}
-
-// .c-facet__select-buttons {
-//   @extend %c-facet__select-buttons;
-// }
-
-// .c-facet__select-buttons--open {
-//   @extend %c-facet__select-buttons;
-//   display: flex;
-// }
-
-.c-facet__select-button {
+.c-facet__deselect-button {
   padding: 10px;
   border: none;
-  background: $design-light-gray-color;
+  background-color: $design-light-gray-color;
 
   @include bp(screen2) {
     padding: 0;
-    background: transparent;
+    background-color: transparent;
     color: $design-white-color;
     font-size: 0.9em;
+  }
+
+  &[disabled] {
+    background-color: lighten($design-light-gray-color, 20%);
+    color: $design-light-gray-color;
+
+    @include bp(screen2) {
+      display: none;
+    }
+
   }
 
 }
