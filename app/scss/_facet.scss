@@ -55,8 +55,8 @@
   transform: rotate(-90deg);
 }
 
-%c-facet__select-buttons {
-  display: none;
+.c-facet__select-buttons {
+  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 
@@ -66,14 +66,14 @@
 
 }
 
-.c-facet__select-buttons {
-  @extend %c-facet__select-buttons;
-}
+// .c-facet__select-buttons {
+//   @extend %c-facet__select-buttons;
+// }
 
-.c-facet__select-buttons--open {
-  @extend %c-facet__select-buttons;
-  display: flex;
-}
+// .c-facet__select-buttons--open {
+//   @extend %c-facet__select-buttons;
+//   display: flex;
+// }
 
 .c-facet__select-button {
   padding: 10px;
