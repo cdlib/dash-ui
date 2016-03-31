@@ -50,13 +50,11 @@ Selector pattern using above mixin:
 
 %hide {
   position: absolute;
-  top: -9999px;
   left: -9999px;
 }
 
 %show {
   position: static;
-  top: auto;
   left: auto;
 }
 
