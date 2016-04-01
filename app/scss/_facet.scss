@@ -18,8 +18,7 @@
 }
 
 .c-facet__heading {
-  display: flex;
-  justify-content: space-between;
+  position: relative; // to %c-facet__toggle-button
   padding: 10px;
   background-color: $design-dark-blue-color;
 
@@ -35,24 +34,45 @@
 }
 
 %c-facet__toggle-button {
-  padding: 10px;
+  position: absolute; // to .c-facet__heading
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   border: none;
-  background: url('../images/icon_right-white-arrow.svg') center no-repeat;
+  background-color: transparent;
 
   @include bp(screen2) {
     display: none;
+  }
+
+  &::after {
+    position: absolute; // to %c-facet__toggle-button
+    top: 10px;
+    right: 10px;
+    padding: 10px; // reveals icon
+    background: url('../images/icon_right-white-arrow.svg') center no-repeat;
+    content: '';
   }
 
 }
 
 .c-facet__toggle-button {
   @extend %c-facet__toggle-button;
-  transform: rotate(90deg);
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
 }
 
 .c-facet__toggle-button--open {
   @extend %c-facet__toggle-button;
-  transform: rotate(-90deg);
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+
 }
 
 %c-facet__deselect-button {
