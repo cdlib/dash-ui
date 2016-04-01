@@ -158,8 +158,8 @@ html.svg .c-facet__check-input {
 }
 
 .c-facet__check-label {
-  flex: 1 0 auto; // for Safari
   display: block; // if flexbox not supported
+  flex: 1 0 auto; // for Safari
   padding: 10px;
   cursor: pointer;
 
