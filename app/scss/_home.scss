@@ -37,7 +37,7 @@
 }
 
 .t-home__heading-level1 {
-	padding: 0 0 0 $spacing-lg;
+	@extend %viewport-edge-padding;
 }
 
 .t-home__data {
