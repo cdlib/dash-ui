@@ -5,6 +5,7 @@
 }
 
 .t-search-results__columns {
+	@extend %viewport-edge-padding;
 	margin: 0 0 20px;
 }
 

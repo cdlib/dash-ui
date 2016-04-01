@@ -39,7 +39,21 @@ Selector pattern using above mixin:
 
 */
 
-// Bleed object to edge of browser window past body margins
+// Component/object spacing at left & right viewport edges after body spacing
+
+%viewport-edge-padding {
+
+  @include bp(screen1) {
+    padding: 0 $spacing-md;
+  }
+
+  @include bp(screen2) {
+    padding: 0 $spacing-lg;
+  }
+
+}
+
+// Bleed component/object to edge of viewport past body spacing
 
 %page-bleed {
   margin: 0 (-$spacing-body);
