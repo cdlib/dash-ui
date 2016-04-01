@@ -2,11 +2,6 @@
 
 .c-facet {
   border: 1px solid $design-dark-blue-color;
-
-  @include bp(screen2) {
-    margin: 0 0 30px;
-  }
-
 }
 
 .c-facet__header {
