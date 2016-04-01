@@ -29,8 +29,10 @@
 }
 
 .c-data-home__title-group {
+	@extend %viewport-edge-padding;
 	flex: 0 1 auto; // fixes IE 10
-	padding: 20px 10px 10px 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 .c-data-home__title {
