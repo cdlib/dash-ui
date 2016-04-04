@@ -28,17 +28,18 @@
 
 }
 
-.c-header__dash-logo {
-  // empty
+.c-header__dash-logo-link {
+  max-width: 240px;
+  height: 50px;
 }
 
 .c-header__dash-logo-svg {
-  max-width: 240px;
-  max-height: 50px;
+  width: 100%;
+  height: 100%;
 
   // Native dimentions:
-  // max-width: 340px;
-  // max-height: 65px;
+  // width: 340px;
+  // height: 65px;
 }
 
 %c-header__nav {
