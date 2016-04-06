@@ -2,7 +2,5 @@
 
 @font-face {
   font-family: 'KievitWeb';
-  src: inline('../fonts/KievitWeb.eot'); /* IE9 Compat Modes */
-  src: inline('../fonts/KievitWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       inline('../fonts/KievitWeb.woff') format('woff'); /* Modern Browsers */
+  src: inline('../fonts/KievitWeb.woff') format('woff');
 }
