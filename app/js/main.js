@@ -19,9 +19,9 @@ $(document).ready(function(){
   });
 
   $('.js-facet__toggle-button').click(function(){
-    $('.js-facet__toggle-button').toggleClass('c-facet__toggle-button--open c-facet__toggle-button');
-    $('.js-facet__check-group').toggleClass('c-facet__check-group--open c-facet__check-group');
-    $('.js-facet__deselect-button').toggleClass('c-facet__deselect-button--open c-facet__deselect-button');
+    $(this).toggleClass('c-facet__toggle-button--open c-facet__toggle-button');
+    $(this).parents().siblings('.js-facet__check-group').toggleClass('c-facet__check-group--open c-facet__check-group');
+    $(this).parent().siblings('.js-facet__deselect-button').toggleClass('c-facet__deselect-button--open c-facet__deselect-button');
   });
 
   // ***** Alert Close ***** //
