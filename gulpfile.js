@@ -25,6 +25,8 @@ var sftp = require('gulp-sftp');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
+var postcss = require('gulp-postcss');
+var assets = require('postcss-assets');
 
 
 // Check that gulp is working by running "gulp hello" at the command line:
@@ -60,12 +62,15 @@ gulp.task('modernizr', function() {
 });
 
 
-// Process sass and add sourcemaps:
+// Process sass to css, add sourcemaps, inline font & image files into css, and reload browser:
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
+    .pipe(postcss([assets({
+      loadPaths: ['fonts/', 'images/']
+    })]))
     .pipe(sourcemaps.write('sourcemaps'))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -99,7 +104,7 @@ gulp.task('browserSync', function() {
 })
 
 
-// Minify CSS, uglify JS from paths within HTML comment tags; include files:
+// Minify CSS, uglify JS, and concatenate files from paths within HTML comment tags; include files:
 gulp.task('useref', function(){
   return gulp.src(['app/**/*.html', '!app/includes/*'])
     .pipe(gulpIf('*.css', minifyCSS()))
