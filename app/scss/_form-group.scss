@@ -23,7 +23,7 @@
   &::after {
     position: absolute;
     right: $spacing-body;
-    content: url('../images/icon_right-white-arrow.svg');
+    content: inline('../images/icon_right-white-arrow.svg');
   }
 
 }

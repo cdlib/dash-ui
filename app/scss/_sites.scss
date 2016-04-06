@@ -62,13 +62,13 @@
     position: absolute;
     right: $spacing-body + 5px;
     transform: rotate(90deg);
-    content: url('../images/icon_right-white-arrow.svg');
+    content: inline('../images/icon_right-white-arrow.svg');
 
     @include bp(screen2) {
       display: inline-block;
       right: 0;
       transform: rotate(0deg);
-      content: url('../images/icon_down-blue-arrow.svg');
+      content: inline('../images/icon_down-blue-arrow.svg');
     }
 
   }

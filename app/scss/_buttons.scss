@@ -68,7 +68,7 @@
 %o-button__icon-left {
   @extend %o-button__icon;
   padding: 0 12px 0 35px;
-  background: $design-white-color url('../images/icon_left-blue-arrow.svg') left 10px center no-repeat;
+  background: $design-white-color inline('../images/icon_left-blue-arrow.svg') left 10px center no-repeat;
 }
 
 .o-button__icon-left {
@@ -84,7 +84,7 @@
 %o-button__icon-right {
   @extend %o-button__icon;
   padding: 0 35px 0 12px;
-  background: $design-white-color url('../images/icon_right-blue-arrow.svg') right 10px center no-repeat;
+  background: $design-white-color inline('../images/icon_right-blue-arrow.svg') right 10px center no-repeat;
 }
 
 .o-button__icon-right {
@@ -107,12 +107,12 @@
 
 .o-button__no-bg-icon-left1 {
   @extend %o-button__no-bg-icon-left;
-  background: url('../images/icon_point.svg') left center no-repeat;
+  background: inline('../images/icon_point.svg') left center no-repeat;
 }
 
 .o-button__no-bg-icon-left2 {
   @extend %o-button__no-bg-icon-left;
-  background: url('../images/icon_details.svg') left center no-repeat;
+  background: inline('../images/icon_details.svg') left center no-repeat;
 }
 
 %o-button__prev-next {
@@ -124,13 +124,13 @@
 .o-button__previous {
   @extend %o-button__prev-next;
   padding: 5px 5px 5px 20px;
-  background: url('../images/icon_left-blue-arrow.svg') left center no-repeat;
+  background: inline('../images/icon_left-blue-arrow.svg') left center no-repeat;
 }
 
 .o-button__next {
   @extend %o-button__prev-next;
   padding: 5px 20px 5px 5px;
-  background: url('../images/icon_right-blue-arrow.svg') right center no-repeat;
+  background: inline('../images/icon_right-blue-arrow.svg') right center no-repeat;
 }
 
 %o-button__text-number {
@@ -150,11 +150,11 @@
 .o-button__menu {
   padding: 15px;
   border: none;
-  background: url('../images/icon_menu.svg') center / 35px no-repeat;
+  background: inline('../images/icon_menu.svg') center / 35px no-repeat;
 }
 
 .o-button__close {
   padding: 10px;
   border: none;
-  background: transparent url('../images/icon_close.svg') center / 15px no-repeat;
+  background: transparent inline('../images/icon_close.svg') center / 15px no-repeat;
 }

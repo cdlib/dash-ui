@@ -51,7 +51,7 @@
     top: 10px;
     right: 10px;
     padding: 10px; // reveals icon
-    background: url('../images/icon_right-white-arrow.svg') center no-repeat;
+    background: inline('../images/icon_right-white-arrow.svg') center no-repeat;
     content: '';
   }
 
@@ -124,7 +124,7 @@
   margin: 10px;
   padding: 0 35px 0 5px;
   border: 1px solid $design-light-gray-color;
-  background: url('../images/icon_magnifying-glass-blue.svg') right 5px center no-repeat;
+  background: inline('../images/icon_magnifying-glass-blue.svg') right 5px center no-repeat;
 }
 
 %c-facet__check-group {
@@ -152,7 +152,7 @@ html.svg .c-facet__check-input {
   @extend %hide;
 
   &:checked + .c-facet__check-label {
-    background: url('../images/icon_checkbox-checked.svg') right 10px center no-repeat;
+    background: inline('../images/icon_checkbox-checked.svg') right 10px center no-repeat;
   }
 
 }
@@ -170,5 +170,5 @@ html.svg .c-facet__check-input {
 }
 
 html.svg .c-facet__check-label {
-  background: url('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
+  background: inline('../images/icon_checkbox-unchecked.svg') right 10px center no-repeat;
 }

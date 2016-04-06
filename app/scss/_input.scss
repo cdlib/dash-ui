@@ -65,7 +65,7 @@ $input-height: 30px;
 	height: $input-height + 2;
 	padding: 0 5px;
 	border-radius: 0;
-	background: url('../images/icon_up-down-arrows.svg') right 9px center / 12px no-repeat, linear-gradient($design-light-blue-color, $design-light-blue-color) right / 30px 30px no-repeat;
+	background: inline('../images/icon_up-down-arrows.svg') right 9px center / 12px no-repeat, linear-gradient($design-light-blue-color, $design-light-blue-color) right / 30px 30px no-repeat;
 	appearance: none; // removes default down arrow for Chrome and FF 35 and higher
 	// background: linear-gradient(90deg, blue 50%, green 50%);
 
