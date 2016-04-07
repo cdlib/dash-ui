@@ -15,10 +15,10 @@
 
 .o-download__files {
 	@extend %o-download__button;
-	background-image: url('../images/icon_download.svg');
+	background-image: inline('../images/icon_download.svg');
 }
 
 .o-download__docs {
 	@extend %o-download__button;
-	background-image: url('../images/icon_pdf.svg');
+	background-image: inline('../images/icon_pdf.svg');
 }
