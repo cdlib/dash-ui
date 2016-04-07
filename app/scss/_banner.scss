@@ -10,11 +10,11 @@
   @include bp(screen1) {
 		height: 28vw;
 	  padding: 8vw 0 0;
-	  background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6), 6vw, rgba($design-dark-blue-color, 0.6), 22vw, transparent 22vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
+	  background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 22vw, transparent 22vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
   }
 
   @include bp(screen2) {
-  	background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6), 6vw, rgba($design-dark-blue-color, 0.6), 20vw, transparent 20vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
+  	background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 20vw, transparent 20vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
   }
 
 }
