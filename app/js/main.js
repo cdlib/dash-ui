@@ -5,15 +5,15 @@ $(document).ready(function(){
   // ***** Facets ***** //
 
   $('.js-facet__deselect-button').click(function(){
-    $('.js-facet__check-input').prop('checked', false);
-    $('.js-facet__deselect-button').attr('disabled', '');
+    $(this).parent().siblings().children('.js-facet__check-input').prop('checked', false);
+    $(this).attr('disabled', '');
   });
 
   $('.js-facet__check-input').click(function() {
-    if ($('.js-facet__check-input').is(':checked')) {
-      $('.js-facet__deselect-button').removeAttr('disabled');
+    if ($(this).is(':checked')) {
+      $(this).parent().siblings().find('.js-facet__deselect-button').removeAttr('disabled');
     } else {
-      $('.js-facet__deselect-button').attr('disabled', '');
+      $(this).parent().siblings().find('.js-facet__deselect-button').attr('disabled', '');
     }
     
   });
