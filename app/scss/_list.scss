@@ -1,5 +1,12 @@
 // ##### List Object ##### //
 
 .o-list {
-	// empty
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		line-height: 1.5;
+	}
+
 }
