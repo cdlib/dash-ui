@@ -3,3 +3,7 @@
 .t-describe {
 	// empty
 }
+
+.t-describe__heading {
+	@extend %viewport-edge-padding;
+}
