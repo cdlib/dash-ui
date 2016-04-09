@@ -1,6 +1,7 @@
 // ##### Form Group Component ##### //
 
 .c-fgroup {
+  padding: 0 $spacing-lg;
 
   &[open] .c-fgroup__summary {
 
@@ -14,9 +15,10 @@
 }
 
 .c-fgroup__summary {
-  @extend %page-bleed;
+
   position: relative;
-  padding: 10px $spacing-body;
+  margin: 0 (-$spacing-body) + (-$spacing-lg);
+  padding: 10px ($spacing-body + $spacing-lg);
   background-color: $design-dark-blue-color;
   color: $design-white-color;
 
