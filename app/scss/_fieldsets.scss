@@ -3,6 +3,12 @@
 .c-fieldset {
 	padding: 15px 0 0;
 	border: 0;
+
+	.c-input__label,
+	.c-input__label--required {
+		font-weight: normal;
+	}
+
 }
 
 .c-fieldset__legend {

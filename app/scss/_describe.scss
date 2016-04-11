@@ -5,13 +5,8 @@
 }
 
 .t-describe__author-fieldset {
-	display: flex;
 
 	.c-input {
-
-		&:not(:first-of-type) {
-			margin: 0 0 0 20px;
-		}
 
 		&:nth-of-type(1) {
 			flex: 1 0 auto;
@@ -25,10 +20,6 @@
 			flex: 3 0 auto;
 		}
 
-	}
-
-	.c-input__label {
-		// empty
 	}
 
 }
