@@ -1,13 +1,14 @@
 // ##### Header Component ##### //
 
 .c-header {
+  margin: 0 0 $spacing-lg;
 
   @include bp(screen2) {
     @extend %viewport-edge-padding;
     display: flex;
     justify-content: space-between;
     height: 60px;
-    padding-bottom: 10px;
+    padding: 0 0 10px;
     border-bottom: 1px solid $design-dark-gray-color;
     z-index: 0;
   }
