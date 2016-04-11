@@ -15,8 +15,7 @@ $fgroup-right-margin: 200px;
   &[open] .c-fgroup__summary {
 
     &::after {
-      right: 14px;
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
     }
 
   }
@@ -43,6 +42,7 @@ $fgroup-right-margin: 200px;
   &::after {
     position: absolute;
     right: $spacing-body;
+    transform: rotate(90deg);
     content: inline('../images/icon_right-white-arrow.svg');
   }
 
