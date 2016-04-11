@@ -44,6 +44,15 @@ $fgroup-right-margin: 200px;
     right: $spacing-body;
     transform: rotate(90deg);
     content: inline('../images/icon_right-white-arrow.svg');
+
+    @include bp(screen1) {
+      right: $spacing-body + $spacing-md;
+    }
+
+    @include bp(screen2) {
+      right: $spacing-body + $spacing-lg;
+    }
+
   }
 
 }
