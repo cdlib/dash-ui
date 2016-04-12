@@ -4,6 +4,15 @@
 	@extend %viewport-edge-padding;
 }
 
+.t-describe__basic-info {
+	@extend %viewport-edge-padding;
+
+	@include bp(screen2) {
+		padding-right: 20vw;
+	}
+
+}
+
 .t-describe__author-fieldset {
 
 	.c-input {

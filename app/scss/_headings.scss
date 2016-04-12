@@ -32,9 +32,19 @@
 
 .o-heading__page-span {
   @extend %page-bleed;
+  margin-bottom: 20px;
   padding: 10px;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
   font-size: 1.3em;
   font-weight: normal;
+
+  @include bp(screen1) {
+    padding: 10px ($spacing-body + $spacing-md);
+  }
+
+  @include bp(screen2) {
+    padding: 10px ($spacing-body + $spacing-lg);
+  }
+
 }
