@@ -29,3 +29,12 @@
 .o-heading__level3 {
   @extend %o-heading__level3;
 }
+
+.o-heading__page-span {
+  @extend %page-bleed;
+  padding: 10px;
+  background-color: $design-dark-blue-color;
+  color: $design-white-color;
+  font-size: 1.3em;
+  font-weight: normal;
+}
