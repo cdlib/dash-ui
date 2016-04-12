@@ -20,7 +20,7 @@
     flex: 1 0 auto;
     align-items: center;
     justify-content: center;
-    height: 37px;
+    height: 34px;
     border: 1px solid $design-dark-gray-color;
   }
 
@@ -39,11 +39,12 @@
     font-size: 1.2em;
     content: '>';
 
+    // Right angle arrow using borders:
     @include bp(screen1) {
       position: absolute;
-      top: 5px;
-      right: -14px;
-      padding: 13px;
+      top: 4px;
+      right: -13px;
+      padding: 12px;
       transform: rotate(45deg);
       border-width: 1px;
       border-top-style: solid;
