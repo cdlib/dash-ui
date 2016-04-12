@@ -96,3 +96,12 @@ $input-height: 30px;
 	@extend %c-input__error-message;
 	display: flex;
 }
+
+.c-input__required-note {
+
+	&::before {
+		color: $design-orange-color;
+		content: '* ';
+	}
+
+}
