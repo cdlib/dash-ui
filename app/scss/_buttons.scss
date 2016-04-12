@@ -160,10 +160,11 @@
 }
 
 .o-button__add {
-  padding: 5px;
+  padding: 2px 5px 2px 0;
   border: none;
   background-color: $design-white-color;
-  color: $design-light-blue-color;
+  color: $design-dark-blue-color;
+  text-align: left;
 
   &::before {
     margin: 0 0.25em 0 0;
