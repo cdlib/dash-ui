@@ -4,7 +4,7 @@ $fgroup-right-margin: 200px;
 
 .c-fgroup {
   margin: 0 0 20px;
-  
+
   @include bp(screen1) {
     padding: 0 $spacing-md;
   }
@@ -25,14 +25,14 @@ $fgroup-right-margin: 200px;
 
 .c-fgroup__summary {
   position: relative;
-  margin: 0 (-$spacing-md) 20px (-$spacing-md);
+  margin: 0 (-$spacing-md) 20px;
   padding: 10px $spacing-md;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
   font-size: 1.3em;
 
   @include bp(screen1) {
-    margin: 0 ((-$spacing-body) + (-$spacing-md)) 20px ((-$spacing-body) + (-$spacing-md));
+    margin: 0 ((-$spacing-body) + (-$spacing-md)) 20px;
     padding: 10px ($spacing-body + $spacing-md);
   }
 
