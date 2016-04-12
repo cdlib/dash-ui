@@ -87,7 +87,71 @@
 	</div>
 
 	<details class="c-fgroup" role="group" open>
-		<summary class="o-showhide__summary c-fgroup__summary">Basic Information</summary>
+		<summary class="o-showhide__summary c-fgroup__summary">Data Description (optional)</summary>
+		<fieldset class="c-fieldset">
+			<legend class="c-fieldset__legend">Funding</legend>
+			<div class="c-input__inline">
+				<div class="c-input">
+					<label class="c-input__label" for="t-describe__input7">Granting Organization</label>
+					<select class="c-input__select" name="" id="t-describe__input7">
+						<option value="">Please Choose</option>
+						<option value="">One</option>
+						<option value="">Two</option>
+						<option value="">Three</option>
+					</select>
+				</div>
+				<div class="c-input">
+					<label class="c-input__label" for="t-describe__input8">Award Number</label>
+					<input class="c-input__text" id="t-describe__input8" type="text" name="">
+					<div class="c-input__error-message js-input__error-message">Error message.</div>
+				</div>
+			</div>
+			<button class="t-describe__add-funder-button o-button__add">add another funder</button>
+		</fieldset>
+		<div class="c-input">
+			<label class="c-input__label" for="c-input__9">Keywords <span class="c-input__hint">separated by commas</span></label>
+			<input class="c-input__text" id="c-input__9" type="text" name="">
+			<div class="c-input__error-message js-input__error-message">Error message.</div>
+		</div>
+		<div class="c-input">
+			<label class="c-input__label" for="c-input__10">Methods <span class="c-input__hint">How was this dataset collected? How has it been processed?</span></label>
+			<textarea name="" class="c-input__textarea" id="c-input__10"></textarea>
+			<div class="c-input__error-message js-input__error-message">Error message.</div>
+		</div>
+		<div class="c-input">
+			<label class="c-input__label" for="c-input__11">Usage Notes <span class="c-input__hint">What else would someone need to know to use this dataset?</span></label>
+			<textarea name="" class="c-input__textarea" id="c-input__11"></textarea>
+			<div class="c-input__error-message js-input__error-message">Error message.</div>
+		</div>
+		<fieldset class="c-fieldset">
+			<legend class="c-fieldset__legend">Related work(s) <span class="c-input__hint">articles, other datasets: e.g., This dataset is cited by DOI 10.1000/182.</span></legend>
+			<div class="c-input__inline">
+				<div class="c-input">
+					<label class="c-input__label" for="t-describe__input12">Relationship</label>
+					<select class="c-input__select" name="" id="t-describe__input12">
+						<option value="">Select Relationship</option>
+						<option value="">One</option>
+						<option value="">Two</option>
+						<option value="">Three</option>
+					</select>
+				</div>
+				<div class="c-input">
+					<label class="c-input__label" for="t-describe__input13">ID Type</label>
+					<select class="c-input__select" name="" id="t-describe__input13">
+						<option value="">DOI</option>
+						<option value="">One</option>
+						<option value="">Two</option>
+						<option value="">Three</option>
+					</select>
+				</div>
+				<div class="c-input">
+					<label class="c-input__label" for="t-describe__input14">Identifier</label>
+					<input class="c-input__text" id="t-describe__input14" type="text" name="">
+					<div class="c-input__error-message js-input__error-message">Error message.</div>
+				</div>
+			</div>
+			<button class="t-describe__add-funder-button o-button__add">add another funder</button>
+		</fieldset>
 	</details>
 
 	<!--#include file="includes/footer.html" -->

@@ -8,7 +8,7 @@
 	@extend %viewport-edge-padding;
 
 	@include bp(screen2) {
-		padding-right: 20vw;
+		padding-right: 200px;
 	}
 
 }
@@ -34,12 +34,16 @@
 .t-describe__group1-button {
 
 	&:nth-of-type(1) {
-		margin: 0 20px 0 0;
 		width: 20%;
+		margin: 0 20px 0 0;
 	}
 
 }
 
 .t-describe__select1 {
 	align-items: flex-start;
+}
+
+.t-describe__add-funder-button {
+	margin: 0 0 20px;
 }
