@@ -172,3 +172,9 @@
   }
 
 }
+
+.o-button__help {
+  padding: 10px;
+  border: none;
+  background: $design-white-color inline('../images/icon_question-mark.svg') center / 15px no-repeat;
+}
