@@ -8,16 +8,29 @@
 	border: $bgreen;
 }
 
-.c-location__buttons {
-	// empty
+.c-location__button-group {
+	display: flex;
+	margin: 0 0 10px;
+}
+
+%c-location__button-base {
+	flex: 1 0 50%;
+	height: $input-height;
+	padding: 0 8px 0 30px;
+	border: 1px solid $design-dark-blue-color;
+	background: left 8px center no-repeat;
+	color: $design-dark-blue-color;
+	text-align: left;
 }
 
 .c-location__point-button {
-	// empty
+	@extend %c-location__button-base;
+	background-image: url('../images/icon_point.svg');
 }
 
 .c-location__box-button {
-	// empty
+	@extend %c-location__button-base;
+	background-image: url('../images/icon_box.svg');
 }
 
 .c-location__label {
@@ -27,7 +40,7 @@
 .c-location__point-inputs {
 	display: flex;
 	align-items: flex-end;
-	margin: 0 0 10px 0;
+	margin: 0 0 10px;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_point.svg') left 8px center no-repeat;
 }
@@ -57,7 +70,7 @@
 .c-location__coordinates {
 	display: flex;
 	align-items: flex-end;
-	margin: 0 0 10px 0;
+	margin: 0 0 10px;
 }
 
 .c-location__legend {
