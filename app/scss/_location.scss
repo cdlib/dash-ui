@@ -23,14 +23,34 @@
 	text-align: left;
 }
 
-.c-location__point-button {
+%c-location__point-button {
 	@extend %c-location__button-base;
 	background-image: url('../images/icon_point.svg');
 }
 
-.c-location__box-button {
+.c-location__point-button {
+	@extend %c-location__point-button;
+}
+
+.c-location__point-button--active {
+	@extend %c-location__point-button;
+	background-color: $design-dark-blue-color;
+	color: $design-white-color;
+}
+
+%c-location__box-button {
 	@extend %c-location__button-base;
 	background-image: url('../images/icon_box.svg');
+}
+
+.c-location__box-button {
+	@extend %c-location__box-button;
+}
+
+.c-location__box-button--active {
+	@extend %c-location__box-button;
+	background-color: $design-dark-blue-color;
+	color: $design-white-color;
 }
 
 .c-location__label {
