@@ -2,6 +2,22 @@
 
 $(document).ready(function(){
   
+  // ***** Location Inputs ***** //
+
+  $('.js-location__box-inputs').hide();
+  
+  $('.js-location__point-button').click(function(){
+    $('.js-location__point-inputs').show();
+    $('.js-location__box-inputs').hide();
+    $('.js-location__point-button').toggleClass('js-location__point-button js-location__point-button--active');
+  });
+
+  $('.js-location__box-button').click(function(){
+    $('.js-location__box-inputs').show();
+    $('.js-location__point-inputs').hide();
+    $('.js-location__box-button').toggleClass('js-location__box-button js-location__box-button--active');
+  });
+
   // ***** Facets ***** //
 
   $('.js-facet__deselect-button').click(function(){
