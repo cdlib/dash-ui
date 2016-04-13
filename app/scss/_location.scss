@@ -1,7 +1,7 @@
 // ##### Location Component ##### //
 
 .c-location {
-	width: 500px;
+	width: 300px;
 
 	border: $bgreen;
 }
@@ -36,6 +36,7 @@
 
 .c-location__input {
 	flex: 1 0 auto;
+	width: 50px;
 
 	&:first-of-type {
 		margin: 0 5px 0 0;
