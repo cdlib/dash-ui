@@ -1,6 +1,8 @@
 // ##### Location Component ##### //
 
 .c-location {
+	display: flex;
+	flex-flow: column nowrap;
 	width: 300px;
 
 	border: $bgreen;
@@ -25,6 +27,7 @@
 .c-location__point-inputs {
 	display: flex;
 	align-items: flex-end;
+	margin: 0 0 10px 0;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_point.svg') left 8px center no-repeat;
 }
@@ -37,6 +40,9 @@
 .c-location__input {
 	flex: 1 0 auto;
 	width: 50px;
+	height: 30px;
+	padding: 0 5px;
+	border: 1px solid $design-dark-gray-color;
 
 	&:first-of-type {
 		margin: 0 5px 0 0;
@@ -51,6 +57,7 @@
 .c-location__coordinates {
 	display: flex;
 	align-items: flex-end;
+	margin: 0 0 10px 0;
 }
 
 .c-location__legend {
@@ -62,5 +69,5 @@
 }
 
 .c-location__add-button {
-	// empty
+	align-self: flex-end;
 }
