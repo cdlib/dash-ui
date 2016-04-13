@@ -1,7 +1,9 @@
 // ##### Location Component ##### //
 
 .c-location {
-	// empty
+	width: 500px;
+
+	border: $bgreen;
 }
 
 .c-location__buttons {
@@ -21,31 +23,40 @@
 }
 
 .c-location__point-inputs {
-	// empty
-}
-
-.c-location__point-input {
-	// empty
+	display: flex;
+	align-items: flex-end;
+	padding: 0 0 0 30px;
+	background: url('../images/icon_point.svg') left 8px center no-repeat;
 }
 
 .c-location__box-inputs {
 	// empty
 }
 
-.c-location__box-input {
-	// empty
+.c-location__input {
+	flex: 1 0 auto;
+
+	&:first-of-type {
+		margin: 0 5px 0 0;
+	}
+
+	&:last-of-type {
+		margin: 0 0 0 5px;
+	}
+
 }
 
-.c-location__ne-coord {
-	// empty
-}
-
-.c-location__sw-coord {
-	// empty
+.c-location__coordinates {
+	display: flex;
+	align-items: flex-end;
 }
 
 .c-location__legend {
-	// empty
+	align-self: center;
+	width: 25px;
+	margin: 0 5px 0 0;
+	color: $design-light-blue-color;
+	text-align: right;
 }
 
 .c-location__add-button {
