@@ -15,7 +15,6 @@
 	margin: 0 0 10px;
 
 	@include bp(screen2) {
-		display: block;
 		margin: 0;
 	}
 
@@ -23,12 +22,17 @@
 
 %c-location__button-base {
 	flex: 1 0 50%;
-	height: $input-height;
+	height: $input-height + 2px;
 	padding: 0 8px 0 30px;
 	border: 1px solid $design-dark-blue-color;
 	background: left 8px center no-repeat;
 	color: $design-dark-blue-color;
 	text-align: left;
+
+	@include bp(screen2) {
+		flex: 0 1 auto;
+	}
+
 }
 
 %c-location__point-button {
@@ -67,27 +71,30 @@
 
 .c-location__point-inputs {
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-end; // align commas to bottom
 	margin: 0 0 10px;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_point.svg') left 8px center no-repeat;
 
 	@include bp(screen2) {
 		flex: 1 0 auto;
-		margin: 0 10px 10px;
+		margin: 0 10px;
 	}
 
 }
 
 .c-location__box-inputs {
+	margin: 0 0 10px;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_box.svg') left 8px center no-repeat;
 
 	@include bp(screen2) {
 		display: flex;
 		flex: 1 0 auto;
+		margin: 0 10px 0 0;
+		padding: 0 0 0 20px;
 	}
-border: $bgreen;
+
 }
 
 .c-location__input {
@@ -109,12 +116,20 @@ border: $bgreen;
 
 .c-location__coordinates {
 	display: flex;
-	align-items: flex-end;
-	margin: 0 0 10px;
+	align-items: flex-end; // align commas to bottom
 
 	@include bp(screen2) {
 		flex: 1 0 auto;
-		margin: 0;
+		margin: 0 0 0 10px;
+	}
+
+	&:first-of-type {
+		margin: 0 0 10px;
+
+		@include bp(screen2) {
+			margin: 0 0 0 10px;
+		}
+
 	}
 
 }
