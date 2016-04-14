@@ -84,13 +84,15 @@
 }
 
 .c-location__box-inputs {
+	display: flex;
+	flex-flow: column nowrap;
 	margin: 0 0 10px;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_box.svg') left 8px center no-repeat;
 
 	@include bp(screen2) {
-		display: flex;
 		flex: 1 0 auto;
+		flex-flow: row nowrap;
 		margin: 0 10px 0 0;
 		padding: 0 0 0 20px;
 	}
