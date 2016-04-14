@@ -1,5 +1,16 @@
 // ##### Element Resets ##### //
 
+abbr {
+  border: none; // for older browsers
+  text-decoration: none; // for newer browsers
+  cursor: default;
+
+  &[title] {
+    border: none; // override normalize.scss
+  }
+
+}
+
 // Remove rounded corners from WebKit search fields on iOS:
 
 // scss-lint:disable ImportantRule
