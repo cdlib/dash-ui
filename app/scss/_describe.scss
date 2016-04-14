@@ -51,6 +51,7 @@
 .t-describe__location-by-name {
 	align-items: flex-end;
 	width: 500px;
+	margin: 20px 0 0;
 }
 
 .t-describe__location-by-name-icon {
@@ -61,7 +62,7 @@
 
 .t-describe__location-by-name-label {
 	position: relative;
-	left: -30px;
+	left: -30px; // move label over icon
 }
 
 .t-describe__location-by-name-button {
