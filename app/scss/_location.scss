@@ -41,13 +41,13 @@
 
 .c-location__point-button {
 	@extend %c-location__point-button;
-	background-image: url('../images/icon_point-blue.svg');
+	background-image: inline('../images/icon_point-blue.svg');
 }
 
 .c-location__point-button--active {
 	@extend %c-location__point-button;
 	background-color: $design-dark-blue-color;
-	background-image: url('../images/icon_point-white.svg');
+	background-image: inline('../images/icon_point-white.svg');
 	color: $design-white-color;
 }
 
@@ -57,13 +57,13 @@
 
 .c-location__box-button {
 	@extend %c-location__box-button;
-	background-image: url('../images/icon_box-blue.svg');
+	background-image: inline('../images/icon_box-blue.svg');
 }
 
 .c-location__box-button--active {
 	@extend %c-location__box-button;
 	background-color: $design-dark-blue-color;
-	background-image: url('../images/icon_box-white.svg');
+	background-image: inline('../images/icon_box-white.svg');
 	color: $design-white-color;
 }
 
@@ -76,7 +76,7 @@
 	align-items: flex-end; // align commas to bottom
 	margin: 0 0 10px;
 	padding: 0 0 0 30px;
-	background: url('../images/icon_point-blue.svg') left 8px center no-repeat;
+	background: inline('../images/icon_point-blue.svg') left 8px center no-repeat;
 
 	@include bp(screen2) {
 		flex: 1 0 auto;
@@ -90,7 +90,7 @@
 	flex-flow: column nowrap;
 	margin: 0 0 10px;
 	padding: 0 0 0 30px;
-	background: url('../images/icon_box-blue.svg') left 8px center no-repeat;
+	background: inline('../images/icon_box-blue.svg') left 8px center no-repeat;
 
 	@include bp(screen2) {
 		flex: 1 0 auto;
