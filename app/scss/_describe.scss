@@ -48,21 +48,22 @@
 	margin: 0 0 20px;
 }
 
-.t-describe__location-info-row {
+.t-describe__location-by-name {
 	align-items: flex-end;
 	width: 500px;
 }
 
-.t-describe__place-input-icon {
+.t-describe__location-by-name-icon {
 	width: 25px;
 	height: 25px;
 	margin: 0 5px 23px 0;
 }
 
-.t-describe__place-input {
-	margin: 0 0 20px;
+.t-describe__location-by-name-label {
+	position: relative;
+	left: -30px;
 }
 
-.t-describe__add-location-button {
+.t-describe__location-by-name-button {
 	margin: 0 0 20px 20px;
 }
