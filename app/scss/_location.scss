@@ -3,14 +3,21 @@
 .c-location {
 	display: flex;
 	flex-flow: column nowrap;
-	width: 300px;
 
-	border: $bgreen;
+	@include bp(screen2) {
+		flex-flow: row nowrap;
+	}
+
 }
 
 .c-location__button-group {
 	display: flex;
 	margin: 0 0 10px;
+
+	@include bp(screen2) {
+		display: block;
+	}
+
 }
 
 %c-location__button-base {
@@ -63,11 +70,23 @@
 	margin: 0 0 10px;
 	padding: 0 0 0 30px;
 	background: url('../images/icon_point.svg') left 8px center no-repeat;
+
+	@include bp(screen2) {
+		flex: 1 0 auto;
+		margin: 0 10px 10px;
+	}
+
 }
 
 .c-location__box-inputs {
 	padding: 0 0 0 30px;
 	background: url('../images/icon_box.svg') left 8px center no-repeat;
+
+	@include bp(screen2) {
+		display: flex;
+		flex: 1 0 auto;
+	}
+
 }
 
 .c-location__input {
@@ -91,6 +110,11 @@
 	display: flex;
 	align-items: flex-end;
 	margin: 0 0 10px;
+
+	@include bp(screen2) {
+		flex: 1 0 auto;
+	}
+
 }
 
 .c-location__legend {
@@ -103,4 +127,9 @@
 
 .c-location__add-button {
 	align-self: flex-end;
+
+	@include bp(screen2) {
+		align-self: flex-start;
+	}
+
 }
