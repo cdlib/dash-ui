@@ -27,28 +27,14 @@
 	@extend %c-locations__group;
 }
 
+.c-locations__coordinate {
+	color: $design-light-blue-color;
+}
+
 .c-locations__data {
 	// empty
 }
 
 .c-locations__button {
 	// empty
-}
-
-.c-locations__area-sw {
-
-	&::before {
-		color: $design-light-blue-color;
-		content: 'SW ';
-	}
-
-}
-
-.c-locations__area-nw {
-
-	&::before {
-		color: $design-light-blue-color;
-		content: 'NW ';
-	}
-
 }
