@@ -12,10 +12,14 @@
 }
 
 .c-input__inline {
-	display: flex;
 
-	.c-input ~ .c-input {
-		margin: 0 0 20px 20px;
+	@include bp(screen2) {
+		display: flex;
+
+		.c-input ~ .c-input {
+			margin: 0 0 20px 20px;
+		}
+
 	}
 
 }
