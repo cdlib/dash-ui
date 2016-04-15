@@ -74,3 +74,8 @@
 .t-describe__locations {
 	margin: 0 0 20px;
 }
+
+.t-describe__dataset-nav {
+	@extend %viewport-edge-padding;
+	@extend %right-padding;
+}
