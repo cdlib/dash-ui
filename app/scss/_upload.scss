@@ -10,6 +10,7 @@
 
 .t-upload__container {
 	@extend %viewport-edge-padding;
+	@extend %right-padding;
 }
 
 %t-upload__choose-heading {

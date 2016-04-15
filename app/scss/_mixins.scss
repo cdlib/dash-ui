@@ -53,6 +53,14 @@ Selector pattern using above mixin:
 
 }
 
+%right-padding {
+
+  @include bp(screen2) {
+    padding-right: 200px;
+  }
+
+}
+
 // Bleed component/object to edge of viewport past body spacing
 
 %page-bleed {
