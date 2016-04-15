@@ -3,3 +3,52 @@
 .c-locations {
 	// empty
 }
+
+.c-locations__label {
+	margin: 0 0 20px;
+}
+
+%c-locations__group {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.25em 0;
+	border-bottom: 1px solid $design-light-gray-color;
+}
+
+.c-locations__point {
+	@extend %c-locations__group;
+}
+
+.c-locations__place {
+	@extend %c-locations__group;
+}
+
+.c-locations__area {
+	@extend %c-locations__group;
+}
+
+.c-locations__data {
+	// empty
+}
+
+.c-locations__button {
+	// empty
+}
+
+.c-locations__area-sw {
+
+	&::before {
+		color: $design-light-blue-color;
+		content: 'SW ';
+	}
+
+}
+
+.c-locations__area-nw {
+
+	&::before {
+		color: $design-light-blue-color;
+		content: 'NW ';
+	}
+
+}
