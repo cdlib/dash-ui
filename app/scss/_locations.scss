@@ -19,10 +19,14 @@
 
 .c-locations__point {
 	@extend %c-locations__group;
+	padding-left: 26px;
+	background: url('../images/icon_point-blue.svg') left 2px center no-repeat;
 }
 
 .c-locations__place {
 	@extend %c-locations__group;
+	padding-left: 26px;
+	background: url('../images/icon_globe.svg') left 1px center no-repeat;
 }
 
 .c-locations__area {
