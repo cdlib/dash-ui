@@ -1,0 +1,9 @@
+// ##### Upload Files Theme ##### //
+
+.t-upload__heading {
+	@extend %viewport-edge-padding;
+}
+
+.t-upload__heading-optional {
+	font-size: 0.5em;
+}
