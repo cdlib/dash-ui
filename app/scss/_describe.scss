@@ -41,8 +41,9 @@
 }
 
 .t-describe__location-by-name {
+	display: flex;
 	align-items: flex-end;
-	width: 500px;
+	max-width: 500px;
 	margin: 20px 0 0;
 }
 
@@ -58,7 +59,7 @@
 }
 
 .t-describe__location-by-name-button {
-	margin: 0 0 20px 20px;
+	margin: 0 0 20px 10px;
 }
 
 .t-describe__map-label {
