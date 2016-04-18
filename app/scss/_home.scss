@@ -1,8 +1,13 @@
 // ##### Home Page Theme ##### //
 
 .t-home__header {
-	margin: 0;
+	margin: 0 0 10px;
 	border-bottom: none;
+
+	@include bp(screen2) {
+		margin: 0;
+	}
+
 }
 
 .t-home__banner {
@@ -12,6 +17,7 @@
 
 .t-home__quote-search {
 	@extend %page-bleed;
+	margin-bottom: $spacing-lg;
 	padding: 0;
 
 	@include bp(screen1) {
