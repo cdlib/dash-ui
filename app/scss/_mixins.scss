@@ -41,7 +41,7 @@ Selector pattern using above mixin:
 
 // Component/object spacing at left & right viewport edges after body spacing
 
-%viewport-edge-padding {
+%viewport-edge-padding { // depreciate to %viewport-edge-padding-with-bleed below?
 
   @include bp(screen1) {
     padding: 0 $spacing-md;
@@ -49,6 +49,20 @@ Selector pattern using above mixin:
 
   @include bp(screen2) {
     padding: 0 $spacing-lg;
+  }
+
+}
+
+%viewport-edge-margin {
+
+  @include bp(screen1) {
+    margin-left: $spacing-md;
+    margin-right: $spacing-md;
+  }
+
+  @include bp(screen2) {
+    margin-left: $spacing-lg;
+    margin-right: $spacing-lg;
   }
 
 }
