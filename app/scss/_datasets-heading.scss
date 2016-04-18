@@ -12,6 +12,14 @@
 
 }
 
+.c-datasets-heading__heading {
+
+	@include bp(screen1) {
+		margin: 0;
+	}
+
+}
+
 .c-datasets-heading__button {
 	align-self: center;
 	height: 35px;
