@@ -1,5 +1,21 @@
 // ##### Dataset Heading Object ##### //
 
 .o-dataset-heading {
-	// empty
+	display: flex;
+	flex-flow: column nowrap;
+
+	@include bp(screen1) {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+}
+
+.o-dataset-heading__button {
+	align-self: center;
+	height: 35px;
+	padding: 0 20px 0 40px;
+	border: none;
+	background: $design-light-blue-color url('../images/icon_plus-white.svg') left 18px center / 12px no-repeat;
+	color: $design-white-color;
 }
