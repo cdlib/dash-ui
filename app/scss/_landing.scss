@@ -1,11 +1,11 @@
 // ##### Landing Page Theme ##### //
 
-.t-landing {
-	// empty
+.t-landing__data-type {
+	margin: 0 0 $spacing-lg;
 }
 
 .t-landing__metadata {
-	margin: 0 0 1em;
+	margin: 0 0 $spacing-lg;
 }
 
 .t-landing__columns {
@@ -23,7 +23,7 @@
 .t-landing__sidebar {
 
 	.o-download {
-		margin: 0 0 20px;
+		margin: 0 0 $spacing-lg;
 	}
 
 	.c-sidebox {
