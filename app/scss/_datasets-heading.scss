@@ -1,6 +1,6 @@
-// ##### Datasets Heading Object ##### //
+// ##### Datasets Heading Component ##### //
 
-.o-datasets-heading {
+.c-datasets-heading {
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 0 0 $spacing-lg;
@@ -12,7 +12,7 @@
 
 }
 
-.o-datasets-heading__button {
+.c-datasets-heading__button {
 	align-self: center;
 	height: 35px;
 	padding: 0 20px 0 40px;
