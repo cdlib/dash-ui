@@ -53,6 +53,24 @@ Selector pattern using above mixin:
 
 }
 
+%viewport-edge-padding-with-bleed {
+  margin-left: (-$spacing-body);
+  margin-right: (-$spacing-body);
+  padding-left: $spacing-body;
+  padding-right: $spacing-body;
+
+  @include bp(screen1) {
+    padding-left: $spacing-body + $spacing-md;
+    padding-right: $spacing-body + $spacing-md;
+  }
+
+  @include bp(screen2) {
+    padding-left: $spacing-body + $spacing-lg;
+    padding-right: $spacing-body + $spacing-lg;
+  }
+
+}
+
 %right-padding {
 
   @include bp(screen2) {

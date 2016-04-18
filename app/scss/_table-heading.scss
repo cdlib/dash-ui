@@ -1,11 +1,11 @@
 // ##### Table Heading Component ##### //
 
 .c-table-heading {
+	@extend %viewport-edge-padding-with-bleed;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 40px;
-	padding: 0 10px;
 	background-color: $design-dark-blue-color;
 }
 
