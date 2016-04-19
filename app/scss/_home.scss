@@ -1,11 +1,11 @@
 // ##### Home Page Theme ##### //
 
 .t-home__header {
-	margin: 0 0 10px;
+	margin-bottom: 10px;
 	border-bottom: none;
 
 	@include bp(screen2) {
-		margin: 0;
+		margin-bottom: 0;
 	}
 
 }

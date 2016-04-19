@@ -1,8 +1,8 @@
 // ##### Header Component ##### //
 
 .c-header {
-  @extend %viewport-edge-padding;
-  margin: 0 0 $spacing-lg;
+  @extend %pull-borders;
+  margin-bottom: $spacing-lg;
 
   @include bp(screen2) {
     display: flex;
