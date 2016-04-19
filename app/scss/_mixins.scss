@@ -39,6 +39,57 @@ Selector pattern using above mixin:
 
 */
 
+// Pull component/object container over responsive body margins to small screen margin. Reset content to mirror responsive body margins. Typically used for top/bottom borders, like select object:
+
+%pull-borders {
+
+  @include bp(screen1) {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+
+  @include bp(screen2) {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+}
+
+// Pull component/object container over responsive body margins to viewport edge. Reset content to mirror responsive body margins. Typically used for bleeding background to page edge:
+
+%pull-background {
+  margin: 0 -10px;
+  padding: 0 10px;
+
+  @include bp(screen1) {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+  @include bp(screen2) {
+    margin: 0 -30px;
+    padding: 0 30px;
+  }
+
+}
+
+// Pull component/object container over responsive body margins to viewport edge. Don't add padding. Typically used for bleeding components to page edge, like on home theme:
+
+%pull-full-bleed {
+  margin: 0 -10px;
+
+  @include bp(screen1) {
+    margin: 0 -20px;
+  }
+
+  @include bp(screen2) {
+    margin: 0 -30px;
+  }
+
+}
+
+// ***** Old Mixins - but still being used until migrated to new ones above ***** //
+
 // Component/object spacing at left & right viewport edges after body spacing
 
 %viewport-edge-padding { // used in header.scss, etc.
