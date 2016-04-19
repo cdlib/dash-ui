@@ -8,10 +8,6 @@
 	margin: 0 0 $spacing-lg;
 }
 
-.t-landing__columns {
-	@extend %viewport-edge-padding;
-}
-
 .t-landing__main {
 
 	@include bp(screen2) {
@@ -21,6 +17,11 @@
 }
 
 .t-landing__sidebar {
+	margin: 0 0 $spacing-lg;
+
+	@include bp(screen2) {
+		margin: 0;
+	}
 
 	.o-download {
 		margin: 0 0 $spacing-lg;
