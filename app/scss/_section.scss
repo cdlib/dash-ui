@@ -1,18 +1,9 @@
 // ##### Section Object ##### //
 
 .o-section {
-	@extend %viewport-edge-padding;
-	margin: 0 0 $spacing-lg;
+	@extend %pull-borders;
+	margin-bottom: $spacing-lg;
 	padding-top: $spacing-lg;
 	border-top: 1px solid $design-dark-gray-color;
 	border-bottom: 1px solid $design-dark-gray-color;
-
-	@include bp(screen1) {
-		margin: 0 (-$spacing-md) $spacing-lg;
-	}
-
-	@include bp(screen2) {
-		margin: 0 (-$spacing-lg) $spacing-lg;
-	}
-
 }
