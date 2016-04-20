@@ -1,16 +1,10 @@
 // ##### Form Group Component ##### //
 
-$fgroup-right-margin: 200px;
-
 .c-fgroup {
   margin: 0 0 20px;
 
-  @include bp(screen1) {
-    padding: 0 $spacing-md;
-  }
-
   @include bp(screen2) {
-     padding: 0 $fgroup-right-margin 0 $spacing-lg;
+    padding-right: $fgroup-right-margin;
   }
 
   &[open] .c-fgroup__summary {
@@ -24,21 +18,17 @@ $fgroup-right-margin: 200px;
 }
 
 .c-fgroup__summary {
+  @extend %pull-background;
   position: relative;
-  margin: 0 (-$spacing-md) 20px;
-  padding: 10px $spacing-md;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: $design-dark-blue-color;
   color: $design-white-color;
   font-size: 1.3em;
 
-  @include bp(screen1) {
-    margin: 0 ((-$spacing-body) + (-$spacing-md)) 20px;
-    padding: 10px ($spacing-body + $spacing-md);
-  }
-
   @include bp(screen2) {
-    margin: 0 ((-$fgroup-right-margin) + (-$spacing-body)) 20px ((-$spacing-body) + (-$spacing-lg));
-    padding: 10px ($spacing-body + $spacing-lg);
+    margin-right: -230px;
   }
 
   &::after {
