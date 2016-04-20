@@ -1,15 +1,10 @@
 // ##### Search Results Theme ##### //
 
-.t-search-results__heading-level1 {
-	@extend %viewport-edge-padding;
-}
-
 .t-search-results__columns {
-	@extend %viewport-edge-padding;
 	margin: 0 0 20px;
 }
 
-// ***** Facet Alignment ***** //
+// ***** Facet Alignment at Responsive Breakpoints ***** //
 
 .t-search-results__sidebar {
 	display: flex;
