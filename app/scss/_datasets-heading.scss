@@ -3,7 +3,6 @@
 .c-datasets-heading {
 	display: flex;
 	flex-flow: column nowrap;
-	@extend %viewport-edge-padding-with-bleed;
 	margin-bottom: $spacing-lg;
 
 	@include bp(screen1) {
