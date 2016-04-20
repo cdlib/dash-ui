@@ -39,7 +39,7 @@ Selector pattern using above mixin:
 
 */
 
-// Pull component/object container over responsive body margins to small screen margin. Reset content to mirror responsive body margins. Typically used for top/bottom borders, like select object:
+// Pull component/object container over responsive body margins to small screen margin. Reset content to mirror responsive body margins. Typically used for top/bottom borders, like with select object
 
 %pull-borders {
 
@@ -55,7 +55,7 @@ Selector pattern using above mixin:
 
 }
 
-// Pull component/object container over responsive body margins to viewport edge. Reset content to mirror responsive body margins. Typically used for bleeding background to page edge:
+// Pull component/object container over responsive body margins to viewport edge. Reset content to mirror responsive body margins by adding padding. Typically used for bleeding background to page edge, like with table heading component
 
 %pull-background {
   margin: 0 -10px;
@@ -73,7 +73,7 @@ Selector pattern using above mixin:
 
 }
 
-// Pull component/object container over responsive body margins to viewport edge. Don't add padding. Typically used for bleeding components to page edge, like on home theme:
+// Pull component/object container over responsive body margins to viewport edge without adding padding. Typically used for bleeding components to page edge, like with banner object on home theme
 
 %pull-full-bleed {
   margin: 0 -10px;
@@ -88,67 +88,12 @@ Selector pattern using above mixin:
 
 }
 
-// ***** Old Mixins - but still being used until migrated to new ones above ***** //
-
-// Component/object spacing at left & right viewport edges after body spacing
-
-%viewport-edge-padding { // used in header.scss, etc.
-
-  @include bp(screen1) {
-    padding: 0 $spacing-md;
-  }
-
-  @include bp(screen2) {
-    padding: 0 $spacing-lg;
-  }
-
-}
-
-%viewport-edge-margin {
-
-  @include bp(screen1) {
-    margin-left: $spacing-md;
-    margin-right: $spacing-md;
-  }
-
-  @include bp(screen2) {
-    margin-left: $spacing-lg;
-    margin-right: $spacing-lg;
-  }
-
-}
-
-%viewport-edge-padding-with-bleed {
-  margin-left: (-$spacing-body);
-  margin-right: (-$spacing-body);
-  padding-left: $spacing-body;
-  padding-right: $spacing-body;
-
-  @include bp(screen1) {
-    padding-left: $spacing-body + $spacing-md;
-    padding-right: $spacing-body + $spacing-md;
-  }
-
-  @include bp(screen2) {
-    padding-left: $spacing-body + $spacing-lg;
-    padding-right: $spacing-body + $spacing-lg;
-  }
-
-}
-
 %right-padding {
 
   @include bp(screen2) {
     padding-right: 200px;
   }
 
-}
-
-// Bleed component/object to edge of viewport past body spacing
-
-%page-bleed {
-  margin: 0 (-$spacing-body);
-  padding: 0 $spacing-body;
 }
 
 // Hide/show something visually but not for screen readers
