@@ -1,7 +1,7 @@
 // ##### Table Heading Component ##### //
 
 .c-table-heading {
-	@extend %viewport-edge-padding-with-bleed;
+	@extend %pull-background;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

@@ -16,8 +16,7 @@ $table-cell-label-width: 110px;
 
 @include bp(screen2) {
   .o-table {
-    width: 100%;
-    margin: 0 0 $spacing-lg;
+    margin: 0 (-$spacing-lg) $spacing-lg;
   }
 
   .o-table tr {
