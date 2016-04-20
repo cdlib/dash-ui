@@ -4,7 +4,7 @@
   margin: 0 0 20px;
 
   @include bp(screen2) {
-    padding-right: $fgroup-right-margin;
+    padding-right: 200px;
   }
 
   &[open] .c-fgroup__summary {
