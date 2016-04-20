@@ -1,5 +1,5 @@
 // ##### Review & Submit Theme ##### //
 
-.t-review {
-	// empty
+.t-review__container {
+	@extend %right-padding;
 }
