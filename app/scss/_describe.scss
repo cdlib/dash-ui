@@ -1,16 +1,7 @@
 // ##### Metadata Entry Theme ##### //
 
-.t-describe__heading {
-	@extend %viewport-edge-padding;
-}
-
 .t-describe__basic-info {
-	@extend %viewport-edge-padding;
-
-	@include bp(screen2) {
-		padding-right: 200px;
-	}
-
+	@extend %right-padding;
 }
 
 .t-describe__group1-buttons {
@@ -76,6 +67,5 @@
 }
 
 .t-describe__dataset-nav {
-	@extend %viewport-edge-padding;
 	@extend %right-padding;
 }
