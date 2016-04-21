@@ -5,21 +5,21 @@ $(document).ready(function(){
   // ***** License Component ***** //
 
   $('.js-license_select').change(function(){
-    $(this).find("option:selected").each(function(){
+    $(this).find('option:selected').each(function(){
       if($(this).hasClass('js-license__option--cc0')){
-        $('.c-license__version').not().hide();
-        $('.js-license__version--cc0').show();
+        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
+        $(this).parents('.c-input').siblings('.js-license__version--cc0').show();
       }
       else if($(this).hasClass('js-license__option--ccby')){
-        $('.c-license__version').not().hide();
-        $('.js-license__version--ccby').show();
+        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
+        $(this).parents('.c-input').siblings('.js-license__version--ccby').show();
       }
       else if($(this).hasClass('js-license__option--ccbync')){
-        $('.c-license__version').not().hide();
-        $('.js-license__version--ccbync').show();
+        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
+        $(this).parents('.c-input').siblings('.js-license__version--ccbync').show();
       }
       else{
-        $('.c-license__version').hide();
+        $(this).parents('.c-input').siblings('.c-license__version').hide();
       }
     });
   }).change();
