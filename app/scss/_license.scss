@@ -4,13 +4,14 @@
 	margin: 0 0 20px;
 }
 
-.c-license__input-logo-group {
+.c-license__desc-logo-group {
 	display: flex;
+	justify-content: space-between;
 }
 
 .c-license__logo {
 	flex: 0 0 auto;
 	width: 120px;
 	height: 42px;
-	margin: 0 0 20px 20px;
+	margin: 0 0 0 20px;
 }
