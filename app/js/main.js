@@ -1,12 +1,8 @@
 // ##### Main JavaScript ##### //
 
+
+
 $(document).ready(function(){
-  
-  // ***** Publication Dates ***** //
-
-  // to go here
-
-  // $('.js-pubdate__1week').text(pubdate);
 
   // ***** Select Content Object ***** //
 
@@ -125,5 +121,27 @@ $(document).ready(function(){
     $('.js-table-heading__button-show').show();
     $('.js-table__details--show').toggleClass('js-table__details--show js-table__details--hide');
   });
+
+  // ***** Publication Dates ***** //
+
+  var today, week1, month1, month3, month6, year1;
+
+  var today = moment().format('M/DD/YYYY');
+  $('.js-pubdate__today').text(today);
+
+  var week1 = moment().add(1, 'week').format('M/DD/YYYY');
+  $('.js-pubdate__week1').text(week1);
+
+  var month1 = moment().add(1, 'month').format('M/DD/YYYY');
+  $('.js-pubdate__month1').text(month1);
+
+  var month3 = moment().add(3, 'month').format('M/DD/YYYY');
+  $('.js-pubdate__month3').text(month3);
+
+  var month6 = moment().add(6, 'month').format('M/DD/YYYY');
+  $('.js-pubdate__month6').text(month6);
+
+  var year1 = moment().add(1, 'year').format('M/DD/YYYY');
+  $('.js-pubdate__year1').text(year1);
 
 }); // Close $(document).ready(function()
