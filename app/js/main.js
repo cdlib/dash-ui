@@ -18,6 +18,22 @@ $(document).ready(function(){
         $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
         $(this).parents('.o-select__input').siblings('.js-select__content3').show();
       }
+      else if($(this).hasClass('js-select__option4')){
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content4').show();
+      }
+      else if($(this).hasClass('js-select__option5')){
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content5').show();
+      }
+      else if($(this).hasClass('js-select__option6')){
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content6').show();
+      }
+      else if($(this).hasClass('js-select__option7')){
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content7').show();
+      }
       else{
         $(this).parents('.o-select__input').siblings('.o-select__content').hide();
       }
