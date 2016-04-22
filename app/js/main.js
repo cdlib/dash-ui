@@ -2,24 +2,24 @@
 
 $(document).ready(function(){
   
-  // ***** License Component ***** //
+  // ***** Select Content Object ***** //
 
-  $('.js-license_select').change(function(){
+  $('.o-select__select').change(function(){
     $(this).find('option:selected').each(function(){
-      if($(this).hasClass('js-license__option--cc0')){
-        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
-        $(this).parents('.c-input').siblings('.js-license__version--cc0').show();
+      if($(this).hasClass('js-select__option1')){
+        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
+        $(this).parents('.c-input').siblings('.js-select__content1').show();
       }
-      else if($(this).hasClass('js-license__option--ccby')){
-        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
-        $(this).parents('.c-input').siblings('.js-license__version--ccby').show();
+      else if($(this).hasClass('js-select__option2')){
+        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
+        $(this).parents('.c-input').siblings('.js-select__content2').show();
       }
-      else if($(this).hasClass('js-license__option--ccbync')){
-        $(this).parents('.c-input').siblings('.c-license__version').not().hide();
-        $(this).parents('.c-input').siblings('.js-license__version--ccbync').show();
+      else if($(this).hasClass('js-select__option3')){
+        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
+        $(this).parents('.c-input').siblings('.js-select__content3').show();
       }
       else{
-        $(this).parents('.c-input').siblings('.c-license__version').hide();
+        $(this).parents('.c-input').siblings('.o-select__content').hide();
       }
     });
   }).change();
