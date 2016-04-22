@@ -7,19 +7,19 @@ $(document).ready(function(){
   $('.o-select__select').change(function(){
     $(this).find('option:selected').each(function(){
       if($(this).hasClass('js-select__option1')){
-        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
-        $(this).parents('.c-input').siblings('.js-select__content1').show();
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content1').show();
       }
       else if($(this).hasClass('js-select__option2')){
-        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
-        $(this).parents('.c-input').siblings('.js-select__content2').show();
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content2').show();
       }
       else if($(this).hasClass('js-select__option3')){
-        $(this).parents('.c-input').siblings('.o-select__content').not().hide();
-        $(this).parents('.c-input').siblings('.js-select__content3').show();
+        $(this).parents('.o-select__input').siblings('.o-select__content').not().hide();
+        $(this).parents('.o-select__input').siblings('.js-select__content3').show();
       }
       else{
-        $(this).parents('.c-input').siblings('.o-select__content').hide();
+        $(this).parents('.o-select__input').siblings('.o-select__content').hide();
       }
     });
   }).change();
