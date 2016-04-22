@@ -2,6 +2,12 @@
 
 $(document).ready(function(){
   
+  // ***** Publication Dates ***** //
+
+  // to go here
+
+  // $('.js-pubdate__1week').text(pubdate);
+
   // ***** Select Content Object ***** //
 
   $('.o-select__select').change(function(){
