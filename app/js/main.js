@@ -124,8 +124,6 @@ $(document).ready(function(){
 
   // ***** Publication Dates ***** //
 
-  var today, week1, month1, month3, month6, year1;
-
   var today = moment().format('M/DD/YYYY');
   $('.js-pubdate__today').text(today);
 
