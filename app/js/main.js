@@ -124,8 +124,7 @@ $(document).ready(function(){
 
   // ***** Publication Dates ***** //
 
-  var today = moment().format('M/DD/YYYY');
-  $('.js-pubdate__today').text(today);
+  $('.js-pubdate__release-date-input').attr('value', 'mm/dd/yyyy');
 
   var week1 = moment().add(1, 'week').format('M/DD/YYYY');
   $('.js-pubdate__week1').text(week1);

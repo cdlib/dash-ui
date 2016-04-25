@@ -1,8 +1,8 @@
 
 <div class="o-select">
 	<div class="c-input o-select__input">
-		<label class="c-input__label" for="o-select__select1">Publish this dataset</label>
-		<select class="o-select__select c-input__select" name="" id="o-select__select1">
+		<label class="c-input__label" for="c-pubdate__input1">Publish this dataset</label>
+		<select class="o-select__select c-input__select" name="" id="c-pubdate__input1">
 			<option class="js-select__option1" value="">today</option>
 			<option class="js-select__option2" value="">in 1 week</option>
 			<option class="js-select__option3" value="">in 1 month</option>
@@ -31,7 +31,11 @@
 		This data is scheduled to be published on <span class="js-pubdate__year1"></span>. You will be able to change the publication date any time up to that date.
 	</div>
 	<div class="js-select__content7 o-select__content">
-		This data is scheduled to be published on the following release date. You will be able to change the publication date any time up to that date.
-		<input type="date">
+		<p>This data is scheduled to be published on the following release date. You will be able to change the publication date any time up to that date.</p>
+		<div class="c-input">
+			<label class="c-input__label" for="c-pubdate__input2">Release Date</label>
+			<input class="js-pubdate__release-date-input c-input__text c-pubdate__release-date-input" id="c-pubdate__input2" type="date" name="">
+			<div class="c-input__error-message js-input__error-message">Error message.</div>
+		</div>
 	</div>
 </div>
