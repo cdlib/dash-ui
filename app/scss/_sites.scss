@@ -2,7 +2,7 @@
 
 .o-sites {
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     display: flex;
     position: relative; // to .o-sites__group
     flex-flow: row-reverse nowrap;
@@ -22,7 +22,7 @@
     &::after {
       transform: rotate(-90deg);
 
-      @include bp(screen2) {
+      @include bp(screen3) {
         transform: rotate(-180deg);
       }
 
@@ -40,7 +40,7 @@
   color: $design-white-color;
   text-decoration: none;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     margin: 0;
     background-color: $design-white-color;
     color: $design-black-color;
@@ -52,7 +52,7 @@
   @extend %o-sites__item;
   position: relative;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     padding: 0 20px 0 0;
     background-color: transparent;
     text-align: right; // if browser text size is increased beyond normal size
@@ -64,7 +64,7 @@
     transform: rotate(90deg);
     content: inline('../images/icon_right-white-arrow.svg');
 
-    @include bp(screen2) {
+    @include bp(screen3) {
       display: inline-block;
       right: 0;
       transform: rotate(0deg);
@@ -77,7 +77,7 @@
 
 .o-sites__group {
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     position: absolute; // to .o-sites
     right: 0;
     left: 0;
@@ -96,7 +96,7 @@
 .o-sites__group-item {
   @extend %o-sites__item;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     border-right: 1px solid $design-light-gray-color;
     border-bottom: 1px solid $design-light-gray-color;
     border-left: 1px solid $design-light-gray-color;
@@ -122,7 +122,7 @@
   background-color: $design-dark-blue-color;
   text-align: center;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     padding: 0;
     background-color: transparent;
     color: $design-light-blue-color;

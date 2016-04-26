@@ -4,7 +4,7 @@
   @extend %pull-borders;
   margin-bottom: $spacing-lg;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     display: flex;
     justify-content: space-between;
     height: 70px;
@@ -23,15 +23,21 @@
 .c-header__menu-button {
   margin: 5px 35px 0 0;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     display: none;
   }
 
 }
 
 .c-header__dash-logo-link {
-  max-width: 240px;
-  height: 50px;
+  width: 200px;
+  height: 40px;
+
+  @include bp(screen3) {
+    width: 240px;
+    height: 50px;
+  }
+
 }
 
 .c-header__dash-logo-svg {
@@ -48,7 +54,7 @@
   flex-flow: column nowrap;
   margin: 5px 0 0;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     display: flex;
     justify-content: space-between;
     width: 600px;
@@ -71,7 +77,7 @@
   padding: 6px;
   background-color: $design-light-blue-color;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     align-self: flex-end;
     width: $global-search-width;
     margin: 0;
@@ -85,7 +91,7 @@
   display: flex;
   flex-flow: column nowrap;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     flex-flow: row nowrap;
     align-items: flex-end; // wrap text to bottom
     justify-content: space-between;
@@ -101,7 +107,7 @@
   color: $design-white-color;
   text-decoration: none;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     margin: 0;
     padding: 0 15px;
     background-color: $design-white-color;
@@ -123,7 +129,7 @@
   @extend %c-header__nav-item;
   color: $design-black-color;
 
-  @include bp(screen2) {
+  @include bp(screen3) {
     color: $design-dark-blue-color;
   }
 
