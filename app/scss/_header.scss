@@ -18,7 +18,7 @@
 .c-header__logos {
   display: flex;
   align-items: flex-start;
-  margin: 0 20px 0 0;
+  // margin: 0 20px 0 0;
 }
 
 .c-header__menu-button {
@@ -52,7 +52,7 @@
   @include bp(screen2) {
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    width: 600px;
     margin: 0;
   }
 
@@ -103,9 +103,14 @@
 
   @include bp(screen2) {
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
     background-color: $design-white-color;
     color: $design-black-color;
+
+    &:not(:first-of-type) {
+      border-left: 1px dotted $design-orange-color;
+    }
+
   }
 
 }
