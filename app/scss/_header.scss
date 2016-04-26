@@ -7,7 +7,7 @@
   @include bp(screen2) {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
     padding-bottom: 10px;
     border-bottom: 1px solid $design-dark-gray-color;
     z-index: 0;
@@ -18,7 +18,6 @@
 .c-header__logos {
   display: flex;
   align-items: flex-start;
-  // margin: 0 20px 0 0;
 }
 
 .c-header__menu-button {
@@ -88,6 +87,7 @@
 
   @include bp(screen2) {
     flex-flow: row nowrap;
+    align-items: flex-end; // wrap text to bottom
     justify-content: space-between;
     z-index: 1;
   }
