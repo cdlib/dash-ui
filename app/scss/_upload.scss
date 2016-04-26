@@ -33,22 +33,24 @@
 }
 
 .t-upload__o-drop {
-	margin: 0 0 20px;
+	display: none;
 
 	@include bp(screen1) {
+		display: block;
 		margin: 0 20px 0 0;
 	}
 
 }
 
 .t-upload__or {
-	margin: 0 0 20px;
-	color: $design-dark-blue-color;
-	font-size: 1.5em;
-	font-weight: bold;
+	display: none;
 
 	@include bp(screen1) {
+		display: block;
 		margin: 0 20px 0 0;
+		color: $design-dark-blue-color;
+		font-size: 1.5em;
+		font-weight: bold;
 	}
 
 }
