@@ -8,7 +8,7 @@
   font-size: 1em;
 
   @include bp(screen3) {
-    font-size: 0.7em;
+    // font-size: 0.7em;
   }
 
 }
@@ -36,37 +36,39 @@
 .c-footer__nav-item {
   margin: 0 0 2px;
   padding: 10px;
-  background-color: $design-light-blue-color;
+  background-color: $design-dark-blue-color;
   color: $design-white-color;
   text-decoration: none;
 
   @include bp(screen3) {
     margin: 0;
-    padding: 0 1em;
+    padding: 0 10px 0 0;
     background-color: $design-white-color;
     color: $design-light-blue-color;
 
     &:not(:first-of-type) {
-      border-left: 1px solid $design-light-gray-color;
+      padding: 0 10px;
+      border-left: 1px solid $design-dark-blue-color;
     }
 
   }
 
 }
 
-.c-footer__policy-links {
+.c-footer__policy-group {
   text-align: center;
 
   @include bp(screen3) {
-  text-align: left;
+    text-align: left;
+  }
 
-    a {
-      @extend %o-link__primary;
+  a {
+    @extend %o-link__primary;
+    padding: 0 10px 0 0;
 
-      &:not(:first-of-type) {
-        margin: 0 0 0 1em;
-      }
-
+    &:not(:first-of-type) {
+      padding: 0 10px;
+      border-left: 1px solid $design-dark-blue-color;
     }
 
   }
