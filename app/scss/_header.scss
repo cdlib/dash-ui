@@ -113,6 +113,11 @@
     background-color: $design-white-color;
     color: $design-black-color;
 
+    &:hover,
+    &:focus {
+      color: $design-light-blue-color;
+    }
+
     &:not(:first-of-type) {
       border-left: 1px dotted $design-orange-color;
     }
