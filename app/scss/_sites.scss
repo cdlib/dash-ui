@@ -82,7 +82,7 @@
     right: 0;
     left: 0;
     margin: 10px 0 0;
-    box-shadow: 0 8px 10px $design-black-color;
+    box-shadow: 0 8px 10px $design-dark-gray-color;
   }
 
 }
@@ -90,7 +90,13 @@
 .o-sites__group-heading {
   @extend %o-sites__item;
   padding: 5px 10px;
-  background-color: $design-light-gray-color;
+  background-color: $design-dark-gray-color;
+
+  @include bp(screen3) {
+    background-color: $design-dark-blue-color;
+    color: $design-white-color;
+  }
+
 }
 
 .o-sites__group-item {
