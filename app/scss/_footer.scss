@@ -5,12 +5,60 @@
   margin-bottom: $spacing-lg;
   padding-top: 10px;
   border-top: 1px solid $design-dark-gray-color;
-  font-size: 0.7em;
+  font-size: 1em;
+
+  @include bp(screen3) {
+    font-size: 0.7em;
+  }
+
+}
+
+.c-footer__nav-group {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 0 $spacing-lg;
+
+  @include bp(screen3) {
+    flex-flow: row nowrap;
+    margin: 0 0 $spacing-md;
+  }
+
+}
+
+.c-footer__logged-in-or-out {
+
+  @include bp(screen3) {
+    display: none;
+  }
+
+}
+
+.c-footer__nav-item {
+  margin: 0 0 2px;
+  padding: 10px;
+  background-color: $design-light-blue-color;
+  color: $design-white-color;
+  text-decoration: none;
+
+  @include bp(screen3) {
+    margin: 0;
+    padding: 0 1em;
+    background-color: $design-white-color;
+    color: $design-light-blue-color;
+
+    &:not(:first-of-type) {
+      border-left: 1px solid $design-light-gray-color;
+    }
+
+  }
+
 }
 
 .c-footer__policy-links {
-  
+  text-align: center;
+
   @include bp(screen3) {
+  text-align: left;
 
     a {
       @extend %o-link__primary;
