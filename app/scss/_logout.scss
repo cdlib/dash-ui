@@ -14,10 +14,11 @@
 .o-logout__button {
 	position: absolute;
 	width: 100%;
-	padding: 10px 3.8em 10px 10px;
+	padding: 10px;
 	border: none;
 	background-color: transparent;
 	color: $design-white-color;
+	text-align: left;
 
 	@include bp(screen3) {
 		position: static;
@@ -30,15 +31,18 @@
 }
 
 .o-logout__name {
-	padding: 10px 10px 10px 5.5em;
+	padding: 10px 10px 10px 4em;
 	background-color: $design-dark-blue-color;
 	color: $design-white-color;
-	text-align: center;
 
 	@include bp(screen3) {
+		width: $global-search-width - 60px;
 		padding: 0;
 		background-color: transparent;
 		color: $design-black-color;
+  	text-align: right;
+  	text-overflow: ellipsis; // truncate text if too long
+  	overflow: hidden;
 	}
 
 }
