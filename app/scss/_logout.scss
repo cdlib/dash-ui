@@ -4,7 +4,7 @@
 	position: relative;
 	margin: 0 0 2px;
 
-	@include bp(screen2) {
+	@include bp(screen3) {
 		display: flex;
 		justify-content: space-between;
 		width: $global-search-width;
@@ -20,7 +20,7 @@
 	background-color: transparent;
 	color: $design-white-color;
 
-	@include bp(screen2) {
+	@include bp(screen3) {
 		position: static;
 		width: auto;
 		padding: 0;
@@ -36,7 +36,7 @@
 	color: $design-white-color;
 	text-align: center;
 
-	@include bp(screen2) {
+	@include bp(screen3) {
 		padding: 0;
 		background-color: transparent;
 		color: $design-black-color;
