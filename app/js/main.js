@@ -108,6 +108,8 @@ $(document).ready(function(){
   // ***** Toggle Table Heading Buttons ***** //
 
   $('.js-table-heading__button-hide').hide();
+  // $('.js-table__td-toggle').hide();
+  
   $('.js-table__details--hide').toggleClass('js-table__details--hide js-table__details--show');
 
   $('.js-table-heading__button-show').click(function(){

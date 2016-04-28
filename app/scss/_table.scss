@@ -84,3 +84,14 @@ $table-cell-label-width: 110px;
   }
 
 }
+
+// ***** Show / Hide Table Data ***** //
+
+.o-table__td-toggle {
+  // display: none;
+
+  @include bp(screen1) {
+    // display: block;
+  }
+
+}
