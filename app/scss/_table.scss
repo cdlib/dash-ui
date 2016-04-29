@@ -16,6 +16,7 @@ $table-cell-label-width: 110px;
 
 @include bp(screen2) {
   .o-table {
+    width: 100%;
     margin: 0 (-$spacing-lg) $spacing-lg;
   }
 
@@ -87,11 +88,11 @@ $table-cell-label-width: 110px;
 
 // ***** Show / Hide Table Data ***** //
 
-.o-table__td-toggle {
-  // display: none;
+// .o-table__td-toggle {
+//   display: none;
 
-  @include bp(screen1) {
-    // display: block;
-  }
+//   @include bp(screen2) {
+//     display: table-cell;
+//   }
 
-}
+// }
