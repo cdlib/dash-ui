@@ -1,8 +1,16 @@
 // ##### Main JavaScript ##### //
 
-
-
 $(document).ready(function(){
+
+  // ***** Toggle Table Cell Details ***** //
+
+  $('.js-table-heading__button-show').click(function(){
+    $('.js-table-progress').toggleClass('c-table-progress c-table-progress--details');
+  });
+
+  $('.js-table-heading__button-hide').click(function(){
+    $('.js-table-progress').toggleClass('c-table-progress--details c-table-progress');
+  });
 
   // ***** Select Content Object ***** //
 
