@@ -4,11 +4,17 @@ $(document).ready(function(){
 
   // ***** Toggle Table Cell Details ***** //
 
+  $('.js-table-heading__button-hide').hide();
+
   $('.js-table-heading__button-show').click(function(){
+    $(this).hide();
+    $(this).siblings('.js-table-heading__button-hide').show();
     $(this).parents('.c-table-heading').next('.js-table-progress').toggleClass('c-table-progress c-table-progress--details');
   });
 
   $('.js-table-heading__button-hide').click(function(){
+    $(this).hide();
+    $(this).siblings('.js-table-heading__button-show').show();
     $(this).parents('.c-table-heading').next('.js-table-progress').toggleClass('c-table-progress--details c-table-progress');
   });
 
@@ -111,25 +117,6 @@ $(document).ready(function(){
   $('[required]').map(function() {
     $(this).siblings('label').removeClass('c-input__label');
     $(this).siblings('label').addClass('c-input__label--required');
-  });
-
-  // ***** Toggle Table Heading Buttons ***** //
-
-  $('.js-table-heading__button-hide').hide();
-  // $('.js-table__td-toggle').hide();
-  
-  $('.js-table__details--hide').toggleClass('js-table__details--hide js-table__details--show');
-
-  $('.js-table-heading__button-show').click(function(){
-    $('.js-table-heading__button-show').hide();
-    $('.js-table-heading__button-hide').show();
-    $('.js-table__details--hide').toggleClass('js-table__details--hide js-table__details--show');
-  });
-
-  $('.js-table-heading__button-hide').click(function(){
-    $('.js-table-heading__button-hide').hide();
-    $('.js-table-heading__button-show').show();
-    $('.js-table__details--show').toggleClass('js-table__details--show js-table__details--hide');
   });
 
   // ***** Publication Dates ***** //
