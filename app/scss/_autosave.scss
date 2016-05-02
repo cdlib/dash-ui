@@ -1,9 +1,16 @@
 // ##### Autosave Component ##### //
 
-.c-autosave {
+.c-autosave-header {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
+}
+
+.c-autosave-footer {
+	@extend %right-padding;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 0 $spacing-lg;
 }
 
 .c-autosave__text {
