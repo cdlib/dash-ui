@@ -10,12 +10,14 @@ $(document).ready(function(){
     $(this).hide();
     $(this).siblings('.js-table-heading__button-hide').show();
     $(this).parents('.c-table-heading').next('.js-table-progress').toggleClass('c-table-progress c-table-progress--details');
+    $(this).parents('.c-table-heading').next('.js-table-submitted').toggleClass('c-table-submitted c-table-submitted--details');
   });
 
   $('.js-table-heading__button-hide').click(function(){
     $(this).hide();
     $(this).siblings('.js-table-heading__button-show').show();
     $(this).parents('.c-table-heading').next('.js-table-progress').toggleClass('c-table-progress--details c-table-progress');
+    $(this).parents('.c-table-heading').next('.js-table-submitted').toggleClass('c-table-submitted--details c-table-submitted');
   });
 
   // ***** Select Content Object ***** //
