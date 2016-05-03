@@ -2,19 +2,44 @@
 
 .o-banner {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   align-items: center;
   padding: 10px 0;
   background-color: $design-light-blue-color;
 
+	// 'background-image: none' needs to override the inline background-image style in the HTML at small screen:
+	// scss-lint:disable ImportantRule
+  @media (max-width: $screen-sm-min - 1) {
+  	background-image: none !important;
+  }
+
   @include bp(screen1) {
 		height: 28vw;
 	  padding: 8vw 0 0;
-	  background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 22vw, transparent 22vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+
+	  &::before {
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 22vw, transparent 22vw);
+			content: '';
+			z-index: 1;
+  	}
+
   }
 
   @include bp(screen2) {
-  	background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 20vw, transparent 20vw), inline('../images/bg_drawer-of-bugs.jpg') 0 0 / 100% no-repeat;
+
+  	&::before {
+			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 20vw, transparent 20vw);
+  	}
+
   }
 
 }
@@ -28,6 +53,7 @@ html.no-multiplebgs .o-banner {
 	margin: 0 0 10px;
 	color: $design-white-color;
 	font-size: 1.7em;
+	z-index: 2;
 
 	@include bp(screen1) {
 		margin: 0 0 2vw;
@@ -45,6 +71,7 @@ html.no-multiplebgs .o-banner {
 	border: none;
 	background-color: $design-white-color;
 	color: $design-dark-blue-color;
+	z-index: 2;
 
 	@include bp(screen1) {
 		height: 4vw;
