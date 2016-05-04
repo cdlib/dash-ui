@@ -43,22 +43,27 @@
 }
 
 .o-button__plain-text6 {
+  margin: 0 8px 0 0;
   padding: 0 8px 0 0;
   border: none;
   border-right: 2px solid $design-light-gray-color;
   background-color: $design-white-color;
   color: $design-dark-blue-color;
   font-weight: bold;
-  white-space: nowrap;
+
+  @include bp(screen2) {
+    margin: 0 8px 10px 0;
+  }
+
 }
 
 .o-button__plain-text7 {
-  padding: 0 0 0 8px;
+  padding: 0;
   border: none;
   background-color: $design-white-color;
   color: $design-dark-blue-color;
   font-weight: bold;
-  white-space: nowrap;
+  text-align: left;
 }
 
 %o-button__icon {
