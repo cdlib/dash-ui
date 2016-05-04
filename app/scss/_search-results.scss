@@ -25,6 +25,7 @@
 		}
 
 		@include bp(screen2) {
+			flex: 1 0 100%;
 
 			&:not(:last-of-type) {
 				margin: 0 0 30px;
