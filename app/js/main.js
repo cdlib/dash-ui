@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+  // ***** Initialize jQuery UI Tooltip ***** //
+
+  $('.o-button__help').tooltip();
+
   // ***** Toggle Table Cell Details ***** //
 
   $('.js-table-heading__button-hide').hide();
