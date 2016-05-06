@@ -78,15 +78,15 @@
 @import 'ui-library';
 
 body {
-  margin: 0 10px;
+  margin: 10px;
   font-family: 'KievitWeb';
 
   @include bp(screen1) {
-    margin: 0 20px;
+    margin: 10px 20px;
   }
 
   @include bp(screen2) {
-    margin: 0 30px;
+    margin: 10px 30px;
   }
 
 }
