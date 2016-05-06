@@ -29,7 +29,6 @@
   		left: 0;
 			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 22vw, transparent 22vw);
 			content: '';
-			z-index: 1;
   	}
 
   }
@@ -53,7 +52,7 @@ html.no-multiplebgs .o-banner {
 	margin: 0 0 10px;
 	color: $design-white-color;
 	font-size: 1.7em;
-	z-index: 2;
+	z-index: 1;
 
 	@include bp(screen1) {
 		margin: 0 0 2vw;
@@ -71,7 +70,7 @@ html.no-multiplebgs .o-banner {
 	border: none;
 	background-color: $design-white-color;
 	color: $design-dark-blue-color;
-	z-index: 2;
+	z-index: 1;
 
 	@include bp(screen1) {
 		height: 4vw;
