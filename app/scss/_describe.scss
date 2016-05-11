@@ -4,6 +4,15 @@
 	@extend %right-padding;
 }
 
+.t-describe__remove-button {
+	margin: 0 0 $spacing-lg;
+
+	@include bp(screen2) {
+		margin: 0 0 0 $spacing-lg;
+	}
+
+}
+
 .t-describe__group1-buttons {
 	display: flex;
 	margin: 0 0 20px;
