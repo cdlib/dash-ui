@@ -5,6 +5,7 @@
 }
 
 .t-describe__remove-button {
+	align-self: center;
 	margin: 0 0 $spacing-lg;
 
 	@include bp(screen2) {
