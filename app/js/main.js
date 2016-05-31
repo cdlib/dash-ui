@@ -4,7 +4,9 @@ $(document).ready(function(){
 
   // ***** Initialize jQuery UI Tooltip ***** //
 
-  $('.o-button__help').tooltip();
+  // Comment out tooltip method until jQuery UI is included on every page:
+  
+  // $('.o-button__help').tooltip();
 
   // ***** Toggle Table Cell Details ***** //
 
