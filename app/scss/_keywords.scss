@@ -1,5 +1,8 @@
 // ##### Keywords Component ##### //
 
+$keywords-height: 25px;
+$keywords-spacing: 5px;
+
 .c-keywords {
 	// empty
 }
@@ -10,15 +13,17 @@
 
 .c-keywords__container {
 	display: flex;
-	padding: 5px;
+	flex-flow: row wrap;
+	padding: $keywords-spacing $keywords-spacing 0;
 	border: 1px solid $design-dark-gray-color;
 }
 
 .c-keywords__keyword {
 	display: inline-flex;
 	align-items: center;
-	margin: 0 5px 0 0;
-	padding: 4px 6px;
+	height: $keywords-height;
+	margin: 0 $keywords-spacing $keywords-spacing 0;
+	padding: 0 6px;
 	background-color: $design-light-blue-color;
 	color: $design-white-color;
 }
@@ -31,5 +36,7 @@
 }
 
 .c-keywords__input {
-	border: none;
+	height: $keywords-height - $keywords-spacing;
+	margin: 0 0 $keywords-spacing;
+	padding: 0;
 }
