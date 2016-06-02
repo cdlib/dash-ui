@@ -4,8 +4,16 @@ $(document).ready(function(){
 
   // ***** Keywords Input Focus ***** //
 
-  $('.js-keywords__container').click(function(){
+  $('#js-keywords__container').click(function(){
     $('.js-keywords__input').focus();
+  });
+
+  $('.js-keywords__input').focus(function(){
+    $('#js-keywords__container').attr('class', 'c-keywords__container--has-focus');
+  });
+
+  $('.js-keywords__input').blur(function(){
+    $('#js-keywords__container').attr('class', 'c-keywords__container--has-blur');
   });
 
   // ***** Initialize jQuery UI Tooltip ***** //

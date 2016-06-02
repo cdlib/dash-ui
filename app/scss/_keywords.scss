@@ -11,11 +11,21 @@ $keywords-spacing: 5px;
 	font-weight: bold;
 }
 
-.c-keywords__container {
+%c-keywords__container {
 	display: flex;
 	flex-flow: row wrap;
 	padding: $keywords-spacing $keywords-spacing 0;
 	border: 1px solid $design-dark-gray-color;
+}
+
+.c-keywords__container,
+.c-keywords__container--has-blur {
+	@extend %c-keywords__container;
+}
+
+.c-keywords__container--has-focus {
+	@extend %c-keywords__container;
+	border: 2px solid $design-orange-color;
 }
 
 .c-keywords__keyword {
