@@ -14,8 +14,10 @@ $keywords-spacing: 5px;
 %c-keywords__container {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 	padding: $keywords-spacing $keywords-spacing 0;
 	border: 1px solid $design-dark-gray-color;
+	cursor: text;
 }
 
 .c-keywords__container,
@@ -49,4 +51,5 @@ $keywords-spacing: 5px;
 	height: $keywords-height - $keywords-spacing;
 	margin: 0 0 $keywords-spacing;
 	padding: 0;
+	border: none;
 }
