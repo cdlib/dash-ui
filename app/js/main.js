@@ -2,6 +2,12 @@
 
 $(document).ready(function(){
 
+  // ***** Keywords Input Focus ***** //
+
+  $('.js-keywords__container').click(function(){
+    $('.js-keywords__input').focus();
+  });
+
   // ***** Initialize jQuery UI Tooltip ***** //
 
   // Comment out tooltip method until jQuery UI is included on every page:
