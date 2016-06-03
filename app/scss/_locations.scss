@@ -42,12 +42,6 @@
 
 .c-locations__button {
 	flex: 0 0 auto;
-	border: none;
-	background-color: $design-white-color;
 	color: $design-light-blue-color;
-
-	&::before {
-		content: 'x ';
-	}
-
+	text-decoration: none;
 }
