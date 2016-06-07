@@ -66,22 +66,21 @@ html.no-multiplebgs .o-banner {
 }
 
 .o-banner__button {
+	display: inline-block;
 	padding: 6px 12px;
-	border: none;
 	background-color: $design-white-color;
 	color: $design-dark-blue-color;
+	text-decoration: none;
 	z-index: 1;
 
 	@include bp(screen1) {
-		height: 4vw;
-		padding: 0 1.5vw;
-		font-size: 2.2vw;
+		padding: 6px 2vw;
+		font-size: 2.4vw;
 	}
 
 	@include bp(screen2) {
-		height: 3.2vw;
-		padding: 0 1vw;
-		font-size: 1.7vw;
+		padding: 6px 2vw;
+		font-size: 1.9vw;
 	}
 
 }
