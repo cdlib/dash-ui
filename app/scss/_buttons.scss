@@ -216,7 +216,7 @@
   @extend %o-button__add-remove;
 
   &::before {
-    content: '\2013'; // en dash
+    content: '\00d7'; // multiply sign
   }
 
 }
