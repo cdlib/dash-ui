@@ -60,6 +60,10 @@
     margin: 0 8px 10px 0;
   }
 
+  &[disabled] {
+    color: $design-dark-gray-color;
+  }
+
 }
 
 .o-button__plain-text7 {
@@ -69,6 +73,11 @@
   color: $design-dark-blue-color;
   font-weight: bold;
   text-align: left;
+
+  &[disabled] {
+    color: $design-dark-gray-color;
+  }
+
 }
 
 .o-button__inline-form { // For Rails "button_to" output
