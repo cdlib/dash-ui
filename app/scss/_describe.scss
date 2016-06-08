@@ -14,28 +14,17 @@
 
 }
 
-.t-describe__group-add-buttons {
-	display: flex;
+.t-describe__orcid-id {
 	margin: 0 0 20px;
-
-	@include bp(screen2) {
-		margin: 0 5em 20px 0;
-	}
-
 }
 
-.t-describe__group-add-button {
+.t-describe__add-orcid {
+	display: inline-flex;
+	align-items: flex-start;
+}
 
-	&:nth-of-type(1) {
-		margin: 0 10px 0 0;
-
-		@include bp(screen2) {
-			width: 31.5%;
-			margin: 0 2.5% 0 0;
-		}
-
-	}
-
+.t-describe__add-button {
+	margin: 0 1em 20px 0;
 }
 
 .t-describe__select1 {
