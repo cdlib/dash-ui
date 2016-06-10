@@ -108,3 +108,18 @@
 	}
 
 }
+
+// ***** File Input ***** //
+
+.c-input__file-label {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: $design-light-blue-color;
+	color: $design-white-color;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+.c-input__file {
+	@extend %hide;
+}
