@@ -1,5 +1,42 @@
 // ##### Latest Datasets Component ##### //
 
-.c-latest {
+.c-latest__parent {
 	// empty
+}
+
+.c-latest {
+	padding: 20px 0 0 0;
+	border-top: 1px solid $design-dark-gray-color;
+
+	@include bp(screen2) {
+		display: inline-flex;
+		flex-flow: row wrap;
+		width: 49%;
+
+		// &:nth-of-type(odd) {
+		// 	border-left: 1px dashed $design-orange-color;
+		// }
+
+	}
+
+}
+
+.c-latest__title-group {
+	// empty
+}
+
+.c-latest__title {
+	color: $design-dark-blue-color;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+.c-latest__author {
+	// empty
+}
+
+.c-latest__type {
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: right;
 }
