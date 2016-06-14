@@ -1,21 +1,36 @@
 // ##### Latest Datasets Component ##### //
 
-.c-latest__parent {
-	// empty
-}
-
 .c-latest {
-	padding: 20px 0 0 0;
-	border-top: 1px solid $design-dark-gray-color;
+
+	@include bp(screen1) {
+    margin: 0 -10px;
+  }
 
 	@include bp(screen2) {
-		display: inline-flex;
+		display: flex;
 		flex-flow: row wrap;
-		width: 49%;
+		margin: 0 -20px;
+	}
 
-		// &:nth-of-type(odd) {
-		// 	border-left: 1px dashed $design-orange-color;
-		// }
+}
+
+.c-latest__dataset {
+	padding: 10px 0 0;
+	border-top: 1px solid $design-dark-gray-color;
+
+	@include bp(screen1) {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 10px 0;
+	}
+
+	@include bp(screen2) {
+		flex: 1 0 40%;
+		padding: 20px 20px 0;
+
+		&:nth-of-type(even) {
+			border-left: 1px dashed $design-orange-color;
+		}
 
 	}
 
@@ -36,6 +51,7 @@
 }
 
 .c-latest__type {
+	margin: 0 0 10px 1em;
 	font-size: 0.9em;
 	font-weight: bold;
 	text-align: right;
