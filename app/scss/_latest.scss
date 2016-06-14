@@ -37,7 +37,7 @@
 }
 
 .c-latest__title-group {
-	// empty
+	flex: 0 1 auto; // IE 10 fix
 }
 
 .c-latest__title {
