@@ -1,6 +1,6 @@
 // ##### Upload File Component ##### //
 
-.c-upload {
+%c-upload {
 	@extend %pull-borders;
 	display: flex;
 	flex-flow: row wrap;
@@ -11,19 +11,25 @@
 	border-top: 1px solid $design-light-gray-color;
 	border-bottom: 1px solid $design-light-gray-color;
 
-	~ .c-upload {
+	~ .c-upload,
+	~ .c-upload--complete {
 		border-top: none;
 	}
 
 }
 
-%c-upload__filename {
-	// empty
+.c-upload {
+	@extend %c-upload;
 }
 
-.c-upload__filename--upload-complete {
-	@extend %c-upload__filename;
-	// empty
+.c-upload--complete {
+	@extend %c-upload;
+
+	.c-upload__filename {
+		padding: 0 0 0 1.5em;
+	background: inline('../images/icon_check-green.svg') left center / 0.9em no-repeat;
+	}
+
 }
 
 .c-upload__filesize {
