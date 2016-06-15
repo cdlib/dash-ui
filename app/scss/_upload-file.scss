@@ -1,0 +1,31 @@
+// ##### Upload File Component ##### //
+
+.c-upload {
+	@extend %pull-borders;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid $design-light-gray-color;
+	border-bottom: 1px solid $design-light-gray-color;
+
+	~ .c-upload {
+		border-top: none;
+	}
+
+}
+
+.c-upload__filename {
+	// empty
+}
+
+.c-upload__filesize {
+	margin: 0 0 0 1em;
+}
+
+.c-upload__button {
+	border: none;
+	background-color: transparent;
+	color: $design-dark-blue-color;
+	font-weight: bold;
+}
