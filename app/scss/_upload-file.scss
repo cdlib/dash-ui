@@ -3,6 +3,8 @@
 .c-upload {
 	@extend %pull-borders;
 	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
 	justify-content: space-between;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -15,7 +17,12 @@
 
 }
 
-.c-upload__filename {
+%c-upload__filename {
+	// empty
+}
+
+.c-upload__filename--upload-complete {
+	@extend %c-upload__filename;
 	// empty
 }
 
@@ -23,9 +30,28 @@
 	margin: 0 0 0 1em;
 }
 
+.c-upload__action {
+
+	progress[value] { // for placeholder progress component
+		height: 10px;
+		border: none;
+		appearance: none;
+	}
+
+}
+
 .c-upload__button {
+	margin: 0 0 0 1em;
 	border: none;
 	background-color: transparent;
 	color: $design-dark-blue-color;
 	font-weight: bold;
+}
+
+.c-upload__no-files-text {
+	color: $design-dark-gray-color;
+}
+
+.c-upload__upload-complete-text {
+	color: $design-green-color;
 }
