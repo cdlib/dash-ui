@@ -2,6 +2,12 @@
 
 $(document).ready(function(){
 
+  // ***** Test if main.js has loaded ***** //
+
+  $('.test-jquery').click(function(){
+    $(this).css('color', 'green');
+  });
+
   // ***** Keywords Input Focus ***** //
 
   $('#js-keywords__container').click(function(){
