@@ -21,8 +21,12 @@
 
 	@include bp(screen1) {
 		position: absolute; // to t-review__funding-section
-		right: 0;
+		right: 10px;
 		bottom: 0;
+	}
+
+	@include bp(screen2) {
+		right: 20px;
 	}
 
 }
