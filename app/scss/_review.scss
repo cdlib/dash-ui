@@ -1,5 +1,28 @@
 // ##### Review & Submit Theme ##### //
 
-.t-review {
-	// empty
+.t-review__edit-button-top {
+
+	@include bp(screen1) {
+		float: right;
+	}
+
+}
+
+.t-review__funding-section {
+	position: relative;
+}
+
+.t-review__doi {
+	padding: 0 170px 0 0; // provides space for edit button below
+}
+
+.t-review__edit-button-bottom {
+	margin: 0 0 20px;
+
+	@include bp(screen1) {
+		position: absolute; // to t-review__funding-section
+		right: 0;
+		bottom: 0;
+	}
+
 }
