@@ -3,10 +3,6 @@
 .c-fgroup {
   margin: 0 0 20px;
 
-  @include bp(screen2) {
-    padding-right: 200px;
-  }
-
   &[open] .c-fgroup__summary {
 
     &::after {
@@ -26,10 +22,6 @@
   background-color: $design-dark-blue-color;
   color: $design-white-color;
   font-size: 1.3em;
-
-  @include bp(screen2) {
-    margin-right: -230px;
-  }
 
   &::after {
     position: absolute;

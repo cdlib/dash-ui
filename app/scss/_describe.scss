@@ -1,9 +1,5 @@
 // ##### Metadata Entry Theme ##### //
 
-.t-describe__basic-info {
-	@extend %right-padding;
-}
-
 .t-describe__remove-button {
 	align-self: center;
 	margin: 0 0 $spacing-lg;
@@ -64,8 +60,4 @@
 
 .t-describe__locations {
 	margin: 0 0 20px;
-}
-
-.t-describe__dataset-nav {
-	@extend %right-padding;
 }
