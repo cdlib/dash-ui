@@ -212,6 +212,15 @@
 
 }
 
+.o-button__connect-orcid {
+  display: inline-block;
+  padding: 5px 8px 5px 28px;
+  border: 1px solid $design-dark-gray-color;
+  background: $design-white-color inline('../images/icon_orcid.png') left 6px center no-repeat;
+  color: $design-dark-blue-color;
+  text-decoration: none;
+}
+
 .o-button__remove {
   @extend %o-button__add-remove;
   padding: 2px 0;
