@@ -190,8 +190,6 @@
 
 %o-button__add-remove {
   display: inline-block;
-  padding: 2px 0;
-  border: none;
   background-color: $design-white-color;
   color: $design-dark-blue-color;
   text-align: left;
@@ -205,6 +203,8 @@
 
 .o-button__add {
   @extend %o-button__add-remove;
+  padding: 5px 8px;
+  border: 1px solid $design-dark-gray-color;
 
   &::before {
     content: '+';
@@ -214,6 +214,8 @@
 
 .o-button__remove {
   @extend %o-button__add-remove;
+  padding: 2px 0;
+  border: none;
 
   &::before {
     content: '\00d7'; // multiply sign
