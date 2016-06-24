@@ -7,11 +7,12 @@
 	border-radius: 0.5em;
 	color: $design-dark-blue-color;
 	font-size: 1.6em;
+	text-align: center;
 
 	@include bp(screen2) {
 		padding: 2em;
 		border-radius: 0.75em;
-		font-size: 2em;
+		font-size: 1.9em;
 	}
 
 }
