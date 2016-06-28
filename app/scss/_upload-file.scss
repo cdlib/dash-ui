@@ -29,8 +29,8 @@
 	@extend %c-upload__item;
 
 	.c-upload__filename {
-		padding: 0 0 0 1.5em;
-		background: inline('../images/icon_check-green.svg') left center / 0.9em no-repeat;
+		padding: 0 0 0 25px;
+		background: inline('../images/icon_check-green.svg') left center / 15px no-repeat;
 	}
 
 }
@@ -63,8 +63,18 @@
 	font-weight: bold;
 }
 
-.c-upload__total-size {
+%c-upload__total-size {
 	margin: 10px 0;
+}
+
+.c-upload__total-size {
+	@extend %c-upload__total-size;
+}
+
+.c-upload__total-size--warning {
+	@extend %c-upload__total-size;
+	padding: 0 0 0 25px;
+	background: inline('../images/icon_warning.svg') left center / 18px no-repeat;
 }
 
 .c-upload__upload-complete-text {
