@@ -1,6 +1,10 @@
 // ##### Upload File Component ##### //
 
-%c-upload {
+.c-upload {
+	margin: 0 0 20px;
+}
+
+%c-upload__item {
 	@extend %pull-borders;
 	display: flex;
 	flex-flow: row wrap;
@@ -11,23 +15,24 @@
 	border-top: 1px solid $design-light-gray-color;
 	border-bottom: 1px solid $design-light-gray-color;
 
-	~ .c-upload,
-	~ .c-upload--complete {
+	&:not(:first-child) {
 		border-top: none;
+
+		color: $design-red-color;
 	}
 
 }
 
-.c-upload {
-	@extend %c-upload;
+.c-upload__item {
+	@extend %c-upload__item;
 }
 
-.c-upload--complete {
-	@extend %c-upload;
+.c-upload__item--complete {
+	@extend %c-upload__item;
 
 	.c-upload__filename {
 		padding: 0 0 0 1.5em;
-	background: inline('../images/icon_check-green.svg') left center / 0.9em no-repeat;
+		background: inline('../images/icon_check-green.svg') left center / 0.9em no-repeat;
 	}
 
 }
@@ -38,7 +43,7 @@
 
 .c-upload__action {
 
-	progress[value] { // for placeholder progress component
+	progress[value] {
 		height: 10px;
 		border: none;
 		appearance: none;
@@ -55,7 +60,12 @@
 }
 
 .c-upload__no-files-text {
+	margin: 0 0 10px;
 	color: $design-dark-gray-color;
+}
+
+.c-upload__total-size {
+	margin: 0 0 10px;
 }
 
 .c-upload__upload-complete-text {
