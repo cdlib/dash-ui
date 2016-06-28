@@ -17,8 +17,6 @@
 
 	&:not(:first-child) {
 		border-top: none;
-
-		color: $design-red-color;
 	}
 
 }
@@ -52,7 +50,7 @@
 }
 
 .c-upload__button {
-	margin: 0 0 0 1em;
+	margin: 0 0 0 10px;
 	border: none;
 	background-color: transparent;
 	color: $design-dark-blue-color;
@@ -62,12 +60,15 @@
 .c-upload__no-files-text {
 	margin: 0 0 10px;
 	color: $design-dark-gray-color;
+	font-weight: bold;
 }
 
 .c-upload__total-size {
-	margin: 0 0 10px;
+	margin: 10px 0;
 }
 
 .c-upload__upload-complete-text {
+	margin: 10px 0 0;
 	color: $design-green-color;
+	font-weight: bold;
 }
