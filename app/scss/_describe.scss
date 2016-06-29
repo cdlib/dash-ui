@@ -27,28 +27,6 @@
 	margin: 0 0 20px;
 }
 
-.t-describe__location-by-name {
-	display: flex;
-	align-items: flex-end;
-	max-width: 500px;
-	margin: 20px 0 0;
-}
-
-.t-describe__location-by-name-icon {
-	width: 25px;
-	height: 25px;
-	margin: 0 5px 23px 0;
-}
-
-.t-describe__location-by-name-label {
-	position: relative;
-	left: -30px; // move label over icon
-}
-
-.t-describe__location-by-name-button {
-	margin: 0 0 20px 10px;
-}
-
 .t-describe__map-label {
 	margin: 1em 0 0;
 	font-weight: bold;
