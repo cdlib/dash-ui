@@ -35,7 +35,7 @@
   padding: 5px 0;
   border: none;
   background-color: $design-white-color;
-  color: $design-light-blue-color;
+  color: $design-dark-blue-color;
   font-size: 0.9em;
 }
 
@@ -130,7 +130,7 @@
   padding: 3px 0 3px 25px;
   border: none;
   background-color: $design-white-color;
-  color: $design-light-blue-color;
+  color: $design-dark-blue-color;
   font-size: 0.9em;
 }
 
@@ -173,7 +173,7 @@
 
 .o-button__text-number--active {
   @extend %o-button__text-number;
-  color: $design-light-blue-color;
+  color: $design-dark-blue-color;
 }
 
 .o-button__menu {
@@ -190,8 +190,7 @@
 
 %o-button__add-remove {
   display: inline-block;
-  background-color: $design-white-color;
-  color: $design-dark-blue-color;
+  border: none;
   text-align: left;
   text-decoration: none;
 
@@ -204,10 +203,23 @@
 .o-button__add {
   @extend %o-button__add-remove;
   padding: 5px 8px;
-  border: 1px solid $design-dark-gray-color;
+  color: $design-black-color;
+  background-color: $design-lighter-blue-color;
 
   &::before {
     content: '+';
+  }
+
+}
+
+.o-button__remove {
+  @extend %o-button__add-remove;
+  padding: 2px 0;
+  color: $design-dark-blue-color;
+  background-color: $design-white-color;
+
+  &::before {
+    content: '\00d7'; // multiply sign
   }
 
 }
@@ -219,17 +231,6 @@
   background: $design-white-color inline('../images/icon_orcid.png') left 6px center no-repeat;
   color: $design-dark-blue-color;
   text-decoration: none;
-}
-
-.o-button__remove {
-  @extend %o-button__add-remove;
-  padding: 2px 0;
-  border: none;
-
-  &::before {
-    content: '\00d7'; // multiply sign
-  }
-
 }
 
 .o-button__help {
