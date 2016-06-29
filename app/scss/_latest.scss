@@ -41,9 +41,8 @@
 }
 
 .c-latest__title {
-	color: $design-dark-blue-color;
+	@extend %o-link__primary;
 	font-size: 1.4em;
-	text-decoration: none;
 }
 
 .c-latest__author {

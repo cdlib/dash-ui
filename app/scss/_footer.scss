@@ -52,11 +52,15 @@
     margin: 0;
     padding: 0 10px 0 0;
     background-color: $design-white-color;
-    color: $design-light-blue-color;
+    color: $design-dark-blue-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &:not(:first-of-type) {
       padding: 0 10px;
-      border-left: 1px solid $design-dark-blue-color;
+      border-left: 1px solid $design-black-color;
     }
 
   }
@@ -71,16 +75,15 @@
   }
 
   a {
+    @extend %o-link__primary;
     padding: 0 10px;
-    color: $design-light-blue-color;
-    text-decoration: none;
 
     @include bp(screen3) {
-      border-left: 1px solid $design-dark-blue-color;
+      border-left: 1px solid $design-black-color;
     }
 
     &:not(:first-of-type) {
-      border-left: 1px solid $design-dark-blue-color;
+      border-left: 1px solid $design-black-color;
     }
 
   }
