@@ -7,7 +7,6 @@
   @include bp(screen3) {
     display: flex;
     justify-content: space-between;
-    height: 70px;
     padding-bottom: 10px;
     border-bottom: 1px solid $design-dark-gray-color;
     z-index: 0;
@@ -17,11 +16,15 @@
 
 .c-header__logos {
   display: flex;
-  align-items: flex-start;
+
+  @include bp(screen3) {
+    margin: 8px 0;
+  }
+
 }
 
 .c-header__menu-button {
-  margin: 5px 35px 0 0;
+  margin: 0 25px 0 0;
 
   @include bp(screen3) {
     display: none;
@@ -30,23 +33,22 @@
 }
 
 .c-header__dash-logo-link {
-  width: 200px;
-  height: 40px;
-
-  @include bp(screen3) {
-    width: 240px;
-    height: 50px;
-  }
-
+  display: flex;
 }
 
 .c-header__dash-logo-svg {
-  width: 100%;
-  height: 100%;
+  height: 30px;
 
-  // Native dimentions:
-  // width: 340px;
-  // height: 65px;
+  @include bp(screen3) {
+    height: 45px;
+  }
+
+  &:last-child {
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+    border-left: 2px solid $design-dark-gray-color;
+  }
+
 }
 
 %c-header__nav {
@@ -56,7 +58,9 @@
 
   @include bp(screen3) {
     display: flex;
+    flex: 1 0 auto;
     justify-content: space-between;
+    max-width: 600px;
     margin: 0;
   }
 
@@ -106,8 +110,11 @@
   text-decoration: none;
 
   @include bp(screen3) {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
     margin: 0;
-    padding: 0 1em;
+    padding: 0;
     background-color: $design-white-color;
     color: $design-black-color;
 
