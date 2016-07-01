@@ -16,6 +16,7 @@
 
 .c-header__logos {
   display: flex;
+  flex: 1 0 auto; // IE 11 fix
 
   @include bp(screen3) {
     margin: 8px 0;
@@ -58,9 +59,7 @@
 
   @include bp(screen3) {
     display: flex;
-    flex: 1 0 auto;
     justify-content: space-between;
-    max-width: 600px;
     margin: 0;
   }
 
@@ -112,9 +111,8 @@
   @include bp(screen3) {
     display: flex;
     flex: 1 0 auto;
-    justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
     background-color: $design-white-color;
     color: $design-black-color;
 
