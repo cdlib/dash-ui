@@ -44,7 +44,7 @@
     height: 45px;
   }
 
-  &:last-child {
+  &:nth-child(2) {
     margin: 0 0 0 15px;
     padding: 0 0 0 15px;
     border-left: 2px solid $design-dark-gray-color;
