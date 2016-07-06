@@ -19,7 +19,7 @@
   flex: 1 0 auto; // IE 11 fix
 
   @include bp(screen3) {
-    margin: 8px 0;
+    margin: 5px 0; // The space between the top & bottom of logo separator line. Sets height of header, in addition to the .c-header__dash-logo-svg height properties below.
   }
 
 }
@@ -37,16 +37,19 @@
   display: flex;
 }
 
+// The SVG height properties below also set the header height, in addition to the c-header__logos margin property above.
+
 .c-header__dash-logo-svg {
   height: 30px;
+  padding: 5px 0;
 
   @include bp(screen3) {
-    height: 45px;
+    height: 40px;
   }
 
   &:nth-child(2) {
-    margin: 0 0 0 15px;
-    padding: 0 0 0 15px;
+    margin-left: 15px;
+    padding-left: 15px;
     border-left: 2px solid $design-dark-gray-color;
   }
 
