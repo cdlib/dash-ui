@@ -7,7 +7,6 @@
 @include bp(screen2) {
 
   .c-table-latest td:nth-of-type(1) {
-    color: $design-dark-blue-color;
     font-size: 1.1em;
   }
 
@@ -21,7 +20,6 @@
     margin: 0;
 
     &:nth-of-type(1) {
-      color: $design-dark-blue-color;
       font-size: 1.3em;
       font-weight: normal;
     }

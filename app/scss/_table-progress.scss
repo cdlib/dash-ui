@@ -7,16 +7,11 @@
 @include bp(screen2) {
 
   .c-table-progress td:nth-of-type(1) {
-    color: $design-dark-blue-color;
     font-size: 1.1em;
   }
 
   .c-table-progress td:nth-of-type(2) {
     white-space: nowrap;
-  }
-
-  .c-table-progress td:nth-of-type(6) {
-    color: $design-dark-blue-color;
   }
 
 }
@@ -34,7 +29,6 @@
   .c-table-progress td:nth-of-type(1),
   .c-table-progress--details td:nth-of-type(1) {
     margin: 0;
-    color: $design-dark-blue-color;
     font-size: 1.3em;
     font-weight: normal;
   }
@@ -70,7 +64,6 @@
   .c-table-progress td:nth-of-type(6),
   .c-table-progress--details td:nth-of-type(6) {
     margin: 0;
-    color: $design-dark-blue-color;
     font-size: 1.2em;
   }
 
