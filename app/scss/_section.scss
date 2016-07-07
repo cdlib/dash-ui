@@ -4,6 +4,7 @@
 	@extend %pull-borders;
 	margin-bottom: $spacing-lg;
 	padding-top: $spacing-lg;
+	clear: right; // for .t-review__edit-button-top float: right
 	border-top: 1px solid $design-dark-gray-color;
 	border-bottom: 1px solid $design-dark-gray-color;
 }

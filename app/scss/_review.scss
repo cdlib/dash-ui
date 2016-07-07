@@ -1,6 +1,7 @@
 // ##### Review & Submit Theme ##### //
 
 .t-review__edit-button-top {
+	margin: 0 0 20px;
 
 	@include bp(screen1) {
 		float: right;
@@ -20,7 +21,7 @@
 	margin: 0 0 20px;
 
 	@include bp(screen1) {
-		position: absolute; // to t-review__funding-section
+		// position: absolute; // to t-review__funding-section
 		right: 10px;
 		bottom: 0;
 	}
