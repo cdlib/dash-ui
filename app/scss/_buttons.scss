@@ -80,8 +80,10 @@
 
 }
 
-.o-button__inline-form { // For Rails "button_to" output
+// If a <button> is a flexbox child and is implemented in Rails using "button_to", add "form_class" and add this class to it:
+.o-button__inline-form {
   display: inline;
+  text-align: center;
 }
 
 %o-button__icon {
