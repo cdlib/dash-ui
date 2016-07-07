@@ -22,9 +22,10 @@
 
 .c-datasets-heading__button {
 	align-self: center;
-	height: 35px;
-	padding: 0 20px 0 40px;
+	height: 45px;
+	padding: 0 25px 0 50px;
 	border: none;
 	background: $design-light-blue-color inline('../images/icon_plus-white.svg') left 18px center / 12px no-repeat;
 	color: $design-white-color;
+	font-size: 1.1em;
 }
