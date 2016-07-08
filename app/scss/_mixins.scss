@@ -4,14 +4,17 @@
 
 @mixin bp($point) {
 
-  @if $point == screen3 {
-    @media (min-width: $screen-lg-min) { @content; }
+  @if $point == screen1 {
+    @media (min-width: $screen-sm-min) { @content; }
 
   } @else if $point == screen2 {
     @media (min-width: $screen-md-min) { @content; }
 
-  } @else if $point == screen1 {
-    @media (min-width: $screen-sm-min) { @content; }
+  } @else if $point == screen3 {
+    @media (min-width: $screen-lg-min) { @content; }
+
+  } @else if $point == screen4 {
+    @media (max-width: $screen-max) { @content; }
   }
 
 }
