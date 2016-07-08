@@ -83,16 +83,18 @@
 @import 'ui-library';
 
 body {
-  margin: 10px;
-  font-family: 'KievitWeb';
+	max-width: $screen-max - ($spacing-lg-new * 2);
+	margin: 0 auto;
+	padding: 10px;
+	font-family: 'KievitWeb';
 
-  @include bp(screen1) {
-    margin: 10px 20px;
-  }
+	@include bp(screen1) {
+		padding: 10px 20px;
+	}
 
-  @include bp(screen2) {
-    margin: 10px 30px;
-  }
+	@include bp(screen2) {
+		padding: 10px 30px;
+	}
 
 }
 

@@ -27,7 +27,10 @@ $screen-max: 1280px;
 
 // ***** Spacing ***** //
 
-$spacing-sm: 5px;
+$spacing-sm: 5px; // rename globally to $spacing-base
+
+// rename sm, md, lg:
 $spacing-md: 10px;
 $spacing-lg: 20px;
+$spacing-lg-new: 30px;
 $spacing-body: $spacing-md;
