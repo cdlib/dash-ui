@@ -21,6 +21,8 @@
 		background-position: 0 0;
 		background-size: 100%;
 
+		// Blue, semi-transparent bar over banner image:
+
 	  &::before {
   		position: absolute;
   		top: 0;
@@ -37,6 +39,17 @@
 
   	&::before {
 			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 20vw, transparent 20vw);
+  	}
+
+  }
+
+  @include bp(screen4) {
+		height: 360px;
+		padding: 100px 0 0;
+		background-size: auto 480px;
+
+  	&::before {
+			background: linear-gradient(transparent 75px, rgba($design-dark-blue-color, 0.6) 75px, rgba($design-dark-blue-color, 0.6) 255px, transparent 255px);
   	}
 
   }
@@ -63,6 +76,11 @@ html.no-multiplebgs .o-banner {
 		font-size: 4vw;
 	}
 
+	@include bp(screen4) {
+		margin: 0 0 26px;
+		font-size: 3.2em;
+	}
+
 }
 
 .o-banner__button {
@@ -81,6 +99,11 @@ html.no-multiplebgs .o-banner {
 	@include bp(screen2) {
 		padding: 6px 2vw;
 		font-size: 1.9vw;
+	}
+
+	@include bp(screen4) {
+		padding: 6px 25px;
+		font-size: 1.5em;
 	}
 
 }

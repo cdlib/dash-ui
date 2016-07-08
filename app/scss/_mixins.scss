@@ -14,7 +14,7 @@
     @media (min-width: $screen-lg-min) { @content; }
 
   } @else if $point == screen4 {
-    @media (max-width: $screen-max) { @content; }
+    @media (min-width: $screen-max) { @content; }
   }
 
 }
