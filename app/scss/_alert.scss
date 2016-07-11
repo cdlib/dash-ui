@@ -7,16 +7,24 @@
 	margin-bottom: $spacing-lg;
 	padding: 10px;
 	border-radius: 5px;
+	color: $design-white-color;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 
 .c-alert--success {
 	@extend %c-alert;
-	background-color: lighten($design-green-color, 30%);
+	background-color: $design-green-color;
+}
+
+.c-alert--informational {
+	@extend %c-alert;
+	background-color: $design-light-gray-color;
 }
 
 .c-alert--error {
 	@extend %c-alert;
-	background-color: lighten($design-red-color, 50%);
+	background-color: $design-red-color;
 }
 
 .c-alert__close {
