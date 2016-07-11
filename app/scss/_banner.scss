@@ -9,14 +9,15 @@
   background-color: $design-light-blue-color;
 
 	// 'background-image: none' needs to override the inline background-image style in the HTML at small screen:
+
 	// scss-lint:disable ImportantRule
   @media (max-width: $screen-sm-min - 1) {
   	background-image: none !important;
   }
 
   @include bp(screen1) {
-		height: 28vw;
-	  padding: 8vw 0 0;
+		height: 27vw;
+	  padding: 10vw 0 0;
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		background-size: 100%;
@@ -29,29 +30,23 @@
   		right: 0;
   		bottom: 0;
   		left: 0;
-			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 22vw, transparent 22vw);
+			background: linear-gradient(transparent 8vw, rgba($design-dark-blue-color, 0.6) 8vw, rgba($design-dark-blue-color, 0.6) 25vw, transparent 25vw);
 			content: '';
   	}
 
   }
 
   @include bp(screen2) {
+		padding: 75px 0 0;
 
   	&::before {
-			background: linear-gradient(transparent 6vw, rgba($design-dark-blue-color, 0.6) 6vw, rgba($design-dark-blue-color, 0.6) 20vw, transparent 20vw);
+			background: linear-gradient(transparent 60px, rgba($design-dark-blue-color, 0.6) 60px, rgba($design-dark-blue-color, 0.6) 190px, transparent 190px);
   	}
 
   }
 
   @include bp(screen4) {
-		height: 360px;
-		padding: 100px 0 0;
-		background-size: auto 480px;
-
-  	&::before {
-			background: linear-gradient(transparent 75px, rgba($design-dark-blue-color, 0.6) 75px, rgba($design-dark-blue-color, 0.6) 255px, transparent 255px);
-  	}
-
+		height: 345px;
   }
 
 }
@@ -69,16 +64,12 @@ html.no-multiplebgs .o-banner {
 
 	@include bp(screen1) {
 		margin: 0 0 2vw;
-		font-size: 5vw;
+		font-size: 5.5vw;
 	}
 
 	@include bp(screen2) {
-		font-size: 4vw;
-	}
-
-	@include bp(screen4) {
-		margin: 0 0 26px;
-		font-size: 3.2em;
+		margin: 0 0 15px;
+		font-size: 2.6em;
 	}
 
 }
@@ -93,17 +84,12 @@ html.no-multiplebgs .o-banner {
 
 	@include bp(screen1) {
 		padding: 6px 2vw;
-		font-size: 2.4vw;
+		font-size: 2.8vw;
 	}
 
 	@include bp(screen2) {
-		padding: 6px 2vw;
-		font-size: 1.9vw;
-	}
-
-	@include bp(screen4) {
-		padding: 6px 25px;
-		font-size: 1.5em;
+		padding: 7px 16px;
+		font-size: 1.3em;
 	}
 
 }
