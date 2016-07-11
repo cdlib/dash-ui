@@ -9,7 +9,6 @@
 	border-radius: 5px;
 	color: $design-white-color;
 	font-size: 1.1em;
-	font-weight: bold;
 }
 
 .c-alert--success {
@@ -19,7 +18,7 @@
 
 .c-alert--informational {
 	@extend %c-alert;
-	background-color: $design-light-gray-color;
+	background-color: $design-dark-gray-color;
 }
 
 .c-alert--error {
