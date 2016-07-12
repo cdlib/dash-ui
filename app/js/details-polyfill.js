@@ -1,7 +1,23 @@
 // ##### Details Element Polyfill ##### //
 
 $(document).ready(function(){
+  setTimeout(function() {
+    // $('details div.o-sites__group').hide();
+    if($.active > 0) {
+      $(document).ajaxStop(function () {
+        // $('details div.o-sites__group').show();
+        modernizeIt();
+        joelsReady();
+        $(this).unbind("ajaxStop"); // required since it fires everytime ajax stops after that, otherwise!
+      });
+    }else{
+      modernizeIt();
+      joelsReady();
+    }
+  }, 30);
+});
 
+function modernizeIt(){
   // Detect via Modernizr if details element is supported in a browser:
 
   if (Modernizr.details) {
@@ -15,7 +31,7 @@ $(document).ready(function(){
       $('[open]').attr('aria-expanded', 'true');
     }
 
-    $('summary').click(function(){
+    $('summary').click(function () {
       if ($(this).parent().is('[open]')) {
         $(this).parent().attr('aria-expanded', 'false');
       } else {
@@ -36,7 +52,8 @@ $(document).ready(function(){
       $('[open]').attr('aria-expanded', 'true');
     }
 
-    $('summary').click(function(){
+    // unbind('click') removed
+    $('summary').on("click", function () {
       $(this).siblings().toggle();
 
       if ($(this).parent().is('[open]')) {
@@ -48,5 +65,4 @@ $(document).ready(function(){
       }
     });
   }
-
-}); // Close $(document).ready(function()
+  }

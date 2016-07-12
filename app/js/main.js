@@ -1,12 +1,6 @@
 // ##### Main JavaScript ##### //
 
-$(document).ready(function(){
-
-  // ***** Test if main.js has loaded ***** //
-
-  $('.test-jquery').click(function(){
-    $(this).css('color', 'green');
-  });
+function joelsReady(){
 
   // ***** Keywords Input Focus ***** //
 
@@ -176,4 +170,4 @@ $(document).ready(function(){
   $('.js-pubdate__year1').text(year1);
   $('.js-pubdate__year1').attr('datetime', year1datetime);
 
-}); // Close $(document).ready(function()
+}// close joelsReady()
