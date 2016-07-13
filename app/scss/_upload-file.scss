@@ -7,7 +7,7 @@
 %c-upload__item {
 	@extend %pull-borders;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 10px;
@@ -35,13 +35,22 @@
 
 }
 
+.c-upload__filename {
+	margin: 0 10px 0 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  overflow: hidden;
+}
+
 .c-upload__filesize {
-	margin: 0 0 0 1em;
+	margin: 0 0 0 0.25em;
 }
 
 .c-upload__action {
+	flex: 0 0 auto;
 
 	progress[value] {
+		width: 20vw;
 		height: 10px;
 		border: none;
 		appearance: none;
@@ -50,7 +59,7 @@
 }
 
 .c-upload__button {
-	margin: 0 0 0 10px;
+	padding: 0 10px;
 	border: none;
 	background-color: transparent;
 	color: $design-dark-blue-color;
