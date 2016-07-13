@@ -128,6 +128,21 @@
   background-color: $design-lighter-blue-color;
 }
 
+.o-button__submit {
+  min-width: 170px;
+  height: 35px;
+  padding: 0 12px;
+  border: none;
+  background-color: $design-lighter-blue-color;
+  text-decoration: none;
+
+  &[disabled] {
+    background-color: lighten($design-light-gray-color, 20%);
+    color: $design-dark-gray-color;
+  }
+
+}
+
 %o-button__no-bg-icon-left {
   padding: 3px 0 3px 25px;
   border: none;
