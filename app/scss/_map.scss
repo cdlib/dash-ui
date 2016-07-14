@@ -1,6 +1,8 @@
 // ##### Map Object ##### //
 
 .o-map {
-	width: 100%;
+	// Override map vendor fixed-width styles:
+	// scss-lint:disable ImportantRule
+	width: 100% !important;
 	margin: 0 0 20px;
 }
