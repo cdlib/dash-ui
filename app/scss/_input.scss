@@ -49,6 +49,7 @@
 %c-input__element {
 	@extend %fcontrol-focus;
 	border: 1px solid $design-dark-gray-color;
+	box-sizing: border-box;
 }
 
 .c-input__text {
@@ -59,13 +60,13 @@
 
 .c-input__textarea {
 	@extend %c-input__element;
-	height: 5em;
+	height: $input-height + 50px;
 	padding: 3px 5px;
 }
 
 .c-input__select {
 	@extend %c-input__element;
-	height: $input-height + 2;
+	height: $input-height;
 	padding: 0 35px 0 5px;
 	border-radius: 0;
 	background: inline('../images/icon_up-down-arrows.svg') right 9px center / 12px no-repeat, linear-gradient($design-light-blue-color, $design-light-blue-color) right / 30px 30px no-repeat;
