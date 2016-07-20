@@ -4,6 +4,10 @@ function joelsReady(){
 
   // ***** Keywords Input Focus ***** //
 
+  // Copied this to keywords component JS in Rails for compatibility with autocomplete JS and removed from here:
+
+  /*
+
   $('#js-keywords__container').click(function(){
     $('.js-keywords__input').focus();
   });
@@ -15,6 +19,8 @@ function joelsReady(){
   $('.js-keywords__input').blur(function(){
     $('#js-keywords__container').attr('class', 'c-keywords__container--has-blur');
   });
+
+  */
 
   // ***** Initialize jQuery UI Tooltip ***** //
 
