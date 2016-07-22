@@ -21,8 +21,6 @@ var jshint = require('gulp-jshint');
 var lbInclude = require('gulp-lb-include');
 var ssi = require('browsersync-ssi');
 var sftp = require('gulp-sftp');
-var svgmin = require('gulp-svgmin');
-var path = require('path');
 var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
 
