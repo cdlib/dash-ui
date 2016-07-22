@@ -12,7 +12,6 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
 var del = require('del');
 var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
@@ -45,7 +44,7 @@ gulp.task('default', function (callback) {
 // Run the build process by running "gulp build" at the command line:
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'js-lint', 'sass', 'useref', 'images' ],
+    ['scss-lint', 'js-lint', 'sass', 'useref'],
     callback
   )
 })
@@ -114,13 +113,11 @@ gulp.task('useref', function(){
 });
 
 
-// Compress images:
-gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(cache(imagemin({ // Caching images that ran through imagemin
-      interlaced: true
-    })))
-  .pipe(gulp.dest('dist/images'))
+// Minify images:
+gulp.task('minify-images', function(){
+  return gulp.src('app/images/**')
+  .pipe(imagemin())
+  .pipe(gulp.dest('app/images'))
 });
 
 
