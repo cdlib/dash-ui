@@ -22,7 +22,6 @@ var jshint = require('gulp-jshint');
 var lbInclude = require('gulp-lb-include');
 var ssi = require('browsersync-ssi');
 var sftp = require('gulp-sftp');
-var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
 var postcss = require('gulp-postcss');
@@ -168,24 +167,4 @@ gulp.task('deploy', function () {
       authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc.
       auth: 'keyMain'
     }));
-});
-
-// Combine SVG files into one and reference them individually within HTML:
-
-gulp.task('svgstore', function () {
-  return gulp
-    .src('app/images/*.svg')
-    .pipe(svgmin(function (file) {
-      var prefix = path.basename(file.relative, path.extname(file.relative));
-      return {
-        plugins: [{
-          cleanupIDs: {
-            prefix: prefix + '-',
-            minify: true
-          }
-        }]
-      }
-    }))
-    .pipe(svgstore())
-    .pipe(gulp.dest('app/images'));
 });
