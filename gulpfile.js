@@ -124,13 +124,6 @@ gulp.task('images', function(){
 });
 
 
-// Copy font files from "app" directory to "dist" directory during build process:
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
-})
-
-
 // Delete "dist" directory at start of build process:
 gulp.task('clean', function(callback) {
   del('dist');
