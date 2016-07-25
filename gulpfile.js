@@ -1,4 +1,4 @@
-// ##### Gulp Tasks #####
+// ##### Gulp Toolkit #####
 
 // ***** Inspired by https://css-tricks.com/gulp-for-beginners/ ***** //
 
@@ -12,6 +12,7 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
+var cache = require('gulp-cache');
 var del = require('del');
 var modernizr = require('gulp-modernizr');
 var runSequence = require('run-sequence');
@@ -25,13 +26,18 @@ var postcss = require('gulp-postcss');
 var assets = require('postcss-assets');
 
 
-// Check that gulp is working by running "gulp hello" at the command line:
+// ***** Plugins That Run a Single Process ***** //
+
+// Run these processes from the command line using the task name. Example: $ gulp hello 
+
+
+// Check that gulp is working:
 gulp.task('hello', function() {
-  console.log('Hello there!');
+  console.log('Gulp is installed and running correctly.');
 });
 
 
-// Run the dev process by running "gulp" at the command line:
+// Run the dev process 'gulp':
 gulp.task('default', function (callback) {
   runSequence(['sass', 'browserSync', 'watch'],
     callback
@@ -39,16 +45,24 @@ gulp.task('default', function (callback) {
 })
 
 
-// Run the build process by running "gulp build" at the command line:
+// Run the build process 'build':
 gulp.task('build', function (callback) {
   runSequence('clean', 
-    ['scss-lint', 'js-lint', 'sass', 'useref'],
+    ['scss-lint', 'js-lint', 'sass', 'useref', 'copy-images'],
     callback
   )
 })
 
 
-// Run "gulp modernizr" at the command line to build a custom modernizr file based off of classes found in CSS:
+// Minify all images during development:
+gulp.task('minify-images', function(){
+  return gulp.src('app/images/**')
+  .pipe(imagemin())
+  .pipe(gulp.dest('app/images'))
+});
+
+
+// Run 'gulp modernizr' to build a custom modernizr file based off of classes found in CSS:
 gulp.task('modernizr', function() {
   gulp.src('app/css/main.css') // where modernizr will look for classes
     .pipe(modernizr({
@@ -58,7 +72,31 @@ gulp.task('modernizr', function() {
 });
 
 
-// Process sass to css, add sourcemaps, inline font & image files into css, and reload browser:
+// Validate build HTML:
+gulp.task('validateHTML', function () {
+  gulp.src('dist/**/*.html')
+    .pipe(validateHTML())
+});
+
+
+// Deploy a build via SFTP to a web server by running 'deploy':
+gulp.task('deploy', function () {
+  return gulp.src('dist/**')
+    .pipe(sftp({
+      host: 'webprod.cdlib.org',
+      remotePath: '/apps/webprod/apache/htdocs/dash/', // customize this path to match your web server
+      authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc. See: https://www.npmjs.com/package/gulp-sftp/#authentication
+      auth: 'keyMain'
+    }));
+});
+
+
+// ***** Plugins That Automatically Run As Part of a Single Process ***** //
+
+// These processes are not typically run from the command line but from the processes above.
+
+
+// Process Sass to CSS, add sourcemaps, autoprefix CSS selectors, optionally Base64 font and image files into CSS, and reload browser:
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sourcemaps.init())
@@ -100,7 +138,7 @@ gulp.task('browserSync', function() {
 })
 
 
-// Minify CSS, uglify JS, and concatenate files from paths within HTML comment tags; include files:
+// Concatenate and minify CSS and JavaScript from paths within useref tags during build process; include files:
 gulp.task('useref', function(){
   return gulp.src(['app/**/*.html', '!app/includes/*'])
     .pipe(useref())
@@ -111,48 +149,32 @@ gulp.task('useref', function(){
 });
 
 
-// Minify images:
-gulp.task('minify-images', function(){
-  return gulp.src('app/images/**')
-  .pipe(imagemin())
-  .pipe(gulp.dest('app/images'))
-});
-
-
-// Delete "dist" directory at start of build process:
+// Delete 'dist' directory at start of build process:
 gulp.task('clean', function(callback) {
   del('dist');
   return cache.clearAll(callback);
 })
 
-// Validate build HTML:
-gulp.task('validateHTML', function () {
-  gulp.src('dist/**/*.html')
-    .pipe(validateHTML())
+
+// Copy images to dist directory during the build process:
+gulp.task('copy-images', function(){
+  return gulp.src('app/images/**')
+  .pipe(gulp.dest('dist/images'))
 });
+
 
 // Lint Sass:
 gulp.task('scss-lint', function() {
   return gulp.src(['app/scss/**/*.scss', '!app/scss/vendor/**/*.scss'])
     .pipe(scsslint({
-      'config': 'scss-lint-config.yml'
+      'config': 'scss-lint-config.yml' // Settings for linters. See: https://github.com/brigade/scss-lint/tree/master/lib/scss_lint/linter
     }));
 });
+
 
 // Lint JavaScript:
 gulp.task('js-lint', function() {
   return gulp.src(['app/js/**/*.js', '!app/js/modernizr-custombuild.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
-});
-
-// Deploy a build via SFTP to a web server:
-gulp.task('deploy', function () {
-  return gulp.src('dist/**')
-    .pipe(sftp({
-      host: 'webprod.cdlib.org',
-      remotePath: '/apps/webprod/apache/htdocs/dash/',
-      authFile: 'gulp-sftp-key.json', // keep this file out of public repos by listing it within .gitignore, .hgignore, etc.
-      auth: 'keyMain'
-    }));
 });
