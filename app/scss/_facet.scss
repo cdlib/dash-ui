@@ -100,10 +100,10 @@
 }
 
 .c-facet__deselect-button {
+  @extend %c-facet__deselect-button;
   display: none;
 
   @include bp(screen2) {
-    @extend %c-facet__deselect-button;
     display: block;
   }
 
