@@ -3,6 +3,7 @@
 .c-review-files {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: flex-start;
 	justify-content: space-between;
 	margin: 0 0 10px;
 }
