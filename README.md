@@ -20,9 +20,9 @@ You are welcome to use any toolkit to do these tasks. However, you are encourage
 
 **/includes**: Includes contain the actual UI elements. They are located at **app/includes** and are compiled into the object, component, and theme files within the **dist** directory during the build process. Their organization is described in the *UI Elements* section below.
 
-**/scss**: Styles are written in multiple [Sass](http://sass-lang.com) files in **app/scss** and compiled to **app/css/main.css** during development runtime and a minified **dist/css/ui.css** for builds. The **ui.css** file should not be modified, as it will be overwritten with new code the next time a build is run. For style nomenclature, authoring patterns, and best practices, please see the *Styles* section below.
+**/scss**: Styles are written in multiple [Sass](http://sass-lang.com) files within **app/scss**. They are compiled to **app/css/main.css** during development runtime and a minified **dist/css/ui.css** for during the build process. Both the **main.css** and **ui.css** files should not be modified, as they will be overwritten with new versions as the Gulp toolkit is run. For style nomenclature, authoring patterns, and best practices, please see the *Styles* section below.
 
-**/js**: JavaScript files exist in **app/js** and get compiled to **dist/js/ui.js** during the build process. The main JavaScript file at **app/js/main.js** is mostly for basic DOM manipulation of HTML attributes, typically using jQuery. Two other custom JS files, **details-polyfill.js** and **modernizr-custombuild.js** exist within **app/js** and get concatenated into **ui.js** for builds. Like **ui.css** mentioned above, you should not modify **ui.js** in the **dist** directory, as it will be overwritten during each build.
+**/js**: JavaScript files exist in **app/js** and get compiled to **dist/js/ui.js** during the build process. The main JavaScript file at **app/js/main.js** is mostly for basic DOM manipulation of HTML attributes, typically using jQuery. Two other custom JS files, **details-polyfill.js** and **modernizr-custombuild.js** exist within **app/js** and get concatenated into **ui.js** for builds. Like the CSS files mentioned above, you should not modify **ui.js** in the **dist** directory, as it will be overwritten during each build.
 
 ## UI Elements
 
@@ -45,6 +45,8 @@ CSS selectors in the Sass partials are written using the [BEM naming convention]
 The namespaces in this UI library designate if a class is an object, component, theme, or for only binding JavaScript by using the prefixed letter **o-**, **c-**, **t-**, or **js-**. Theme classes are meant to be used sparingly, mostly for just aligning object and component alignment within the Theme pages.
 
 Selector block elements are typically named after the scss filename they belongs to. For example, the Banner Object's styles are located in `_banner.scss` and the selector block elements named **o-banner**.
+
+When media queries are included in a style declaration, they are written 'mobile-first'. The selector's properties first define the small screen experience, then a media query for the bigger screen experience is added with properties that add upon or override the small screen properties. To see how media queries are used throughout the UI library, open the file, **app/scss/_mixins.scss** to see examples in the Sass code.
 
 In the UI element HTML, two or more classes with different namespaces will sometimes be chained together into an HTML's class attribute. For example, `class="t-describe__locations c-locations"`. This is to add *complementary* styles to a DOM object, not to cancel or reset styles between the classes.
 
