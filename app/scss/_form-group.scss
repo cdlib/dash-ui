@@ -30,11 +30,11 @@
     content: inline('../images/icon_right-white-arrow.svg');
 
     @include bp(screen1) {
-      right: $spacing-body + $spacing-md;
+      right: $spacing-body + $spacing-sm;
     }
 
     @include bp(screen2) {
-      right: $spacing-body + $spacing-lg;
+      right: $spacing-body + $spacing-md;
     }
 
   }

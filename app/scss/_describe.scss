@@ -2,10 +2,10 @@
 
 .t-describe__remove-button {
 	align-self: center;
-	margin: 0 0 $spacing-lg;
+	margin: 0 0 $spacing-md;
 
 	@include bp(screen2) {
-		margin: 0 0 0 $spacing-lg;
+		margin: 0 0 0 $spacing-md;
 	}
 
 }

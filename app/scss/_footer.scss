@@ -2,7 +2,7 @@
 
 .c-footer {
   @extend %pull-borders;
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-md;
   padding-top: 10px;
   border-top: 1px solid $design-dark-gray-color;
   font-size: 1em;
@@ -24,7 +24,7 @@
 .c-footer__nav-group {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0 0 $spacing-lg;
+  margin: 0 0 $spacing-md;
 
   @include bp(screen3) {
     flex-flow: row nowrap;

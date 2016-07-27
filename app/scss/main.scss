@@ -84,7 +84,7 @@
 @import 'ui-library';
 
 body {
-	max-width: $screen-max - ($spacing-lg-new * 2);
+	max-width: $screen-max - ($spacing-lg * 2);
 	margin: 0 auto;
 	padding: 10px;
 	font-family: 'KievitWeb';

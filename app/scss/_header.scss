@@ -2,7 +2,7 @@
 
 .c-header {
   @extend %pull-borders;
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-md;
 
   @include bp(screen3) {
     display: flex;

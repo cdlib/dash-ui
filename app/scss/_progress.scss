@@ -1,7 +1,7 @@
 // ##### Progress Component ##### //
 
 .c-progress {
-  margin: 0 0 $spacing-lg;
+  margin: 0 0 $spacing-md;
 
   @include bp(screen1) {
     display: flex;

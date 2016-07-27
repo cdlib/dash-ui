@@ -17,7 +17,7 @@ $table-cell-label-width: 110px;
 @include bp(screen2) {
   .o-table {
     width: 100%;
-    margin: 0 (-$spacing-lg) $spacing-lg;
+    margin: 0 (-$spacing-md) $spacing-md;
   }
 
   .o-table tr {
@@ -26,7 +26,7 @@ $table-cell-label-width: 110px;
 
   .o-table th,
   .o-table td {
-    padding: $spacing-lg;
+    padding: $spacing-md;
     text-align: left;
     vertical-align: top;
   }
@@ -57,7 +57,7 @@ $table-cell-label-width: 110px;
   .o-table tbody {
 
     tr {
-      padding: $spacing-md 0;
+      padding: $spacing-sm 0;
 
       &:not(:first-child) {
         border-top: 1px solid $design-light-gray-color;
@@ -76,7 +76,7 @@ $table-cell-label-width: 110px;
     &:before {
       position: absolute;
       left: (-$table-cell-label-width);
-      width: $table-cell-label-width - $spacing-md;
+      width: $table-cell-label-width - $spacing-sm;
       font-weight: normal;
       text-align: right;
       white-space: nowrap;

@@ -17,7 +17,7 @@
 
 .t-home__quote-search-group {
 	@extend %pull-full-bleed;
-	margin-bottom: $spacing-lg;
+	margin-bottom: $spacing-md;
 	padding: 0;
 
 	@include bp(screen1) {

@@ -3,7 +3,7 @@
 .c-datasets-heading {
 	display: flex;
 	flex-flow: column nowrap;
-	margin-bottom: $spacing-lg;
+	margin-bottom: $spacing-md;
 
 	@include bp(screen1) {
 		flex-flow: row nowrap;
