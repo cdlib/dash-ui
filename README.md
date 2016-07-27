@@ -6,7 +6,7 @@ A Library of static objects, components, and themes for the Stash application.
 
 The Dash UI Library uses a Gulp toolkit for front-end web development called [Gulp Template](https://github.com/JoelCDL/gulp_template). Like most build tools, it processes styles and scripts, creates and deploys finished builds, live-reloads file changes, and runs other tasks. 
 
-You are welcome to use any toolkit to do these tasks. However, you are encouraged to use the Gulp Template, since it is already configured to use with this library. Since the Gulp Template touches almost every aspect of the UI workflow, please [read the documentation](https://github.com/JoelCDL/gulp_template) about what it does and how it works in order to get a clear sense of how this library is put together.
+You are welcome to use any build tool to do these tasks. However, if you want to add changes to the UI library sooner rather than later, you are encouraged to use the Gulp Template, since it is already configured with this library. Since the Gulp Template touches almost every aspect of the UI, please [read the documentation](https://github.com/JoelCDL/gulp_template) about what it does and how it works in order to get a clear sense of how this project is put together.
 
 ## Project Structure
 
@@ -44,7 +44,7 @@ CSS selectors in the Sass partials are written using the [BEM naming convention]
 
 The namespaces in this UI library designate if a class is an object, component, theme, or for only binding JavaScript by using the prefixed letter **o-**, **c-**, **t-**, or **js-**. Theme classes are meant to be used sparingly, mostly for just aligning object and component alignment within the Theme pages.
 
-Selector blocks are typically named after the scss filename they belong to. For example, the Banner Object's styles are located in `_banner.scss` and the selector block elements named **o-banner**.
+Selector blocks are typically named after the scss filename they belong to. For example, the Banner Object's styles are located in `_banner.scss` and the selector block is named **o-banner**.
 
 When media queries are included in a style declaration, they are written 'mobile-first'. The selector's properties first define the small screen experience, then a media query for the bigger screen experience is added with properties that add upon or override the small screen properties. To see how media queries are used throughout the UI library, open the file, **app/scss/_mixins.scss** to see examples in the Sass code.
 
