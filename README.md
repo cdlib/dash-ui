@@ -44,7 +44,7 @@ CSS selectors in the Sass partials are written using the [BEM naming convention]
 
 The namespaces in this UI library designate if a class is an object, component, theme, or for only binding JavaScript by using the prefixed letter **o-**, **c-**, **t-**, or **js-**. Theme classes are meant to be used sparingly, mostly for just aligning object and component alignment within the Theme pages.
 
-Selector block elements are typically named after the scss filename they belongs to. For example, the Banner Object's styles are located in `_banner.scss` and the selector block elements named **o-banner**.
+Selector blocks are typically named after the scss filename they belong to. For example, the Banner Object's styles are located in `_banner.scss` and the selector block elements named **o-banner**.
 
 When media queries are included in a style declaration, they are written 'mobile-first'. The selector's properties first define the small screen experience, then a media query for the bigger screen experience is added with properties that add upon or override the small screen properties. To see how media queries are used throughout the UI library, open the file, **app/scss/_mixins.scss** to see examples in the Sass code.
 
